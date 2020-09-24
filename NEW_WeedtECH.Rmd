@@ -1,0 +1,684 @@
+---
+title: "Weed Tech"
+author: "Maxwel Coura Oliveira"
+date: "11/6/2019"
+output: html_document
+---
+
+```{r include=FALSE}
+library(ggplot2)
+library(drc)
+library(knitr)
+library(kableExtra)
+library(ggthemes)
+library(RColorBrewer)
+library(CircStats)
+library(openair)
+library(scales)
+library(tidyverse)
+library(kableExtra)
+library(scales)
+library(usmap)
+library(ggmap)
+library(ggrepel)
+library(maps)
+library(grid)
+library(mapdata)
+library(maptools)
+library(stringr)
+library(dplyr)
+library(ggsn)
+library(choroplethr)
+library(sandwich)
+library(lmtest)
+```
+
+
+# Methods
+
+* *Model*: Three-parameter log-logistic model (Except Nebraska that was four-parameter log-logistic model).
+
+* All results are the combined data from the downwind locations with (Yes) and without tarp (No).
+
+
+
+
+
+# ARKANSAS
+
+
+
+
+
+
+
+```{r include=FALSE, warning=FALSE}
+AR=read_csv("arkansas.csv")
+str(AR)
+AR$Cover <- factor(AR$Cover, levels = c("Yes", "No"), labels = c("Covered", "Noncovered"))
+
+#AR$Distance <- gsub("15.24" , "15.24" , AR$Distance)
+```
+
+kable(b, "latex",  booktabs = T,
+      col.names = c("State", "Role", "#", "%"), linesep = '') %>% 
+  add_header_above(c(" ", " ", "Respondents" = 2), bold = F) %>%
+kable_styling(latex_options = c("striped", "hold_position"), position = "center", font_size = 10, full_width = F) %>%  
+ collapse_rows(columns = 1, latex_hline = "none", valign = "middle") %>% 
+   footnote(number = c("Decision influencer: agronomist, coop, industry rep, and university rep")) 
+```{r}
+kable(AR)
+```
+
+
+
+## Results at 22 DAT
+
+### Non-Xtend soybean injury 
+
+####
+fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")
+```{r message=FALSE, warningFALSE}
+AR1=filter(AR, Direction=="Downwind" & DAT=="22")
+Model1=drm(Injury~Distance, Cover, fct=l3(fixed = c(NA, 55, NA), names = c("b", "d", "e"), ), data=AR1)
+summary(Model1)
+plot(Model1)
+mselect(Model1,  list(l3(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+
+
+##### Model summary
+
+```{r}
+coeftest(Model1, vcov = sandwich)
+```
+
+
+##### ED values (Distances)
+
+```{r echo=FALSE, warning = FALSE}
+ED(Model1, c(1, 10, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning =FALSE}
+EDcomp(Model1, c(1,1,5,5, 10,10,20, 20, 50, 50), type="absolute")
+```
+
+
+```{r}
+mse <- mean(residuals(Model1)^2/df.residual(Model1))
+rmse <- sqrt(mse)
+rmse
+```
+
+
+##### Figure
+
+
+
+```{r include=FALSE, warning = FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(15), log(261), length=261)))
+
+newdata1 <- data.frame(Cover ="Covered", newdata) 
+newdata2 <- data.frame(Cover ="Noncovered", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+
+
+pm <- predict(Model1, newdata=nd, interval="confidence")
+
+
+
+
+#write_csv(nd, "arkansasME.csv")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+AR1$Distance0 <- AR1$Distance 
+AR1$Distance0[AR1$Distance0==0] <- 15 
+```
+
+```{r echo=FALSE, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area in the downwind (Yes or No cover) in Arkansas at 22 DAT.", fig.height=6, fig.width=6, warning=FALSE}
+p1<-ggplot(AR1, aes(x = Distance0, y = Injury, color=Cover, pch=Cover, fill=Cover, linetype=Cover)) + geom_point(pch=1) + theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+  scale_linetype_manual(values=c("dotdash", "solid")) +
+    ylim(-5,100) +
+  annotate("text", x = 221, y = 90, label = "ME (Covered) = 0.97") + 
+  annotate("text", x = 221, y = 85, label = "ME (Noncovered) = 0.96") +
+  annotate("text", x = 227, y = 80, label = "RMSE = 0.32") +
+  annotate("text", x = 235, y = 100, label = c("Arkansas"), size=6, face="bold") +
+  theme(legend.position=c(0.2, 0.9), panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), legend.text = element_text(size=13), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 50, 100, 150, 200, 250)) +
+  ggsave("Arkansas.png", height = 6, width = 6, dpi=600)
+```
+
+
+\newpage
+
+
+
+# INDIANA
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE}
+IN=read_csv("indiana.csv") %>% 
+  filter(Distance != 1.52 & DAT == "21" & Cover != "Transect")
+str(IN)
+IN$Cover <- factor(IN$Cover, levels = c("Yes", "No"), labels = c("Covered", "Noncovered"))
+```
+
+
+
+
+```{r warning=FALSE}
+Model6=drm(Injury~Distance, Cover, fct=l3(fixed = c(NA, NA, NA)), data=IN)
+summary(Model6)
+plot(Model6)
+
+
+mselect(Model6,  list(l4(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model6, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model6, c(1,10,50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model6, c(1,1,5,5,10,10,20, 20,50,50), type="absolute")
+```
+
+```{r}
+mse <- mean(residuals(Model6)^2/df.residual(Model6))
+rmse <- sqrt(mse)
+rmse
+```
+
+#### Figure
+
+
+```{r include=FALSE, warning=FALSE} 
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover = "Covered", newdata) 
+newdata2 <- data.frame(Cover = "Noncovered", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model6, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+#write_csv(nd, "indianaME.csv")
+
+IN$Distance0 <- IN$Distance 
+IN$Distance0[IN$Distance0==0] <- 0.5
+```
+
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated area (Yes or No cover) at 21 DAT in Indiana."}
+p2<-ggplot(IN, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) + geom_point(pch=1) + theme_bw() + 
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+    scale_linetype_manual(values=c("dotdash", "solid")) +
+    annotate("text", x = 14.5, y = 100, label = c("Indiana"), size=6) +
+    ylim(-5,100) +
+  annotate("text", x = 13.5, y = 90, label = "ME (Covered) = 0.98") + 
+  annotate("text", x = 13.5, y = 85, label = "ME (Noncovered) = 0.88") +
+  annotate("text", x = 13.5, y = 80, label = "RMSE = 0.35") +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 50, 100, 150, 200, 250)) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  scale_color_manual(values=c("black", "red")) +
+  ggsave("Indiana1.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+\newpage
+
+
+# MICHIGAN
+
+
+```{r include=FALSE, warning=FALSE}
+MI=read_csv("michigan.csv")
+```
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE, warning=FALSE}
+MI <- MI %>% 
+  filter(Cover != "Transect")
+```
+
+
+```{r warning=FALSE}
+Model14=drm(Injury~Distance, Cover, fct=l3(), data=MI)
+plot(Model14, type="all")
+mselect(Model14,  list(l4(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model14, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model14, c(1, 10, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model14, c(1,1,5,5,10,10,20,20, 50,50), type="absolute")
+```
+
+
+#### Figure
+
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model14, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+#write_csv(nd, "michiganME.csv")
+
+MI$Distance0 <- MI$Distance
+MI$Distance0[MI$Distance0==0] <- 0.5
+```
+
+```{r}
+mse <- mean(residuals(Model14)^2/df.residual(Model14))
+rmse <- sqrt(mse)
+rmse
+```
+
+
+```{r echo=FALSE, warning=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated at Area (Yes or No cover) at 21 DAT in Michigan."}
+p3<-ggplot(MI, aes(x = Distance0, y = Injury, pch=Cover, color=Cover, fill=Cover, linetype=Cover)) + geom_point(pch=1) + theme_bw() +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("red", "black")) +
+  scale_fill_manual(values = c("red", "black")) +
+    scale_linetype_manual(values=c("solid", "dotdash")) +
+  annotate("text", x = 14, y = 100, label = c("Michigan"), size=6) +
+    ylim(-5,100) +
+  annotate("text", x = 13.5, y = 90, label = "ME (Covered) = 0.96") + 
+  annotate("text", x = 13.5, y = 85, label = "ME (Noncovered) = 0.19") +
+  annotate("text", x = 13.5, y = 80, label = "RMSE = 1.15") +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) + 
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Michigan1.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+\newpage
+
+# NEBRASKA
+
+```{r include=FALSE, warning=FALSE}
+Nebraska=read_csv("Nebraska2.csv") %>% 
+  filter(DAT == "21")
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+```{r warning=FALSE}
+Model22=drm(Injury~Distance, Cover, fct=l4(), data=Nebraska)
+plot(Model22)
+summary(Model22)
+
+mselect(Model14,  list(l4(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"),  icfct = AIC, linreg = TRUE)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model22, vcov = sandwich)
+```
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model22, c(1, 10, 50), type="absolute")
+```
+
+
+#### Figure
+
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model22, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+write_csv(nd, "nebraskaME.csv")
+
+
+Nebraska$Distance0 <- Nebraska$Distance
+Nebraska$Distance0[Nebraska$Distance0==0] <- 0.5
+```
+
+```{r}
+mse <- mean(residuals(Model22)^2/df.residual(Model22))
+rmse <- sqrt(mse)
+rmse
+```
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) at 21 DAT in Nebraska."}
+p4<-ggplot(Nebraska, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) + geom_point(pch=1) + theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+   scale_color_manual(values = c("red", "black")) +
+  scale_fill_manual(values = c("red", "black")) +
+    scale_linetype_manual(values=c("solid", "dotdash")) +
+    ylim(-5,100) +
+  annotate("text", x = 13.5, y = 90, label = "ME (Covered) = 0.36") + 
+  annotate("text", x = 13.5, y = 85, label = "ME (Noncovered) = 0.30") +
+  annotate("text", x = 13.5, y = 80, label = "RMSE = 1.22") +
+  annotate("text", x = 14.3, y = 100, label = c("Nebraska"), size=6) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Nebraska1.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+# ONTARIO
+
+```{r include=FALSE, warning=FALSE}
+ON=read_csv("guelph.csv") %>% 
+  filter(Distance < 21)
+str(ON)
+ON$Area<-as.factor(ON$Area)
+
+ON2 <- ON %>% 
+  filter(Cover=="Yes")
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+Uncover only, there is no injury in the covered soybeans.
+
+```{r warning=FALSE}
+ON1=filter(ON, Cover!="Yes" & DAT==21)
+Model28=drm(Injury~Distance, fct=W1.3(fixed = c(NA, NA, NA)), data=ON1)
+plot(Model28, type="all")
+mselect(Model28,  list(l4(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model28, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model28, c(1,10,50), type="absolute")
+```
+
+
+
+#### Figure
+
+
+
+```{r ONprediction, warning=FALSE, include=FALSE} 
+nd <- expand.grid(Distance=exp(seq(log(0.5), log(20), length=91)))
+
+pm <- predict(Model28, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+#write_csv(nd, "ontarioME.csv")
+
+ON1$Distance0 <- ON1$Distance 
+ON1$Distance0[ON1$Distance0==0] <- 0.5 
+```
+
+
+```{r}
+mse <- mean(residuals(Model28)^2/df.residual(Model28))
+rmse <- sqrt(mse)
+rmse
+```
+
+```{r ONPlot, warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) at 21 DAT in Ontario."}
+p5<-ggplot(ON1, aes(x = Distance0, y = Injury)) +  theme_bw() + geom_point(pch=1, color=c("red")) +
+  geom_line(data=nd, aes(x=Distance, y=p), color="red", linetype="solid") + #coord_trans(x="log") + 
+  #geom_segment(aes(x = 4, y = 0, xend = 90, yend = 0), size=1) +
+  geom_smooth(data=ON2, aes(x=Distance, y=Injury), color="black", linetype="dotdash", size=0.7) + geom_point(data=ON2, aes(x=Distance, y=Injury), pch=1) +
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax), alpha=0.2, color=NA, fill="red") +
+  labs(fill="Cover", y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = "red") +
+  scale_fill_manual(values = "red") +
+  annotate("text", x = 18.5, y = 100, label = c("Ontario"), size=6) +
+    ylim(-5,100) +
+  annotate("text", x = 16.5, y = 90, label = "ME (Noncovered) = 0.90") + 
+  annotate("text", x = 16.5, y = 85, label = "RMSE = 0.60") +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  #scale_x_continuous(breaks=c(0, 150)) + 
+  ggsave("Ontario1.png", height = 6, width = 6, dpi=600)
+```
+
+
+\newpage
+
+
+# WISCONSIN
+
+
+```{r include=FALSE, warning=FALSE}
+Wisconsin=read_csv("wisconsin.csv")
+str(Wisconsin)
+```
+
+
+
+## Results at 28 DAT
+
+### Non-Xtend soybean injury
+
+
+```{r include=FALSE, warning=FALSE}
+WI <- Wisconsin %>% 
+  filter(Location != "S-1" & DAT != "14" & Distance < 16)
+```
+
+
+```{r warning=FALSE}
+Model31=drm(Injury~Distance, Cover, fct=l3(), data=WI)
+
+plot(Model31)
+mselect(Model31,  list(l4(), W2.4(), W1.3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model31, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE}
+ED(Model31, c(1,10, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model31, c(1, 1, 5, 5, 10, 10,20, 20, 50, 50), type="absolute")
+```
+
+
+#### Figure
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model31, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+#write_csv(nd, "wiscME.csv")
+
+WI$Distance0 <- WI$Distance
+WI$Distance0[WI$Distance0==0] <- 0.5
+```
+
+```{r}
+mse <- mean(residuals(Model31)^2/df.residual(Model31))
+rmse <- sqrt(mse)
+rmse
+```
+
+```{r echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) in Wisconsin at 28 DAT."}
+p6<-ggplot(WI, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) + geom_point(pch=1) + theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("red", "black")) +
+  scale_fill_manual(values = c("red", "black")) +
+   annotate("text", x = 14, y = 100, label = c("Wisconsin"), size=6) +
+    scale_linetype_manual(values=c( "solid", "dotdash")) +
+    ylim(-5,100) +
+  annotate("text", x = 13.5, y = 90, label = "ME (Covered) = 0.85") + 
+  annotate("text", x = 13.5, y = 85, label = "ME (Noncovered) = 0.85") +
+  annotate("text", x = 13.5, y = 80, label = "RMSE = 0.23") +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Wisconsin1.png", height = 6, width = 6, dpi=600)
+```
+
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p2, p3, p4, p5, p6, nrow = 2, labels = c("A", "B", "C", "D", "E", "F")) +
+  ggsave("Injury.tiff", height=9, width=16, dpi=300)
+```
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p3, p5, p6, nrow = 2, labels = c("A", "B", "C", "D")) +
+  ggsave("Reduced.tiff", height=9, width=10, dpi=600)
+```
+
+
+
+

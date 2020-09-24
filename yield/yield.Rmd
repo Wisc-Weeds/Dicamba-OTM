@@ -1,0 +1,186 @@
+---
+title: "yield"
+author: "Maxwel Coura Oliveira"
+date: "5/28/2019"
+output: pdf_document
+---
+
+
+
+```{r}
+library(ggplot2)
+library(drc)
+library(tidyverse)
+library(ggthemes)
+library(emmeans)
+library(lme4)
+```
+
+
+
+
+```{r}
+yield = read_csv("yield.csv")
+```
+
+
+
+
+```{r}
+ymodel <- drm(yield~distance, location, fct = l3(), data=yield)
+summary(ymodel)
+plot(ymodel)
+plot(yield~distance, data=yield, col=c(1,2,3,4), pch=16)
+```
+
+```{r}
+N <- yield %>% 
+  filter(location == "N")
+modelN <- lm(yield~distance, data=N)
+summary(modelN)
+```
+
+```{r}
+E <- yield %>% 
+  filter(location == "E")
+modelE <- lm(yield~distance, data=E)
+summary(modelE)
+```
+
+
+```{r}
+S <- yield %>% 
+  filter(location == "S")
+modelS <- lm(yield~distance, data=S)
+summary(modelS)
+```
+
+
+
+```{r}
+library(drc)
+ggplot(S, aes(x=distance, y=yield)) + geom_smooth(method="loess")
+ont <- drm(yield ~ distance, fct = MM.2(), data=S)
+summary(ont)
+plot(ont)
+```
+
+
+
+
+
+```{r}
+W <- yield %>% 
+  filter(location == "W")
+modelW <- lm(yield~distance, data=W)
+summary(modelW)
+```
+
+
+
+
+
+```{r}
+p1<-ggplot(S, aes(x=distance, y=yield, color=location, fill=location)) + geom_point() + geom_smooth(method=lm, alpha=0.2) + #geom_point(pch=1) + 
+  theme_bw() +
+  annotate("text", x = 18, y = 5500, label = "Ontario", size=6) +
+  annotate("text", x = 16, y = 2800, label = "Y(x) = 4163 + 37x", size=5) +
+  xlim(0, 20) +
+  ylim(2800, 5500) +
+  scale_color_manual(values="blue") +
+  scale_fill_manual(values="blue") +
+  labs(y= expression(paste("Non-DR soybean yield (kg ha "^"-1",")")), x= "Distance (m)") + theme(legend.position = "none", legend.text = element_text(size=11), legend.title = element_blank(), panel.grid = element_blank(), axis.title = element_text(size=15), axis.text = element_text(size=14, color="black")) +
+  ggsave("ONyield.pdf", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+```{r include=FALSE}
+yieldWI <- read_csv("yieldWI.csv")
+```
+
+
+```{r}
+modelWI <- lm(yield~distance, data=yieldWI)
+summary(modelWI)
+```
+
+
+```{r}
+p2<-ggplot(yieldWI, aes(x=distance, y=yield, color=location, fill=location)) + geom_point() + geom_smooth(method=lm, alpha=0.2)  + 
+  theme_bw() +
+  annotate("text", x = 44, y = 5500, label = "Wisconsin", size=6) + 
+  annotate("text", x = 40, y = 2800, label = "Y(x) = 4092 + 0.2x", size=5) +
+  xlim(0, 50) +
+  ylim(2800, 5500) +
+  scale_color_manual(values="red") +
+  scale_fill_manual(values="red") +
+  labs(y= expression(paste("Non-DR soybean yield (kg ha "^"-1",")")), x= "Distance (m)") + theme(legend.position = "none", legend.text = element_text(size=11), legend.title = element_blank(), panel.grid = element_blank(), axis.title = element_text(size=15), axis.text = element_text(size=14, color="black")) +
+  ggsave("WIyield.pdf", height = 6, width = 6, dpi=600)
+```
+
+```{r}
+IN <- read_csv("yieldIN.csv") %>% 
+  filter(location == "E")
+```
+
+
+```{r}
+modelIN <- lm(yield~distance, data=IN)
+summary(modelIN)
+```
+
+```{r}
+p3<-ggplot(IN, aes(x=distance, y=yield, color=location, fill=location)) + geom_point() + geom_smooth(method=lm, alpha=0.2) + geom_point() + 
+  theme_bw() +
+  annotate("text", x = 92, y = 5500, label = "Indiana", size=6) + 
+  annotate("text", x = 82, y = 2800, label = "Y(x) = 3266 + 7x", size=5) +
+  xlim(0, 100) +
+  ylim(2800, 5500) +
+  scale_color_manual(values="black") +
+  scale_fill_manual(values="black") +
+  labs(y= expression(paste("Non-DR soybean yield (kg ha "^"-1",")")), x= "Distance (m)") + theme(legend.position = "none", legend.text = element_text(size=11), legend.title = element_blank(), panel.grid = element_blank(), axis.title = element_text(size=15), axis.text = element_text(size=14, color="black")) +
+  ggsave("INyield.pdf", height = 6, width = 6, dpi=600)
+```
+
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p3, p1,p2, nrow = 1, labels = c("A", "B", "C")) +
+  ggsave("yield.png", height=5, width=15, dpi=600)
+```
+
+
+
+```{r}
+Data <- read_csv("yieldall.csv")
+```
+
+
+
+```{r}
+p3<-ggplot(Data, aes(x=distance, y=yield, color=location, fill=location)) + geom_smooth(method=lm, alpha=0.2) + #geom_point(pch=1) + 
+  theme_bw() + facet_wrap(~location) +
+  annotate("text", x = 42, y = 2300, label = c("Y(x) = 3266 + 7x",  "Y(x) = 4163 + 37x", "Y(x) = 4092 + 0.2x"), size=4) +
+
+  scale_color_manual(values=c("black", "blue", "red")) +
+  scale_fill_manual(values=c("black", "blue", "red")) +
+  xlim(0, 50) +
+  #ylim(2800, 6000) +
+  labs(y= expression(paste("Non-DT soybean yield (kg ha "^"-1",")")), x= "Distance (m)") + theme(legend.position = "none", legend.text = element_text(size=11), legend.title = element_blank(), panel.grid = element_blank(), axis.title = element_text(size=13), axis.text = element_text(size=11, color="black"), strip.text = element_text(size=13)) +
+  ggsave("yield.pdf", height = 4, width = 12, dpi=600)
+```
+
+
+
+
+
+
+
+
+
+
+
+

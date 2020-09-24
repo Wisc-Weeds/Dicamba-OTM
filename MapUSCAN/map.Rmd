@@ -1,0 +1,96 @@
+---
+title: "Map"
+author: "Maxwel Coura Oliveira"
+date: "2/26/2020"
+output: pdf_document
+---
+
+```{r include=FALSE}
+library(raster)
+library(maps)
+library(ggmap)
+library(usmap)
+library(ggplot2)
+library(scales)
+library(ggsn)
+```
+
+
+```{r}
+#dput(dat)
+Longitude = c(-90.3734, -87.3708, -84.0730, -100.5129, -89.3804, -82.1833)
+Latitude = c(35.0951, 39.7928, 42.6606, 41.4803, 43.3380, 42.5896)
+Location <- c("Proctor, AR", "Montezuma, IN", "Fowlerville, MI", "Stapleton, NE", "Arlington, WI", "Dresden, ON")
+dat <- data.frame(Location, Latitude, Longitude)
+```
+
+
+```{r}
+states <- c("Alabama", "Arizona",  "Arkansas",  "California", "Colorado",  "Connecticut",  "Delaware",  "Florida", "Georgia", "Idaho", "Illinois", "Indiana",  "Iowa",  "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",  "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming")
+
+provinces <- c("Alberta" ,"British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Ontario", "Prince Edward Island", "Saskatchewan", "Québec")
+us <- getData("GADM",country="USA",level=1)
+canada <- getData("GADM",country="CAN",level=1)
+us.states <- us[us$NAME_1 %in% states,]
+ca.provinces <- canada[canada$NAME_1 %in% provinces,]
+```
+
+
+
+
+
+```{r}
+ggplot(us.states, aes(x=long, y=lat, group=group))+
+    geom_path(fill = "white", color = "grey50") +
+    geom_path(data=ca.provinces, fill = "white", color = "grey50") +
+    #coord_map() + 
+   theme_bw() +
+    geom_point(data = dat, aes(x=Longitude,y=Latitude, group=Location, color=Location)) + 
+  scale_color_manual(values = c("red", "blue", "darkgreen", "black",  "orange", "darkviolet")) +
+    labs(x = "", y = "") +
+    theme(axis.text = element_text(size = 13, color="black"), 
+          legend.position = c(0.85, 0.2),
+          legend.title = element_blank(),
+          panel.background = element_blank(),
+          panel.grid = element_blank(),
+          legend.text = element_text(size=13),
+          axis.title = element_text(size = 15, color="black")) +
+  ggsave("Map.tiff", dpi=300, width=9, height=5)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r include=FALSE}
+state = map_data("usmap")
+df <- subset(state, region %in% c("wisconsin", "nebraska", "arkansas", "michigan", "indiana", "ontario"))
+```
+
+```{r include=FALSE}
+counties <- map_data("county")
+midwest <- subset(counties, region %in% c("wisconsin", "nebraska", "arkansas", "michigan", "indiana", "ontario"))
+```
+
+```{r}
+ggplot(data = df, mapping = aes(x = long, y = lat, group = group, color=region)) +
+  geom_polygon(data = midwest, fill = "NA", color = "gray") +
+  geom_polygon(color = "black", fill = NA) + scale_color_brewer(palette=c("Set1")) +
+  labs(fill="", y="", x="", caption="") 
+```
+
+

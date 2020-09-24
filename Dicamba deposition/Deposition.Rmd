@@ -1,0 +1,505 @@
+---
+title: "Deposition"
+author: "Maxwel Coura Oliveira"
+date: "4/2/2019"
+output: pdf_document
+---
+
+
+```{r include=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(drc)
+library(sandwich)
+library(lmtest)
+```
+
+
+# Modeling 
+
+We use the three-parameter logistic model (Equation 1) for fitting dicamba deposition ($\eta$ g filter^-1^) with distance from the dicamba treated area. 
+
+Equation 1: $$Y= \frac{d}{(1 + exp[b(logx - loge)]} $$
+
+where *Y* is the dicamba deposition (g filter^-1^), *x* is the distance (m) from the dicamba treated area. in The parameter *d* is the upper limit (asymptote), *b* is the slope and the parameter *e* is the ED50 (effective *x* that causes 50% reduction in *Y*). 
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data <- read_csv("depositionnew.csv")
+glimpse(Data)
+```
+
+
+# Arkansas
+
+```{r include=FALSE, warning=FALSE}
+Data1 <- Data %>% 
+  filter(site == "Arkansas" & direction=="downwind")
+Model<- drm(y ~ dist, site, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data1)
+plot(Model)
+
+mselect(Model,  list(l4(), W2.4(), l3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+```{r}
+mse <- mean(residuals(Model)^2/df.residual(Model))
+rmse <- sqrt(mse)
+rmse
+```
+
+
+```{r}
+coeftest(Model, vcov = sandwich)
+```
+
+
+
+# Parameter estimates of Arkansas, Ontario, Indiana, Michigan, and Wisconsin
+
+````{r}
+coeftest(Model, vcov = sandwich)
+```
+
+# ED estimates of Arkansas, Ontario, Indiana, Michigan, and Wisconsin
+
+The distance (m) that dicamba deposition ($\eta$ g filter^-1^) is reduced by 20, 50, and 90% of the relative upper limit (asymptote).
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model, c(20, 50, 90), interval = "delta", type="absolute")
+```
+
+
+
+
+```{r warning=FALSE, include=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(14), log(150), length=151)))
+
+nd <- data.frame(site ="Arkansas", newdata) 
+
+pm <- predict(Model, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+write_csv(nd, "arkansas_me.csv")
+
+Data1$Distance0 <- Data1$dist
+Data1$Distance0[Data1$Distance0==0] <- 14
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+p1<-ggplot(Data1, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() + theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~ 'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  scale_y_continuous(breaks=c(-30, 0, 30, 60, 90, 120, 150, 180)) +
+  scale_x_continuous(breaks=c(0, 30, 60, 90, 120, 150)) +
+  scale_color_manual(values="orange") +
+  annotate("text", x = 135, y = 153, label = "ME = 0.21") +
+  annotate("text", x = 135, y = 143, label = "RMSE = 9.61") +
+  scale_fill_manual(values="orange") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Arkansas.png", height = 6, width = 6, dpi=600)
+```
+
+  theme(legend.position=c(0.85, 0.9), legend.text = element_text(size=11), legend.title = element_blank(), panel.grid = element_blank(), axis.title = element_text(size=13), axis.text = element_text(size=11)) +
+
+
+# Indiana
+
+
+```{r include=FALSE, warning=FALSE}
+Data2 <- Data %>% 
+  filter(site == "Indiana" & direction=="downwind")
+Model2<- drm(y ~ dist, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data2)
+plot(Model2)
+summary(Model2)
+
+mselect(Model2,  list(l4(), W2.4(), l3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+```{r}
+mse <- mean(residuals(Model2)^2/df.residual(Model2))
+rmse <- sqrt(mse)
+rmse
+```
+
+
+```{r}
+coeftest(Model2, vcov = sandwich)
+```
+
+
+
+```{r}
+coeftest(Model2, vcov = sandwich)
+```
+
+# ED estimates of Arkansas, Ontario, Indiana, Michigan, and Wisconsin
+
+The distance (m) that dicamba deposition ($\eta$ g filter^-1^) is reduced by 20, 50, and 90% of the relative upper limit (asymptote).
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model2, c(20, 50, 90), interval = "delta")
+```
+
+
+
+
+```{r warning=FALSE, include=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(4), log(99), length=100)))
+
+nd <- data.frame(site ="Indiana", newdata) 
+
+pm <- predict(Model2, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+#write.csv(nd, "indianaME.csv")
+
+Data2$Distance0 <- Data2$dist
+Data2$Distance0[Data2$Distance0==0] <- 4
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+p2<- ggplot(Data2, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() +  theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~ 'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  #scale_y_continuous(breaks=c(0, 100, 200, 300, 400, 500)) +
+  scale_x_continuous(breaks=c(0, 20, 40, 60, 80, 100, 120)) +
+  annotate("text", x = 88, y = 83, label = "ME = 0.15") +
+  annotate("text", x = 88, y = 78, label = "RMSE = 4.69") +
+  scale_color_manual(values="black") +
+  scale_fill_manual(values="black") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Indiana.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+# Michigan
+
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data3 <- Data %>% 
+  filter(site == "Michigan" & direction=="downwind")
+Model3<- drm(y ~ dist, site, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data3)
+plot(Model3)
+
+mselect(Model3,  list(l4(), W2.4(), l3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+```{r}
+summary(Model3)
+```
+
+```{r}
+mse <- mean(residuals(Model3)^2/df.residual(Model3))
+rmse <- sqrt(mse)
+rmse
+```
+
+```{r}
+coeftest(Model3, vcov = sandwich)
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model3, c(20, 50, 90), interval = "delta")
+```
+
+
+
+
+```{r warning=FALSE, include=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(4), log(121), length=121)))
+
+nd <- data.frame(site ="Michigan", newdata) 
+
+pm <- predict(Model3, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+#write.csv(nd, "michiganME.csv")
+
+Data3$Distance0 <- Data3$dist
+Data3$Distance0[Data3$Distance0==0] <- 4
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+p3<-ggplot(Data3, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() +  theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~ 'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  scale_y_continuous(breaks=c(0, 200,  400,  600,  800,  1000,  1200)) +
+  scale_x_continuous(breaks=c(0, 20, 40, 60, 80, 100, 120)) +
+  scale_color_manual(values="darkgreen") +
+  annotate("text", x = 108, y = 980, label = "ME = 0.44") +
+  annotate("text", x = 108, y = 920, label = "RMSE = 31.2") +
+  scale_fill_manual(values="darkgreen") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Michigan.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data4 <- Data %>% 
+  filter(site == "Nebraska" & direction =="downwind")
+Model4<- drm(y ~ dist, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data4)
+summary(Model4)
+plot(Model4)
+
+mselect(Model4,  list(l4(), W2.4(), l3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+# Parameter estimates of Nebraska.
+
+```{r}
+coeftest(Model4, vcov = sandwich)
+```
+
+```{r}
+mse <- mean(residuals(Model4)^2/df.residual(Model4))
+rmse <- sqrt(mse)
+rmse
+```
+
+# ED estimates of Nebraska
+
+The distance (m) that dicamba deposition ($\eta$ g filter^-1^) is reduced by 20, 50, and 90% of the relative upper limit (asymptote).
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model4, c(20,50,90))
+```
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(3.5), log(121), length=121)))
+
+newdata1 <- data.frame(site ="Nebraska", newdata) 
+
+
+
+
+nd=rbind(newdata1)
+
+
+pm <- predict(Model4, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+#write_csv(nd, "nebraskaME.csv")
+
+Data4$Distance0 <- Data4$dist
+Data4$Distance0[Data4$Distance0==0] <- 3.5
+```
+
+```{r echo=FALSE, warning=FALSE}
+p4<-ggplot(Data4, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() + theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~ 'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  scale_y_continuous(breaks=c(0, 2500, 5000, 7500, 10000, 12500, 15000, 17500)) +
+  scale_x_continuous(breaks=c(0, 20, 40, 60, 80, 100, 120)) +
+  annotate("text", x = 108, y = 15500, label = "ME = 0.93") + 
+  annotate("text", x = 108, y = 14500, label = "RMSE = 284.4") + 
+  scale_color_manual(values="darkviolet") +
+  scale_fill_manual(values="darkviolet") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Nebraska.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+# Ontario
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data5 <- Data %>% 
+  filter(site == "Ontario" & direction=="downwind")
+Model5<- drm(y ~ dist, site, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data5)
+plot(Model5)
+```
+
+```{r}
+mse <- mean(residuals(Model5)^2/df.residual(Model5))
+rmse <- sqrt(mse)
+rmse
+```
+
+```{r}
+coeftest(Model5, vcov = sandwich)
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model5, c(20, 50, 90), interval = "delta")
+```
+
+
+
+
+```{r warning=FALSE, include=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(4), log(121), length=121)))
+
+nd <- data.frame(site ="Ontario", newdata) 
+
+pm <- predict(Model5, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+#write.csv(nd, "ontarioME.csv")
+
+Data5$Distance0 <- Data5$dist
+Data5$Distance0[Data5$Distance0==0] <- 4
+```
+
+
+
+```{r echo=FALSE, warning=FALSE}
+p5<-ggplot(Data5, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() +  theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~ 'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  #scale_y_continuous(breaks=c(0, 100, 200, 300, 400, 500)) +
+  scale_x_continuous(breaks=c(0, 20, 40, 60, 80, 100, 120)) +
+  scale_color_manual(values="blue") +
+  scale_fill_manual(values="blue") +
+  annotate("text", x = 108, y = 675, label = "ME = 0.59") + 
+  annotate("text", x = 108, y = 625, label = "RMSE = 22.7") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Ontario.png", height = 6, width = 6, dpi=600)
+```
+
+
+
+# Wisconsin
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data6 <- Data %>% 
+  filter(site == "Wisconsin" & direction=="downwind")
+Model6<- drm(y ~ dist, site, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data6)
+plot(Model6)
+
+mselect(Model,  list(l4(), W2.4(), l3(), W1.4(), W2.4(), gompertz()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+
+```{r}
+coeftest(Model6, vcov = sandwich)
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model6, c(20, 50, 90), interval = "delta")
+```
+
+
+
+
+```{r warning=FALSE, include=FALSE}
+newdata <- expand.grid(dist=exp(seq(log(3), log(50), length=51)))
+
+nd <- data.frame(site ="Wisconsin", newdata) 
+
+pm <- predict(Model6, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+#write_csv(nd, "wiscME.csv")
+
+Data6$Distance0 <- Data6$dist
+Data6$Distance0[Data6$Distance0==0] <- 3
+```
+
+```{r}
+mse <- mean(residuals(Model6)^2/df.residual(Model6))
+rmse <- sqrt(mse)
+rmse
+```
+
+
+```{r echo=FALSE, warning=FALSE}
+p6<-ggplot(Data6, aes(x = Distance0, y = y, color=site, fill=site, linetype=site)) + geom_point() + theme_bw() + #geom_point(aes(shape=site)) +
+  geom_line(data=nd, aes(x=dist, y=p, color=site, fill=site, linetype=site)) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(dist, y=p, ymin=pmin, ymax=pmax, fill=site), alpha=0.2, color=NA) +
+  labs(y=bquote('Dicamba ('*eta~'g' ~ filter^-1*')'), x="Distance (m)", caption = "") +
+  scale_y_continuous(breaks=c(0, 30, 60, 90, 120, 150, 180, 210)) +
+  scale_x_continuous(breaks=c(0, 10, 20, 30, 40, 50)) +
+  scale_color_manual(values="red") +
+  annotate("text", x = 45, y = 173, label = "ME = 0.72") + 
+  annotate("text", x = 45, y = 163, label = "RMSE = 5.85") +
+  scale_fill_manual(values="red") +
+  theme(legend.position=c(0.85, 0.9), panel.grid = element_blank(), legend.text = element_text(size=12), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), axis.text = element_text(size=14, color = "black")) +
+  ggsave("Wisconsin.png", height = 6, width = 6, dpi=600)
+```
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p2, p3, p4, p5, p6, nrow = 2, labels = c("A", "B", "C", "D", "E", "F")) +
+  ggsave("Deposition.tiff", height=9, width=16, dpi=300)
+```
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p3, p5, p6, nrow = 2, labels = c("A", "B", "C", "D")) +
+  ggsave("Reduced.png", height=9, width=10, dpi=600)
+```
+
+
+
+
+
+```{r include=FALSE, warning=FALSE}
+Data3 <- Data %>% 
+  filter(site == "Wisconsin" & direction =="downwind")
+Model2<- drm(y ~ dist, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=Data3)
+summary(Model2)
+plot(Model2)
+ED(Model2, c(20,50,90))
+```

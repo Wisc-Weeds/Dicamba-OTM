@@ -1,0 +1,748 @@
+---
+title: "Combined report"
+author: "Maxwel Coura Oliveira"
+date: "4/1/2019"
+output: pdf_document
+---
+
+```{r include=FALSE}
+library(ggplot2)
+library(drc)
+library(knitr)
+library(kableExtra)
+library(ggthemes)
+library(RColorBrewer)
+library(CircStats)
+library(openair)
+library(scales)
+library(tidyverse)
+library(kableExtra)
+library(scales)
+library(usmap)
+library(ggmap)
+library(ggrepel)
+library(maps)
+library(grid)
+library(mapdata)
+library(maptools)
+library(stringr)
+library(dplyr)
+library(ggsn)
+library(choroplethr)
+library(sandwich)
+library(lmtest)
+```
+
+
+# Methods
+
+* *Model*: Three-parameter log-logistic model (Except Nebraska that was four-parameter log-logistic model).
+
+* All results are the combined data from the downwind locations with (Yes) and without tarp (No).
+
+
+
+
+
+# ARKANSAS
+
+
+
+
+
+
+
+```{r include=FALSE, warning=FALSE}
+AR=read_csv("arkansas.csv")
+str(AR)
+AR$Cover <- factor(AR$Cover, levels = c("Yes", "No"), labels = c("Covered", "Non-covered"))
+```
+
+
+
+## Results at 22 DAT
+
+### Non-Xtend soybean injury 
+
+####
+
+```{r include=FALSE, warningFALSE}
+AR1=filter(AR, Direction=="Downwind" & DAT=="22")
+Model1=drm(Injury~Distance, Cover, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=AR1)
+summary(Model1)
+
+mselect(Model1,  list(LL.3(), LL.5(), W1.3(), W1.4(), W2.4(), baro5()), nested = FALSE,
+sorted = c("IC", "Res var", "Lack of fit", "no"), linreg = FALSE, icfct = AIC)
+```
+
+
+
+##### Model summary
+
+```{r}
+coeftest(Model1, vcov = sandwich)
+```
+
+
+##### ED values (Distances)
+
+```{r echo=FALSE, warning = FALSE}
+ED(Model1, c(1, 10, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning =FALSE}
+EDcomp(Model1, c(1,1,5,5, 10,10,20, 20, 50, 50), type="absolute")
+```
+
+
+
+
+
+##### Figure
+
+
+
+```{r include=FALSE, warning = FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(261), length=261)))
+
+newdata1 <- data.frame(Cover ="Covered", newdata) 
+newdata2 <- data.frame(Cover ="Non-covered", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+
+
+pm <- predict(Model1, newdata=nd, interval="confidence")
+
+
+
+
+
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+AR1$Distance0 <- AR1$Distance 
+AR1$Distance0[AR1$h0==0] <- 0.5 
+```
+
+```{r echo=FALSE, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area in the downwind (Yes or No cover) in Arkansas at 22 DAT.", fig.height=6, fig.width=6, warning=FALSE}
+p1<-ggplot(AR1, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover), size=1.3) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+  scale_linetype_manual(values=c("dotdash", "solid")) +
+    ylim(-5,100) +
+  annotate("text", x = 235, y = 100, label = c("Arkansas"), size=5, face="bold") +
+  theme(legend.position=c(0.2, 0.9), panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), legend.title = element_blank(), legend.text = element_text(size=13), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 50, 100, 150, 200, 250)) +
+  ggsave("Arkansas.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+\newpage
+
+
+
+# INDIANA
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE}
+IN=read_csv("indiana.csv") %>% 
+  filter(Distance != 1.52)
+str(IN)
+IN$Cover <- factor(IN$Cover, levels = c("Yes", "No"), labels = c("Covered", "Non-covered"))
+```
+
+
+
+```{r include=FALSE}
+IN <- IN %>% 
+  filter(Cover != "Transect")
+```
+
+
+
+```{r include=FALSE}
+Model6=drm(Injury~Distance, Cover, fct=l3(fixed = c(NA, NA, NA)), data=IN)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model6, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model6, c(1,5,10,20,50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model6, c(1,1,5,5,10,10,20, 20,50,50), type="absolute")
+```
+
+
+#### Figure
+
+
+```{r include=FALSE, warning=FALSE} 
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover = "Covered", newdata) 
+newdata2 <- data.frame(Cover = "Non-covered", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model6, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+IN$Distance0 <- IN$Distance 
+IN$Distance0[IN$h0==0] <- 0.5 
+```
+
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated area (Yes or No cover) at 21 DAT in Indiana."}
+p2<-ggplot(IN, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover), size=1.3) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+    scale_linetype_manual(values=c("dotdash", "solid")) +
+    annotate("text", x = 14.5, y = 100, label = c("Indiana"), size=5) +
+    ylim(-5,100) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 50, 100, 150, 200, 250)) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Indiana.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+
+\newpage
+
+
+# MICHIGAN
+
+
+```{r include=FALSE, warning=FALSE}
+MI=read_csv("michigan.csv")
+```
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE, warning=FALSE}
+MI <- MI %>% 
+  filter(Cover != "Transect")
+```
+
+
+```{r include=FALSE, warning=FALSE}
+Model14=drm(Injury~Distance, Cover, fct=l3(), data=MI)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model14, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model14, c(1, 5, 10,20, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model14, c(1,1,5,5,10,10,20,20, 50,50), type="absolute")
+```
+
+
+#### Figure
+
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model14, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+MI$Distance0 <- MI$Distance
+MI$Distance0[MI$h0==0] <- 0.5
+```
+
+
+```{r echo=FALSE, warning=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated at Area (Yes or No cover) at 21 DAT in Michigan."}
+p3<-ggplot(MI, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover), size=1.3) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+    scale_linetype_manual(values=c("dotdash", "solid")) +
+  annotate("text", x = 14, y = 100, label = c("Michigan"), size=5) +
+    ylim(-5,100) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Michigan.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+\newpage
+
+# NEBRASKA
+
+```{r include=FALSE, warning=FALSE}
+Nebraska=read_csv("Nebraska2.csv")
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+```{r include=FALSE, warning=FALSE}
+Model22=drm(Injury~Distance, Cover, fct=l4(), data=Nebraska)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model22, vcov = sandwich)
+```
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model22, c(1, 5, 10,20, 50), type="absolute")
+```
+
+
+#### Figure
+
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model22, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+Nebraska$Distance0 <- Nebraska$Distance
+Nebraska$Distance0[Nebraska$h0==0] <- 0.5
+```
+
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) at 21 DAT in Nebraska."}
+p4<-ggplot(Nebraska, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover), size=1.3) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+    scale_linetype_manual(values=c("dotdash", "solid")) +
+    ylim(-5,100) +
+  annotate("text", x = 14.2, y = 100, label = c("Nebraska"), size=5) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Nebraska.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+
+
+
+# ONTARIO
+
+```{r include=FALSE, warning=FALSE}
+ON=read_csv("guelph.csv") %>% 
+  filter(Distance < 21)
+str(ON)
+ON$Area<-as.factor(ON$Area)
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+Uncover only, there is no injury in the covered soybeans.
+
+```{r warning=FALSE, include=FALSE}
+ON1=filter(ON, Cover!="Yes" & DAT==21)
+Model28=drm(Injury~Distance, fct=l3(fixed = c(NA, NA, NA)), data=ON1)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model28, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+ED(Model28, c(1,5,10,20,50), type="absolute")
+```
+
+
+
+#### Figure
+
+
+
+```{r ONprediction, warning=FALSE, include=FALSE} 
+nd <- expand.grid(Distance=exp(seq(log(0.5), log(20), length=91)))
+
+pm <- predict(Model28, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+ON1$Distance0 <- ON1$Distance 
+ON1$Distance0[ON1$h0==0] <- 0.5 
+```
+
+
+```{r ONPlot, warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) at 21 DAT in Ontario."}
+p5<-ggplot(ON1, aes(x = Distance0, y = Injury)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p), size=1.3, color="red", linetype="solid") + #coord_trans(x="log") + 
+  #geom_segment(aes(x = 4, y = 0, xend = 90, yend = 0), size=1) +
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax), alpha=0.2, color=NA, fill="red") +
+  labs(fill="Cover", y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = "red") +
+  scale_fill_manual(values = "red") +
+  annotate("text", x = 18.5, y = 100, label = c("Ontario"), size=5) +
+    ylim(-5,100) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  #scale_x_continuous(breaks=c(0, 150)) + 
+  ggsave("Ontario.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+\newpage
+
+
+# WISCONSIN
+
+
+```{r include=FALSE, warning=FALSE}
+Wisconsin=read_csv("wisconsin.csv")
+str(Wisconsin)
+```
+
+
+
+## Results at 28 DAT
+
+### Non-Xtend soybean injury
+
+
+```{r include=FALSE, warning=FALSE}
+WI <- Wisconsin %>% 
+  filter(Location != "S-1" & DAT != "14")
+```
+
+
+```{r include=FALSE, warning=FALSE}
+Model31=drm(Injury~Distance, Cover, fct=l3(), data=WI)
+```
+
+#### Model summary
+
+```{r}
+coeftest(Model31, vcov = sandwich)
+```
+
+
+#### ED values (Distances)
+
+```{r echo=FALSE}
+ED(Model31, c(1,5,10,20, 50), type="absolute")
+```
+
+
+
+#### ED's comparison (Distances)
+
+```{r echo=FALSE, warning=FALSE}
+EDcomp(Model31, c(1, 1, 5, 5, 10, 10,20, 20, 50, 50), type="absolute")
+```
+
+
+#### Figure
+
+
+```{r include=FALSE, warning=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Cover ="Yes", newdata)
+newdata2 <- data.frame(Cover ="No", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model31, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+WI$Distance0 <- WI$Distance
+WI$Distance0[WI$h0==0] <- 0.5
+```
+
+
+```{r echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area (Yes or No cover) in Wisconsin at 28 DAT."}
+p6<-ggplot(WI, aes(x = Distance0, y = Injury, color=Cover, fill=Cover, linetype=Cover)) +  theme_bw() + #geom_point(aes(shape=Cover)) +
+  geom_line(data=nd, aes(x=Distance, y=p, color=Cover, fill=Cover, linetype=Cover), size=1.3) + #coord_trans(x="log") + 
+  geom_ribbon(data=nd, aes(Distance, y=p, ymin=pmin, ymax=pmax, fill=Cover), alpha=0.2, color=NA) +
+  labs(y="Non-DR soybean injury (%)", x="Distance (m)", caption = "") +
+  scale_color_manual(values = c("black", "red")) +
+  scale_fill_manual(values = c("black", "red")) +
+   annotate("text", x = 14, y = 100, label = c("Wisconsin"), size=5) +
+    scale_linetype_manual(values=c("dotdash", "solid")) +
+    ylim(-5,100) +
+  theme(legend.position="none", panel.grid = element_blank(), axis.title = element_text(size=15, color = "black"), axis.text = element_text(size=14, color = "black")) +
+  scale_x_continuous(breaks=c(0, 5, 10, 15)) +
+  ggsave("Wisconsin.tiff", height = 6, width = 6, dpi=600)
+```
+
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p2, p3, p4, p5, p6, nrow = 2, labels = c("A", "B", "C", "D", "E", "F")) +
+  ggsave("Injury.png", height=9, width=16, dpi=600)
+```
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p3, p5, p6, nrow = 2, labels = c("A", "B", "C", "D")) +
+  ggsave("Reduced.tiff", height=9, width=10, dpi=600)
+```
+
+
+
+
+## Wind
+
+Frequency of wind direction and speed (m/s) three days after dicamba application.
+
+```{r include=FALSE, waring=F}
+data=read.csv("wind.csv")
+str(data)
+data=filter(data)
+
+#Run all this code
+plot.windrose <- function(data,
+                          spd,
+                          dir,
+                          spdres = 2,
+                          dirres = 22.5,
+                          spdmin = 0,
+                          spdmax = 10,
+                          spdseq = NULL,
+                          palette="Oranges",
+                          countmax = NA,
+                          debug = 0){
+
+
+  # Look to see what data was passed in to the function
+  if (is.numeric(spd) & is.numeric(dir)){
+    # assume that we've been given vectors of the speed and direction vectors
+    data <- data.frame(spd = spd,
+                       dir = dir)
+    spd = "spd"
+    dir = "dir"
+  } else if (exists("data")){
+    # Assume that we've been given a data frame, and the name of the speed 
+    # and direction columns. This is the format we want for later use.    
+  }  
+
+  # Tidy up input data ----
+  n.in <- NROW(data)
+  dnu <- (is.na(data[[spd]]) | is.na(data[[dir]]))
+  data[[spd]][dnu] <- NA
+  data[[dir]][dnu] <- NA
+
+  # figure out the wind speed bins ----
+  if (missing(spdseq)){
+    spdseq <- seq(spdmin,spdmax,spdres)
+  } else {
+    if (debug >0){
+      cat("Using custom speed bins \n")
+    }
+  }
+  # get some information about the number of bins, etc.
+  n.spd.seq <- length(spdseq)
+  n.colors.in.range <- n.spd.seq - 1
+
+  # create the color map
+  spd.colors <- colorRampPalette(brewer.pal(min(max(3,
+                                                    n.colors.in.range),
+                                                min(9,
+                                                    n.colors.in.range)),                                               
+                                            palette))(n.colors.in.range)
+
+  if (max(data[[spd]],na.rm = TRUE) > spdmax){    
+    spd.breaks <- c(spdseq,
+                    max(data[[spd]],na.rm = TRUE))
+    spd.labels <- c(paste(c(spdseq[1:n.spd.seq-1]),
+                          '-',
+                          c(spdseq[2:n.spd.seq])),
+                    paste(spdmax,
+                          "-",
+                          max(data[[spd]],na.rm = TRUE)))
+    spd.colors <- c(spd.colors, "grey50")
+  } else{
+    spd.breaks <- spdseq
+    spd.labels <- paste(c(spdseq[1:n.spd.seq-1]),
+                        '-',
+                        c(spdseq[2:n.spd.seq]))    
+  }
+  data$spd.binned <- cut(x = data[[spd]],
+                         breaks = spd.breaks,
+                         labels = spd.labels,
+                         ordered_result = TRUE)
+
+  # figure out the wind direction bins
+  dir.breaks <- c(-dirres/2,
+                  seq(dirres/2, 360-dirres/2, by = dirres),
+                  360+dirres/2)  
+  dir.labels <- c(paste(360-dirres/2,"-",dirres/2),
+                  paste(seq(dirres/2, 360-3*dirres/2, by = dirres),
+                        "-",
+                        seq(3*dirres/2, 360-dirres/2, by = dirres)),
+                  paste(360-dirres/2,"-",dirres/2))
+  # assign each wind direction to a bin
+  dir.binned <- cut(data[[dir]],
+                    breaks = dir.breaks,
+                    ordered_result = TRUE)
+  levels(dir.binned) <- dir.labels
+  data$dir.binned <- dir.binned
+
+  # Run debug if required ----
+  if (debug>0){    
+    cat(dir.breaks,"\n")
+    cat(dir.labels,"\n")
+    cat(levels(dir.binned),"\n")
+
+  }  
+
+  # create the plot ----
+  p.windrose <- ggplot(data = data,
+                       aes(x = dir.binned,
+                           fill = spd.binned
+                           ,y = (..count..)/sum(..count..)
+                           ))+
+    geom_bar(size=0.2, color="black") + theme_bw() +
+    scale_x_discrete(drop = FALSE,
+labels = c("N","","NE","", "E", "", "SE","", 
+             "S","", "SW","", "W","","NW","")) +
+    coord_polar(start = -((dirres/2)/360) * 2*pi) +
+    scale_fill_manual(name = "Wind Speed (m/s)", 
+                      values = spd.colors,
+                      drop = FALSE) +
+    theme(axis.title.x = element_blank(), strip.text.x = element_text(size = 15, colour = "black", face="bold", angle = 0),
+          axis.text=element_text(size=14, color="black"), 
+        axis.title=element_text(size=18,face="bold"), 
+        legend.position="right", legend.direction = "vertical", legend.box = "vertical", legend.text = element_text(colour="black", size = 12), legend.title = element_text(colour="black", size=12, face="bold"),
+  panel.grid.minor = element_blank())  + facet_wrap(~Location) + 
+    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+    ylab("Frequency")
+
+  # adjust axes if required
+  if (!is.na(countmax)){
+    p.windrose <- p.windrose +
+      ylim(c(0,countmax))
+  }
+
+  # print the plot
+  print(p.windrose)  
+
+  # return the handle to the wind rose
+  return(p.windrose)
+}
+```
+
+
+```{r fig.pos='h', echo=FALSE, fig.height= 6, fig.width=8, fig.cap="Wind rose plots demonstrating the average wind frequency (%) and wind speed (m s^1^) grouped in 22.5° of direction (from which the wind is blowing) in Arkansas."}
+plot<-plot.windrose(data = data,
+              spd = "spd",
+              dir = "dir") + facet_wrap(~Location) +
+  ggsave("Wind.tiff", height=6, width=12, dpi=600)
+```
+
+
+
+

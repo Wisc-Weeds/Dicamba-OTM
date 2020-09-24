@@ -1,0 +1,58 @@
+---
+title: "Supplemental File"
+subtitle: "Large-Scale Off-Target Movement Assessment of Dicamba in North America"
+#date: "11/26/2019"
+output: pdf_document
+---
+
+
+
+```{r include=FALSE, warning=FALSE}
+library(kableExtra)
+library(tidyverse)
+options(knitr.kable.NA = '')
+```
+
+\listoftables
+
+\pagebreak
+
+```{r include=FALSE, warning=FALSE}
+data=read_csv("rawinjury.csv")
+data$Cover <- factor(data$Cover, levels = c("Yes", "No"), labels = c("Covered", "Non-covered")) 
+```
+   
+```{r echo=FALSE} 
+kable(data, format = "pandoc", align = "c", caption = "Raw data of dicamba injury (%) on non-DT dicamba soybeans", booktabs = T, col.names = c("State", "Direction[note]",  "Type", "Site location", "Distance (m)", "Injury (%)", "DAT")) %>% 
+  kable_styling(latex_options = "striped") %>% 
+  add_footnote("Upwind data is not presented in the manuscript")
+  
+```
+
+```{r include=FALSE, warning=FALSE}
+data1=read_csv("depositionnew2.csv")
+```
+
+```{r echo=FALSE}
+kable(data1, format = "pandoc", align = "c", caption = "Raw data of dicamba deposition n g filter", booktabs = T, col.names = c("State", "Direction",  "Transect", "Distance (m)", "Deposition"))
+```
+
+
+
+```{r include=FALSE, warning=FALSE}
+data2=read_csv("fluxdata.csv")
+```
+
+```{r echo=FALSE}
+kable(data2, format = "pandoc", align = "c", caption = "Raw data of dicamba flux", booktabs = T, col.names = c("State", "Time (HAT)[note]",  "Method", "Flux")) %>% 
+  add_footnote("Hours After Treatment")
+```
+
+```{r include=FALSE, warning=FALSE}
+data3=read_csv("air.csv")
+```
+
+```{r echo=FALSE}
+kable(data3, format = "latex", align = "c",  booktabs = T, caption = "Raw data of dicamba in the air at multiple heights") %>% 
+  add_header_above(c("State", "Sampling Period (h)", "Air sampler height (m)" = 5))
+```

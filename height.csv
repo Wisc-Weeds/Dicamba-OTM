@@ -1,0 +1,3317 @@
+state,location,wind,distance,rep,height
+Nebraska,Cover 1,downwind,5,1,60
+Nebraska,Cover 1,downwind,6,1,53
+Nebraska,Cover 1,downwind,8,1,51
+Nebraska,Cover 1,downwind,9,1,58
+Nebraska,Cover 1,downwind,11,1,48
+Nebraska,Cover 1,downwind,12,1,46
+Nebraska,Cover 1,downwind,14,1,46
+Nebraska,Cover 1,downwind,15,1,58
+Nebraska,Cover 1,downwind,17,1,
+Nebraska,Cover 1,downwind,18,1,
+Nebraska,Cover 1,downwind,20,1,
+Nebraska,Cover 2,downwind,5,1,64
+Nebraska,Cover 2,downwind,6,1,60
+Nebraska,Cover 2,downwind,8,1,56
+Nebraska,Cover 2,downwind,9,1,61
+Nebraska,Cover 2,downwind,11,1,61
+Nebraska,Cover 2,downwind,12,1,76
+Nebraska,Cover 2,downwind,14,1,66
+Nebraska,Cover 2,downwind,15,1,58
+Nebraska,Cover 2,downwind,17,1,
+Nebraska,Cover 2,downwind,18,1,
+Nebraska,Cover 2,downwind,20,1,
+Nebraska,Cover 3,downwind,5,1,58
+Nebraska,Cover 3,downwind,6,1,55
+Nebraska,Cover 3,downwind,8,1,56
+Nebraska,Cover 3,downwind,9,1,61
+Nebraska,Cover 3,downwind,11,1,66
+Nebraska,Cover 3,downwind,12,1,61
+Nebraska,Cover 3,downwind,14,1,65
+Nebraska,Cover 3,downwind,15,1,64
+Nebraska,Cover 3,downwind,17,1,
+Nebraska,Cover 3,downwind,18,1,
+Nebraska,Cover 3,downwind,20,1,
+Nebraska,Uncover 1,downwind,5,1,28
+Nebraska,Uncover 1,downwind,6,1,30
+Nebraska,Uncover 1,downwind,8,1,58
+Nebraska,Uncover 1,downwind,9,1,33
+Nebraska,Uncover 1,downwind,11,1,55
+Nebraska,Uncover 1,downwind,12,1,58
+Nebraska,Uncover 1,downwind,14,1,61
+Nebraska,Uncover 1,downwind,15,1,58
+Nebraska,Uncover 1,downwind,17,1,
+Nebraska,Uncover 1,downwind,18,1,
+Nebraska,Uncover 1,downwind,20,1,
+Nebraska,Uncover 2,downwind,5,1,23
+Nebraska,Uncover 2,downwind,6,1,30
+Nebraska,Uncover 2,downwind,8,1,60
+Nebraska,Uncover 2,downwind,9,1,53
+Nebraska,Uncover 2,downwind,11,1,56
+Nebraska,Uncover 2,downwind,12,1,58
+Nebraska,Uncover 2,downwind,14,1,71
+Nebraska,Uncover 2,downwind,15,1,61
+Nebraska,Uncover 2,downwind,17,1,
+Nebraska,Uncover 2,downwind,18,1,
+Nebraska,Uncover 2,downwind,20,1,
+Nebraska,Uncover 3,downwind,5,1,
+Nebraska,Uncover 3,downwind,6,1,22
+Nebraska,Uncover 3,downwind,8,1,24
+Nebraska,Uncover 3,downwind,9,1,46
+Nebraska,Uncover 3,downwind,11,1,53
+Nebraska,Uncover 3,downwind,12,1,53
+Nebraska,Uncover 3,downwind,14,1,56
+Nebraska,Uncover 3,downwind,15,1,64
+Nebraska,Uncover 3,downwind,17,1,57
+Nebraska,Uncover 3,downwind,18,1,56
+Nebraska,Uncover 3,downwind,20,1,57
+Michigan,Cover A,downwind,0,1,45
+Michigan,Cover A,downwind,0.8,1,44
+Michigan,Cover A,downwind,1.5,1,44
+Michigan,Cover A,downwind,2.3,1,45
+Michigan,Cover A,downwind,3,1,42
+Michigan,Cover A,downwind,3.8,1,43
+Michigan,Cover A,downwind,4.6,1,47
+Michigan,Cover A,downwind,5.3,1,48
+Michigan,Cover A,downwind,6.1,1,45
+Michigan,Cover A,downwind,6.9,1,45
+Michigan,Cover A,downwind,7.6,1,47
+Michigan,Cover A,downwind,8.4,1,48
+Michigan,Cover A,downwind,9.1,1,48
+Michigan,Cover A,downwind,9.9,1,45
+Michigan,Cover A,downwind,10.7,1,46
+Michigan,Cover A,downwind,11.4,1,47
+Michigan,Cover A,downwind,12.2,1,47
+Michigan,Cover A,downwind,13,1,44
+Michigan,Cover A,downwind,13.7,1,47
+Michigan,Cover A,downwind,14.5,1,48
+Michigan,Cover A,downwind,15.2,1,48
+Michigan,Cover B,downwind,0,1,60
+Michigan,Cover B,downwind,0.8,1,57
+Michigan,Cover B,downwind,1.5,1,58
+Michigan,Cover B,downwind,2.3,1,56
+Michigan,Cover B,downwind,3,1,60
+Michigan,Cover B,downwind,3.8,1,60
+Michigan,Cover B,downwind,4.6,1,55
+Michigan,Cover B,downwind,5.3,1,57
+Michigan,Cover B,downwind,6.1,1,59
+Michigan,Cover B,downwind,6.9,1,63
+Michigan,Cover B,downwind,7.6,1,59
+Michigan,Cover B,downwind,8.4,1,59
+Michigan,Cover B,downwind,9.1,1,60
+Michigan,Cover B,downwind,9.9,1,58
+Michigan,Cover B,downwind,10.7,1,59
+Michigan,Cover B,downwind,11.4,1,52
+Michigan,Cover B,downwind,12.2,1,60
+Michigan,Cover B,downwind,13,1,55
+Michigan,Cover B,downwind,13.7,1,58
+Michigan,Cover B,downwind,14.5,1,58
+Michigan,Cover B,downwind,15.2,1,62
+Michigan,Cover C,downwind,0,1,40
+Michigan,Cover C,downwind,0.8,1,40
+Michigan,Cover C,downwind,1.5,1,45
+Michigan,Cover C,downwind,2.3,1,46
+Michigan,Cover C,downwind,3,1,42
+Michigan,Cover C,downwind,3.8,1,50
+Michigan,Cover C,downwind,4.6,1,50
+Michigan,Cover C,downwind,5.3,1,48
+Michigan,Cover C,downwind,6.1,1,48
+Michigan,Cover C,downwind,6.9,1,50
+Michigan,Cover C,downwind,7.6,1,52
+Michigan,Cover C,downwind,8.4,1,50
+Michigan,Cover C,downwind,9.1,1,50
+Michigan,Cover C,downwind,9.9,1,45
+Michigan,Cover C,downwind,10.7,1,46
+Michigan,Cover C,downwind,11.4,1,46
+Michigan,Cover C,downwind,12.2,1,46
+Michigan,Cover C,downwind,13,1,46
+Michigan,Cover C,downwind,13.7,1,48
+Michigan,Cover C,downwind,14.5,1,46
+Michigan,Cover C,downwind,15.2,1,48
+Michigan,Uncover A,downwind,0,1,29
+Michigan,Uncover A,downwind,0.8,1,32
+Michigan,Uncover A,downwind,1.5,1,31
+Michigan,Uncover A,downwind,2.3,1,32
+Michigan,Uncover A,downwind,3,1,30
+Michigan,Uncover A,downwind,3.8,1,31
+Michigan,Uncover A,downwind,4.6,1,37
+Michigan,Uncover A,downwind,5.3,1,35
+Michigan,Uncover A,downwind,6.1,1,38
+Michigan,Uncover A,downwind,6.9,1,40
+Michigan,Uncover A,downwind,7.6,1,37
+Michigan,Uncover A,downwind,8.4,1,37
+Michigan,Uncover A,downwind,9.1,1,35
+Michigan,Uncover A,downwind,9.9,1,40
+Michigan,Uncover A,downwind,10.7,1,39
+Michigan,Uncover A,downwind,11.4,1,37
+Michigan,Uncover A,downwind,12.2,1,38
+Michigan,Uncover A,downwind,13,1,38
+Michigan,Uncover A,downwind,13.7,1,39
+Michigan,Uncover A,downwind,14.5,1,39
+Michigan,Uncover A,downwind,15.2,1,38
+Michigan,Uncover B,downwind,0,1,57
+Michigan,Uncover B,downwind,0.8,1,59
+Michigan,Uncover B,downwind,1.5,1,52
+Michigan,Uncover B,downwind,2.3,1,54
+Michigan,Uncover B,downwind,3,1,54
+Michigan,Uncover B,downwind,3.8,1,50
+Michigan,Uncover B,downwind,4.6,1,54
+Michigan,Uncover B,downwind,5.3,1,59
+Michigan,Uncover B,downwind,6.1,1,57
+Michigan,Uncover B,downwind,6.9,1,55
+Michigan,Uncover B,downwind,7.6,1,56
+Michigan,Uncover B,downwind,8.4,1,60
+Michigan,Uncover B,downwind,9.1,1,59
+Michigan,Uncover B,downwind,9.9,1,48
+Michigan,Uncover B,downwind,10.7,1,54
+Michigan,Uncover B,downwind,11.4,1,54
+Michigan,Uncover B,downwind,12.2,1,60
+Michigan,Uncover B,downwind,13,1,59
+Michigan,Uncover B,downwind,13.7,1,62
+Michigan,Uncover B,downwind,14.5,1,59
+Michigan,Uncover B,downwind,15.2,1,58
+Michigan,Uncover C,downwind,0,1,42
+Michigan,Uncover C,downwind,0.8,1,50
+Michigan,Uncover C,downwind,1.5,1,46
+Michigan,Uncover C,downwind,2.3,1,40
+Michigan,Uncover C,downwind,3,1,50
+Michigan,Uncover C,downwind,3.8,1,48
+Michigan,Uncover C,downwind,4.6,1,50
+Michigan,Uncover C,downwind,5.3,1,50
+Michigan,Uncover C,downwind,6.1,1,45
+Michigan,Uncover C,downwind,6.9,1,50
+Michigan,Uncover C,downwind,7.6,1,
+Michigan,Uncover C,downwind,8.4,1,
+Michigan,Uncover C,downwind,9.1,1,
+Michigan,Uncover C,downwind,9.9,1,
+Michigan,Uncover C,downwind,10.7,1,
+Michigan,Uncover C,downwind,11.4,1,
+Michigan,Uncover C,downwind,12.2,1,
+Michigan,Uncover C,downwind,13,1,
+Michigan,Uncover C,downwind,13.7,1,
+Michigan,Uncover C,downwind,14.5,1,
+Michigan,Uncover C,downwind,15.2,1,
+Michigan,Transect A,downwind,0,1,23
+Michigan,Transect A,downwind,0,2,25
+Michigan,Transect A,downwind,0,3,23
+Michigan,Transect A,downwind,0,4,25
+Michigan,Transect A,downwind,0,5,22
+Michigan,Transect A,downwind,0,6,
+Michigan,Transect A,downwind,0,7,
+Michigan,Transect A,downwind,0,8,
+Michigan,Transect A,downwind,0,9,
+Michigan,Transect A,downwind,0,10,
+Michigan,Transect A,downwind,0.8,1,30
+Michigan,Transect A,downwind,0.8,2,30
+Michigan,Transect A,downwind,0.8,3,30
+Michigan,Transect A,downwind,0.8,4,30
+Michigan,Transect A,downwind,0.8,5,30
+Michigan,Transect A,downwind,0.8,6,
+Michigan,Transect A,downwind,0.8,7,
+Michigan,Transect A,downwind,0.8,8,
+Michigan,Transect A,downwind,0.8,9,
+Michigan,Transect A,downwind,0.8,10,
+Michigan,Transect A,downwind,1.5,1,28
+Michigan,Transect A,downwind,1.5,2,30
+Michigan,Transect A,downwind,1.5,3,31
+Michigan,Transect A,downwind,1.5,4,26
+Michigan,Transect A,downwind,1.5,5,28
+Michigan,Transect A,downwind,1.5,6,
+Michigan,Transect A,downwind,1.5,7,
+Michigan,Transect A,downwind,1.5,8,
+Michigan,Transect A,downwind,1.5,9,
+Michigan,Transect A,downwind,1.5,10,
+Michigan,Transect A,downwind,2.3,1,31
+Michigan,Transect A,downwind,2.3,2,31
+Michigan,Transect A,downwind,2.3,3,32
+Michigan,Transect A,downwind,2.3,4,30
+Michigan,Transect A,downwind,2.3,5,27
+Michigan,Transect A,downwind,2.3,6,
+Michigan,Transect A,downwind,2.3,7,
+Michigan,Transect A,downwind,2.3,8,
+Michigan,Transect A,downwind,2.3,9,
+Michigan,Transect A,downwind,2.3,10,
+Michigan,Transect A,downwind,3,1,35
+Michigan,Transect A,downwind,3,2,35
+Michigan,Transect A,downwind,3,3,34
+Michigan,Transect A,downwind,3,4,32
+Michigan,Transect A,downwind,3,5,32
+Michigan,Transect A,downwind,3,6,
+Michigan,Transect A,downwind,3,7,
+Michigan,Transect A,downwind,3,8,
+Michigan,Transect A,downwind,3,9,
+Michigan,Transect A,downwind,3,10,
+Michigan,Transect A,downwind,4,1,33
+Michigan,Transect A,downwind,4,2,35
+Michigan,Transect A,downwind,4,3,38
+Michigan,Transect A,downwind,4,4,30
+Michigan,Transect A,downwind,4,5,28
+Michigan,Transect A,downwind,4,6,24
+Michigan,Transect A,downwind,4,7,32
+Michigan,Transect A,downwind,4,8,31
+Michigan,Transect A,downwind,4,9,30
+Michigan,Transect A,downwind,4,10,35
+Michigan,Transect A,downwind,7.9,1,42
+Michigan,Transect A,downwind,7.9,2,42
+Michigan,Transect A,downwind,7.9,3,43
+Michigan,Transect A,downwind,7.9,4,43
+Michigan,Transect A,downwind,7.9,5,36
+Michigan,Transect A,downwind,7.9,6,36
+Michigan,Transect A,downwind,7.9,7,43
+Michigan,Transect A,downwind,7.9,8,41
+Michigan,Transect A,downwind,7.9,9,42
+Michigan,Transect A,downwind,7.9,10,40
+Michigan,Transect A,downwind,15.8,1,48
+Michigan,Transect A,downwind,15.8,2,47
+Michigan,Transect A,downwind,15.8,3,43
+Michigan,Transect A,downwind,15.8,4,50
+Michigan,Transect A,downwind,15.8,5,51
+Michigan,Transect A,downwind,15.8,6,50
+Michigan,Transect A,downwind,15.8,7,50
+Michigan,Transect A,downwind,15.8,8,47
+Michigan,Transect A,downwind,15.8,9,47
+Michigan,Transect A,downwind,15.8,10,47
+Michigan,Transect A,downwind,30.5,1,51
+Michigan,Transect A,downwind,30.5,2,51
+Michigan,Transect A,downwind,30.5,3,50
+Michigan,Transect A,downwind,30.5,4,50
+Michigan,Transect A,downwind,30.5,5,50
+Michigan,Transect A,downwind,30.5,6,52
+Michigan,Transect A,downwind,30.5,7,51
+Michigan,Transect A,downwind,30.5,8,51
+Michigan,Transect A,downwind,30.5,9,50
+Michigan,Transect A,downwind,30.5,10,50
+Michigan,Transect A,downwind,44.8,1,52
+Michigan,Transect A,downwind,44.8,2,52
+Michigan,Transect A,downwind,44.8,3,54
+Michigan,Transect A,downwind,44.8,4,53
+Michigan,Transect A,downwind,44.8,5,60
+Michigan,Transect A,downwind,44.8,6,58
+Michigan,Transect A,downwind,44.8,7,57
+Michigan,Transect A,downwind,44.8,8,58
+Michigan,Transect A,downwind,44.8,9,57
+Michigan,Transect A,downwind,44.8,10,54
+Michigan,Transect A,downwind,59.7,1,56
+Michigan,Transect A,downwind,59.7,2,55
+Michigan,Transect A,downwind,59.7,3,55
+Michigan,Transect A,downwind,59.7,4,59
+Michigan,Transect A,downwind,59.7,5,58
+Michigan,Transect A,downwind,59.7,6,60
+Michigan,Transect A,downwind,59.7,7,57
+Michigan,Transect A,downwind,59.7,8,58
+Michigan,Transect A,downwind,59.7,9,57
+Michigan,Transect A,downwind,59.7,10,57
+Michigan,Transect A,downwind,75,1,53
+Michigan,Transect A,downwind,75,2,53
+Michigan,Transect A,downwind,75,3,54
+Michigan,Transect A,downwind,75,4,54
+Michigan,Transect A,downwind,75,5,53
+Michigan,Transect A,downwind,75,6,56
+Michigan,Transect A,downwind,75,7,52
+Michigan,Transect A,downwind,75,8,52
+Michigan,Transect A,downwind,75,9,53
+Michigan,Transect A,downwind,75,10,53
+Michigan,Transect A,downwind,89.9,1,53
+Michigan,Transect A,downwind,89.9,2,54
+Michigan,Transect A,downwind,89.9,3,54
+Michigan,Transect A,downwind,89.9,4,52
+Michigan,Transect A,downwind,89.9,5,53
+Michigan,Transect A,downwind,89.9,6,56
+Michigan,Transect A,downwind,89.9,7,56
+Michigan,Transect A,downwind,89.9,8,55
+Michigan,Transect A,downwind,89.9,9,52
+Michigan,Transect A,downwind,89.9,10,54
+Michigan,Transect A,downwind,104.9,1,52
+Michigan,Transect A,downwind,104.9,2,54
+Michigan,Transect A,downwind,104.9,3,56
+Michigan,Transect A,downwind,104.9,4,55
+Michigan,Transect A,downwind,104.9,5,55
+Michigan,Transect A,downwind,104.9,6,56
+Michigan,Transect A,downwind,104.9,7,58
+Michigan,Transect A,downwind,104.9,8,56
+Michigan,Transect A,downwind,104.9,9,55
+Michigan,Transect A,downwind,104.9,10,56
+Michigan,Transect A,downwind,119.8,1,47
+Michigan,Transect A,downwind,119.8,2,46
+Michigan,Transect A,downwind,119.8,3,44
+Michigan,Transect A,downwind,119.8,4,48
+Michigan,Transect A,downwind,119.8,5,49
+Michigan,Transect A,downwind,119.8,6,46
+Michigan,Transect A,downwind,119.8,7,42
+Michigan,Transect A,downwind,119.8,8,44
+Michigan,Transect A,downwind,119.8,9,43
+Michigan,Transect A,downwind,119.8,10,47
+Michigan,Transect B,downwind,0,1,43
+Michigan,Transect B,downwind,0,2,40
+Michigan,Transect B,downwind,0,3,44
+Michigan,Transect B,downwind,0,4,44
+Michigan,Transect B,downwind,0,5,42
+Michigan,Transect B,downwind,0,6,
+Michigan,Transect B,downwind,0,7,
+Michigan,Transect B,downwind,0,8,
+Michigan,Transect B,downwind,0,9,
+Michigan,Transect B,downwind,0,10,
+Michigan,Transect B,downwind,0.8,1,42
+Michigan,Transect B,downwind,0.8,2,44
+Michigan,Transect B,downwind,0.8,3,40
+Michigan,Transect B,downwind,0.8,4,41
+Michigan,Transect B,downwind,0.8,5,39
+Michigan,Transect B,downwind,0.8,6,
+Michigan,Transect B,downwind,0.8,7,
+Michigan,Transect B,downwind,0.8,8,
+Michigan,Transect B,downwind,0.8,9,
+Michigan,Transect B,downwind,0.8,10,
+Michigan,Transect B,downwind,1.5,1,41
+Michigan,Transect B,downwind,1.5,2,42
+Michigan,Transect B,downwind,1.5,3,40
+Michigan,Transect B,downwind,1.5,4,39
+Michigan,Transect B,downwind,1.5,5,41
+Michigan,Transect B,downwind,1.5,6,
+Michigan,Transect B,downwind,1.5,7,
+Michigan,Transect B,downwind,1.5,8,
+Michigan,Transect B,downwind,1.5,9,
+Michigan,Transect B,downwind,1.5,10,
+Michigan,Transect B,downwind,2.3,1,40
+Michigan,Transect B,downwind,2.3,2,39
+Michigan,Transect B,downwind,2.3,3,43
+Michigan,Transect B,downwind,2.3,4,42
+Michigan,Transect B,downwind,2.3,5,40
+Michigan,Transect B,downwind,2.3,6,
+Michigan,Transect B,downwind,2.3,7,
+Michigan,Transect B,downwind,2.3,8,
+Michigan,Transect B,downwind,2.3,9,
+Michigan,Transect B,downwind,2.3,10,
+Michigan,Transect B,downwind,3,1,39
+Michigan,Transect B,downwind,3,2,43
+Michigan,Transect B,downwind,3,3,40
+Michigan,Transect B,downwind,3,4,46
+Michigan,Transect B,downwind,3,5,42
+Michigan,Transect B,downwind,3,6,
+Michigan,Transect B,downwind,3,7,
+Michigan,Transect B,downwind,3,8,
+Michigan,Transect B,downwind,3,9,
+Michigan,Transect B,downwind,3,10,
+Michigan,Transect B,downwind,4,1,45
+Michigan,Transect B,downwind,4,2,43
+Michigan,Transect B,downwind,4,3,40
+Michigan,Transect B,downwind,4,4,42
+Michigan,Transect B,downwind,4,5,44
+Michigan,Transect B,downwind,4,6,46
+Michigan,Transect B,downwind,4,7,44
+Michigan,Transect B,downwind,4,8,41
+Michigan,Transect B,downwind,4,9,44
+Michigan,Transect B,downwind,4,10,42
+Michigan,Transect B,downwind,7.9,1,38
+Michigan,Transect B,downwind,7.9,2,37
+Michigan,Transect B,downwind,7.9,3,39
+Michigan,Transect B,downwind,7.9,4,36
+Michigan,Transect B,downwind,7.9,5,40
+Michigan,Transect B,downwind,7.9,6,33
+Michigan,Transect B,downwind,7.9,7,34
+Michigan,Transect B,downwind,7.9,8,39
+Michigan,Transect B,downwind,7.9,9,43
+Michigan,Transect B,downwind,7.9,10,40
+Michigan,Transect B,downwind,15.8,1,40
+Michigan,Transect B,downwind,15.8,2,35
+Michigan,Transect B,downwind,15.8,3,35
+Michigan,Transect B,downwind,15.8,4,42
+Michigan,Transect B,downwind,15.8,5,40
+Michigan,Transect B,downwind,15.8,6,40
+Michigan,Transect B,downwind,15.8,7,41
+Michigan,Transect B,downwind,15.8,8,40
+Michigan,Transect B,downwind,15.8,9,41
+Michigan,Transect B,downwind,15.8,10,43
+Michigan,Transect B,downwind,30.5,1,50
+Michigan,Transect B,downwind,30.5,2,50
+Michigan,Transect B,downwind,30.5,3,48
+Michigan,Transect B,downwind,30.5,4,48
+Michigan,Transect B,downwind,30.5,5,49
+Michigan,Transect B,downwind,30.5,6,48
+Michigan,Transect B,downwind,30.5,7,50
+Michigan,Transect B,downwind,30.5,8,46
+Michigan,Transect B,downwind,30.5,9,45
+Michigan,Transect B,downwind,30.5,10,49
+Michigan,Transect B,downwind,44.8,1,55
+Michigan,Transect B,downwind,44.8,2,50
+Michigan,Transect B,downwind,44.8,3,51
+Michigan,Transect B,downwind,44.8,4,49
+Michigan,Transect B,downwind,44.8,5,51
+Michigan,Transect B,downwind,44.8,6,53
+Michigan,Transect B,downwind,44.8,7,49
+Michigan,Transect B,downwind,44.8,8,52
+Michigan,Transect B,downwind,44.8,9,52
+Michigan,Transect B,downwind,44.8,10,49
+Michigan,Transect B,downwind,59.7,1,52
+Michigan,Transect B,downwind,59.7,2,54
+Michigan,Transect B,downwind,59.7,3,52
+Michigan,Transect B,downwind,59.7,4,52
+Michigan,Transect B,downwind,59.7,5,53
+Michigan,Transect B,downwind,59.7,6,57
+Michigan,Transect B,downwind,59.7,7,59
+Michigan,Transect B,downwind,59.7,8,56
+Michigan,Transect B,downwind,59.7,9,51
+Michigan,Transect B,downwind,59.7,10,54
+Michigan,Transect B,downwind,75,1,42
+Michigan,Transect B,downwind,75,2,45
+Michigan,Transect B,downwind,75,3,40
+Michigan,Transect B,downwind,75,4,42
+Michigan,Transect B,downwind,75,5,44
+Michigan,Transect B,downwind,75,6,49
+Michigan,Transect B,downwind,75,7,51
+Michigan,Transect B,downwind,75,8,48
+Michigan,Transect B,downwind,75,9,50
+Michigan,Transect B,downwind,75,10,46
+Michigan,Transect B,downwind,89.9,1,42
+Michigan,Transect B,downwind,89.9,2,34
+Michigan,Transect B,downwind,89.9,3,42
+Michigan,Transect B,downwind,89.9,4,39
+Michigan,Transect B,downwind,89.9,5,38
+Michigan,Transect B,downwind,89.9,6,37
+Michigan,Transect B,downwind,89.9,7,39
+Michigan,Transect B,downwind,89.9,8,39
+Michigan,Transect B,downwind,89.9,9,38
+Michigan,Transect B,downwind,89.9,10,40
+Michigan,Transect B,downwind,104.9,1,45
+Michigan,Transect B,downwind,104.9,2,45
+Michigan,Transect B,downwind,104.9,3,49
+Michigan,Transect B,downwind,104.9,4,43
+Michigan,Transect B,downwind,104.9,5,50
+Michigan,Transect B,downwind,104.9,6,49
+Michigan,Transect B,downwind,104.9,7,51
+Michigan,Transect B,downwind,104.9,8,50
+Michigan,Transect B,downwind,104.9,9,48
+Michigan,Transect B,downwind,104.9,10,51
+Michigan,Transect B,downwind,119.8,1,57
+Michigan,Transect B,downwind,119.8,2,54
+Michigan,Transect B,downwind,119.8,3,56
+Michigan,Transect B,downwind,119.8,4,56
+Michigan,Transect B,downwind,119.8,5,57
+Michigan,Transect B,downwind,119.8,6,62
+Michigan,Transect B,downwind,119.8,7,55
+Michigan,Transect B,downwind,119.8,8,56
+Michigan,Transect B,downwind,119.8,9,56
+Michigan,Transect B,downwind,119.8,10,59
+Michigan,Transect C,downwind,0,1,52
+Michigan,Transect C,downwind,0,2,50
+Michigan,Transect C,downwind,0,3,52
+Michigan,Transect C,downwind,0,4,50
+Michigan,Transect C,downwind,0,5,45
+Michigan,Transect C,downwind,0,6,
+Michigan,Transect C,downwind,0,7,
+Michigan,Transect C,downwind,0,8,
+Michigan,Transect C,downwind,0,9,
+Michigan,Transect C,downwind,0,10,
+Michigan,Transect C,downwind,0.8,1,48
+Michigan,Transect C,downwind,0.8,2,50
+Michigan,Transect C,downwind,0.8,3,52
+Michigan,Transect C,downwind,0.8,4,53
+Michigan,Transect C,downwind,0.8,5,46
+Michigan,Transect C,downwind,0.8,6,
+Michigan,Transect C,downwind,0.8,7,
+Michigan,Transect C,downwind,0.8,8,
+Michigan,Transect C,downwind,0.8,9,
+Michigan,Transect C,downwind,0.8,10,
+Michigan,Transect C,downwind,1.5,1,50
+Michigan,Transect C,downwind,1.5,2,46
+Michigan,Transect C,downwind,1.5,3,50
+Michigan,Transect C,downwind,1.5,4,50
+Michigan,Transect C,downwind,1.5,5,46
+Michigan,Transect C,downwind,1.5,6,
+Michigan,Transect C,downwind,1.5,7,
+Michigan,Transect C,downwind,1.5,8,
+Michigan,Transect C,downwind,1.5,9,
+Michigan,Transect C,downwind,1.5,10,
+Michigan,Transect C,downwind,2.3,1,50
+Michigan,Transect C,downwind,2.3,2,48
+Michigan,Transect C,downwind,2.3,3,52
+Michigan,Transect C,downwind,2.3,4,44
+Michigan,Transect C,downwind,2.3,5,50
+Michigan,Transect C,downwind,2.3,6,
+Michigan,Transect C,downwind,2.3,7,
+Michigan,Transect C,downwind,2.3,8,
+Michigan,Transect C,downwind,2.3,9,
+Michigan,Transect C,downwind,2.3,10,
+Michigan,Transect C,downwind,3,1,47
+Michigan,Transect C,downwind,3,2,47
+Michigan,Transect C,downwind,3,3,48
+Michigan,Transect C,downwind,3,4,44
+Michigan,Transect C,downwind,3,5,50
+Michigan,Transect C,downwind,3,6,
+Michigan,Transect C,downwind,3,7,
+Michigan,Transect C,downwind,3,8,
+Michigan,Transect C,downwind,3,9,
+Michigan,Transect C,downwind,3,10,
+Michigan,Transect C,downwind,4,1,55
+Michigan,Transect C,downwind,4,2,50
+Michigan,Transect C,downwind,4,3,56
+Michigan,Transect C,downwind,4,4,56
+Michigan,Transect C,downwind,4,5,48
+Michigan,Transect C,downwind,4,6,50
+Michigan,Transect C,downwind,4,7,54
+Michigan,Transect C,downwind,4,8,52
+Michigan,Transect C,downwind,4,9,48
+Michigan,Transect C,downwind,4,10,48
+Michigan,Transect C,downwind,7.9,1,50
+Michigan,Transect C,downwind,7.9,2,52
+Michigan,Transect C,downwind,7.9,3,52
+Michigan,Transect C,downwind,7.9,4,51
+Michigan,Transect C,downwind,7.9,5,50
+Michigan,Transect C,downwind,7.9,6,50
+Michigan,Transect C,downwind,7.9,7,54
+Michigan,Transect C,downwind,7.9,8,53
+Michigan,Transect C,downwind,7.9,9,52
+Michigan,Transect C,downwind,7.9,10,49
+Michigan,Transect C,downwind,15.8,1,40
+Michigan,Transect C,downwind,15.8,2,40
+Michigan,Transect C,downwind,15.8,3,42
+Michigan,Transect C,downwind,15.8,4,41
+Michigan,Transect C,downwind,15.8,5,39
+Michigan,Transect C,downwind,15.8,6,45
+Michigan,Transect C,downwind,15.8,7,40
+Michigan,Transect C,downwind,15.8,8,37
+Michigan,Transect C,downwind,15.8,9,39
+Michigan,Transect C,downwind,15.8,10,40
+Michigan,Transect C,downwind,30.5,1,50
+Michigan,Transect C,downwind,30.5,2,50
+Michigan,Transect C,downwind,30.5,3,51
+Michigan,Transect C,downwind,30.5,4,52
+Michigan,Transect C,downwind,30.5,5,48
+Michigan,Transect C,downwind,30.5,6,50
+Michigan,Transect C,downwind,30.5,7,57
+Michigan,Transect C,downwind,30.5,8,52
+Michigan,Transect C,downwind,30.5,9,51
+Michigan,Transect C,downwind,30.5,10,53
+Michigan,Transect C,downwind,44.8,1,45
+Michigan,Transect C,downwind,44.8,2,42
+Michigan,Transect C,downwind,44.8,3,46
+Michigan,Transect C,downwind,44.8,4,50
+Michigan,Transect C,downwind,44.8,5,42
+Michigan,Transect C,downwind,44.8,6,50
+Michigan,Transect C,downwind,44.8,7,47
+Michigan,Transect C,downwind,44.8,8,48
+Michigan,Transect C,downwind,44.8,9,48
+Michigan,Transect C,downwind,44.8,10,46
+Michigan,Transect C,downwind,59.7,1,40
+Michigan,Transect C,downwind,59.7,2,47
+Michigan,Transect C,downwind,59.7,3,52
+Michigan,Transect C,downwind,59.7,4,44
+Michigan,Transect C,downwind,59.7,5,48
+Michigan,Transect C,downwind,59.7,6,45
+Michigan,Transect C,downwind,59.7,7,46
+Michigan,Transect C,downwind,59.7,8,45
+Michigan,Transect C,downwind,59.7,9,49
+Michigan,Transect C,downwind,59.7,10,46
+Michigan,Transect C,downwind,75,1,40
+Michigan,Transect C,downwind,75,2,40
+Michigan,Transect C,downwind,75,3,39
+Michigan,Transect C,downwind,75,4,38
+Michigan,Transect C,downwind,75,5,46
+Michigan,Transect C,downwind,75,6,34
+Michigan,Transect C,downwind,75,7,33
+Michigan,Transect C,downwind,75,8,35
+Michigan,Transect C,downwind,75,9,36
+Michigan,Transect C,downwind,75,10,37
+Michigan,Transect C,downwind,89.9,1,34
+Michigan,Transect C,downwind,89.9,2,32
+Michigan,Transect C,downwind,89.9,3,30
+Michigan,Transect C,downwind,89.9,4,30
+Michigan,Transect C,downwind,89.9,5,34
+Michigan,Transect C,downwind,89.9,6,34
+Michigan,Transect C,downwind,89.9,7,32
+Michigan,Transect C,downwind,89.9,8,40
+Michigan,Transect C,downwind,89.9,9,42
+Michigan,Transect C,downwind,89.9,10,38
+Michigan,Transect C,downwind,104.9,1,30
+Michigan,Transect C,downwind,104.9,2,29
+Michigan,Transect C,downwind,104.9,3,30
+Michigan,Transect C,downwind,104.9,4,29
+Michigan,Transect C,downwind,104.9,5,34
+Michigan,Transect C,downwind,104.9,6,32
+Michigan,Transect C,downwind,104.9,7,32
+Michigan,Transect C,downwind,104.9,8,34
+Michigan,Transect C,downwind,104.9,9,35
+Michigan,Transect C,downwind,104.9,10,32
+Michigan,Transect C,downwind,119.8,1,40
+Michigan,Transect C,downwind,119.8,2,39
+Michigan,Transect C,downwind,119.8,3,44
+Michigan,Transect C,downwind,119.8,4,46
+Michigan,Transect C,downwind,119.8,5,38
+Michigan,Transect C,downwind,119.8,6,47
+Michigan,Transect C,downwind,119.8,7,46
+Michigan,Transect C,downwind,119.8,8,48
+Michigan,Transect C,downwind,119.8,9,46
+Michigan,Transect C,downwind,119.8,10,40
+Arkansas,West transect 1,upwind,15.2,1,72
+Arkansas,West transect 1,upwind,15.2,2,84
+Arkansas,West transect 1,upwind,15.2,3,90
+Arkansas,West transect 1,upwind,15.2,4,87
+Arkansas,West transect 1,upwind,15.2,5,73
+Arkansas,West transect 1,upwind,15.2,6,78
+Arkansas,West transect 1,upwind,15.2,7,87
+Arkansas,West transect 1,upwind,15.2,8,90
+Arkansas,West transect 1,upwind,15.2,9,84
+Arkansas,West transect 1,upwind,15.2,10,87
+Arkansas,West transect 1,upwind,30.5,1,88
+Arkansas,West transect 1,upwind,30.5,2,77
+Arkansas,West transect 1,upwind,30.5,3,83
+Arkansas,West transect 1,upwind,30.5,4,77
+Arkansas,West transect 1,upwind,30.5,5,67
+Arkansas,West transect 1,upwind,30.5,6,71
+Arkansas,West transect 1,upwind,30.5,7,81
+Arkansas,West transect 1,upwind,30.5,8,79
+Arkansas,West transect 1,upwind,30.5,9,86
+Arkansas,West transect 1,upwind,30.5,10,87
+Arkansas,West transect 1,upwind,45.7,1,81
+Arkansas,West transect 1,upwind,45.7,2,93
+Arkansas,West transect 1,upwind,45.7,3,86
+Arkansas,West transect 1,upwind,45.7,4,85
+Arkansas,West transect 1,upwind,45.7,5,76
+Arkansas,West transect 1,upwind,45.7,6,79
+Arkansas,West transect 1,upwind,45.7,7,81
+Arkansas,West transect 1,upwind,45.7,8,86
+Arkansas,West transect 1,upwind,45.7,9,87
+Arkansas,West transect 1,upwind,45.7,10,88
+Arkansas,West transect 1,upwind,61,1,91
+Arkansas,West transect 1,upwind,61,2,92
+Arkansas,West transect 1,upwind,61,3,88
+Arkansas,West transect 1,upwind,61,4,84
+Arkansas,West transect 1,upwind,61,5,82
+Arkansas,West transect 1,upwind,61,6,80
+Arkansas,West transect 1,upwind,61,7,87
+Arkansas,West transect 1,upwind,61,8,90
+Arkansas,West transect 1,upwind,61,9,94
+Arkansas,West transect 1,upwind,61,10,85
+Arkansas,West transect 2,upwind,15.2,1,88
+Arkansas,West transect 2,upwind,15.2,2,90
+Arkansas,West transect 2,upwind,15.2,3,86
+Arkansas,West transect 2,upwind,15.2,4,85
+Arkansas,West transect 2,upwind,15.2,5,84
+Arkansas,West transect 2,upwind,15.2,6,90
+Arkansas,West transect 2,upwind,15.2,7,89
+Arkansas,West transect 2,upwind,15.2,8,89
+Arkansas,West transect 2,upwind,15.2,9,91
+Arkansas,West transect 2,upwind,15.2,10,89
+Arkansas,West transect 2,upwind,30.5,1,92
+Arkansas,West transect 2,upwind,30.5,2,95
+Arkansas,West transect 2,upwind,30.5,3,91
+Arkansas,West transect 2,upwind,30.5,4,96
+Arkansas,West transect 2,upwind,30.5,5,88
+Arkansas,West transect 2,upwind,30.5,6,90
+Arkansas,West transect 2,upwind,30.5,7,96
+Arkansas,West transect 2,upwind,30.5,8,93
+Arkansas,West transect 2,upwind,30.5,9,90
+Arkansas,West transect 2,upwind,30.5,10,93
+Arkansas,West transect 2,upwind,45.7,1,66
+Arkansas,West transect 2,upwind,45.7,2,77
+Arkansas,West transect 2,upwind,45.7,3,76
+Arkansas,West transect 2,upwind,45.7,4,76
+Arkansas,West transect 2,upwind,45.7,5,82
+Arkansas,West transect 2,upwind,45.7,6,82
+Arkansas,West transect 2,upwind,45.7,7,86
+Arkansas,West transect 2,upwind,45.7,8,85
+Arkansas,West transect 2,upwind,45.7,9,78
+Arkansas,West transect 2,upwind,45.7,10,89
+Arkansas,West transect 2,upwind,61,1,80
+Arkansas,West transect 2,upwind,61,2,85
+Arkansas,West transect 2,upwind,61,3,89
+Arkansas,West transect 2,upwind,61,4,99
+Arkansas,West transect 2,upwind,61,5,86
+Arkansas,West transect 2,upwind,61,6,98
+Arkansas,West transect 2,upwind,61,7,97
+Arkansas,West transect 2,upwind,61,8,91
+Arkansas,West transect 2,upwind,61,9,83
+Arkansas,West transect 2,upwind,61,10,92
+Arkansas,West transect 3,upwind,15.2,1,69
+Arkansas,West transect 3,upwind,15.2,2,88
+Arkansas,West transect 3,upwind,15.2,3,78
+Arkansas,West transect 3,upwind,15.2,4,82
+Arkansas,West transect 3,upwind,15.2,5,82
+Arkansas,West transect 3,upwind,15.2,6,83
+Arkansas,West transect 3,upwind,15.2,7,75
+Arkansas,West transect 3,upwind,15.2,8,73
+Arkansas,West transect 3,upwind,15.2,9,74
+Arkansas,West transect 3,upwind,15.2,10,79
+Arkansas,West transect 3,upwind,30.5,1,83
+Arkansas,West transect 3,upwind,30.5,2,91
+Arkansas,West transect 3,upwind,30.5,3,83
+Arkansas,West transect 3,upwind,30.5,4,91
+Arkansas,West transect 3,upwind,30.5,5,89
+Arkansas,West transect 3,upwind,30.5,6,76
+Arkansas,West transect 3,upwind,30.5,7,77
+Arkansas,West transect 3,upwind,30.5,8,74
+Arkansas,West transect 3,upwind,30.5,9,87
+Arkansas,West transect 3,upwind,30.5,10,91
+Arkansas,West transect 3,upwind,45.7,1,73
+Arkansas,West transect 3,upwind,45.7,2,79
+Arkansas,West transect 3,upwind,45.7,3,83
+Arkansas,West transect 3,upwind,45.7,4,83
+Arkansas,West transect 3,upwind,45.7,5,70
+Arkansas,West transect 3,upwind,45.7,6,77
+Arkansas,West transect 3,upwind,45.7,7,74
+Arkansas,West transect 3,upwind,45.7,8,69
+Arkansas,West transect 3,upwind,45.7,9,78
+Arkansas,West transect 3,upwind,45.7,10,81
+Arkansas,West transect 3,upwind,61,1,70
+Arkansas,West transect 3,upwind,61,2,70
+Arkansas,West transect 3,upwind,61,3,76
+Arkansas,West transect 3,upwind,61,4,74
+Arkansas,West transect 3,upwind,61,5,73
+Arkansas,West transect 3,upwind,61,6,80
+Arkansas,West transect 3,upwind,61,7,80
+Arkansas,West transect 3,upwind,61,8,83
+Arkansas,West transect 3,upwind,61,9,84
+Arkansas,West transect 3,upwind,61,10,81
+Arkansas,West transect 3,upwind,76.2,1,77
+Arkansas,West transect 3,upwind,76.2,2,76
+Arkansas,West transect 3,upwind,76.2,3,85
+Arkansas,West transect 3,upwind,76.2,4,65
+Arkansas,West transect 3,upwind,76.2,5,73
+Arkansas,West transect 3,upwind,76.2,6,87
+Arkansas,West transect 3,upwind,76.2,7,74
+Arkansas,West transect 3,upwind,76.2,8,80
+Arkansas,West transect 3,upwind,76.2,9,74
+Arkansas,West transect 3,upwind,76.2,10,77
+Arkansas,East transect 1,downwind,15.2,1,84
+Arkansas,East transect 1,downwind,15.2,2,80
+Arkansas,East transect 1,downwind,15.2,3,83
+Arkansas,East transect 1,downwind,15.2,4,82
+Arkansas,East transect 1,downwind,15.2,5,89
+Arkansas,East transect 1,downwind,15.2,6,96
+Arkansas,East transect 1,downwind,15.2,7,86
+Arkansas,East transect 1,downwind,15.2,8,95
+Arkansas,East transect 1,downwind,15.2,9,91
+Arkansas,East transect 1,downwind,15.2,10,92
+Arkansas,East transect 1,downwind,30.5,1,84
+Arkansas,East transect 1,downwind,30.5,2,79
+Arkansas,East transect 1,downwind,30.5,3,81
+Arkansas,East transect 1,downwind,30.5,4,78
+Arkansas,East transect 1,downwind,30.5,5,89
+Arkansas,East transect 1,downwind,30.5,6,77
+Arkansas,East transect 1,downwind,30.5,7,78
+Arkansas,East transect 1,downwind,30.5,8,82
+Arkansas,East transect 1,downwind,30.5,9,76
+Arkansas,East transect 1,downwind,30.5,10,79
+Arkansas,East transect 1,downwind,45.7,1,81
+Arkansas,East transect 1,downwind,45.7,2,79
+Arkansas,East transect 1,downwind,45.7,3,87
+Arkansas,East transect 1,downwind,45.7,4,78
+Arkansas,East transect 1,downwind,45.7,5,93
+Arkansas,East transect 1,downwind,45.7,6,91
+Arkansas,East transect 1,downwind,45.7,7,90
+Arkansas,East transect 1,downwind,45.7,8,95
+Arkansas,East transect 1,downwind,45.7,9,79
+Arkansas,East transect 1,downwind,45.7,10,79
+Arkansas,East transect 1,downwind,61,1,91
+Arkansas,East transect 1,downwind,61,2,77
+Arkansas,East transect 1,downwind,61,3,89
+Arkansas,East transect 1,downwind,61,4,77
+Arkansas,East transect 1,downwind,61,5,78
+Arkansas,East transect 1,downwind,61,6,82
+Arkansas,East transect 1,downwind,61,7,91
+Arkansas,East transect 1,downwind,61,8,85
+Arkansas,East transect 1,downwind,61,9,77
+Arkansas,East transect 1,downwind,61,10,81
+Arkansas,East transect 1,downwind,76.2,1,91
+Arkansas,East transect 1,downwind,76.2,2,90
+Arkansas,East transect 1,downwind,76.2,3,90
+Arkansas,East transect 1,downwind,76.2,4,67
+Arkansas,East transect 1,downwind,76.2,5,76
+Arkansas,East transect 1,downwind,76.2,6,75
+Arkansas,East transect 1,downwind,76.2,7,90
+Arkansas,East transect 1,downwind,76.2,8,82
+Arkansas,East transect 1,downwind,76.2,9,68
+Arkansas,East transect 1,downwind,76.2,10,81
+Arkansas,East transect 1,downwind,91.4,1,90
+Arkansas,East transect 1,downwind,91.4,2,89
+Arkansas,East transect 1,downwind,91.4,3,91
+Arkansas,East transect 1,downwind,91.4,4,72
+Arkansas,East transect 1,downwind,91.4,5,88
+Arkansas,East transect 1,downwind,91.4,6,89
+Arkansas,East transect 1,downwind,91.4,7,77
+Arkansas,East transect 1,downwind,91.4,8,70
+Arkansas,East transect 1,downwind,91.4,9,83
+Arkansas,East transect 1,downwind,91.4,10,84
+Arkansas,East transect 1,downwind,106.7,1,90
+Arkansas,East transect 1,downwind,106.7,2,93
+Arkansas,East transect 1,downwind,106.7,3,80
+Arkansas,East transect 1,downwind,106.7,4,80
+Arkansas,East transect 1,downwind,106.7,5,94
+Arkansas,East transect 1,downwind,106.7,6,100
+Arkansas,East transect 1,downwind,106.7,7,90
+Arkansas,East transect 1,downwind,106.7,8,88
+Arkansas,East transect 1,downwind,106.7,9,84
+Arkansas,East transect 1,downwind,106.7,10,90
+Arkansas,East transect 1,downwind,121.9,1,87
+Arkansas,East transect 1,downwind,121.9,2,87
+Arkansas,East transect 1,downwind,121.9,3,91
+Arkansas,East transect 1,downwind,121.9,4,75
+Arkansas,East transect 1,downwind,121.9,5,85
+Arkansas,East transect 1,downwind,121.9,6,86
+Arkansas,East transect 1,downwind,121.9,7,90
+Arkansas,East transect 1,downwind,121.9,8,91
+Arkansas,East transect 1,downwind,121.9,9,100
+Arkansas,East transect 1,downwind,121.9,10,98
+Arkansas,East transect 1,downwind,137.2,1,80
+Arkansas,East transect 1,downwind,137.2,2,79
+Arkansas,East transect 1,downwind,137.2,3,76
+Arkansas,East transect 1,downwind,137.2,4,85
+Arkansas,East transect 1,downwind,137.2,5,91
+Arkansas,East transect 1,downwind,137.2,6,90
+Arkansas,East transect 1,downwind,137.2,7,92
+Arkansas,East transect 1,downwind,137.2,8,90
+Arkansas,East transect 1,downwind,137.2,9,91
+Arkansas,East transect 1,downwind,137.2,10,81
+Arkansas,East transect 1,downwind,152.4,1,76
+Arkansas,East transect 1,downwind,152.4,2,77
+Arkansas,East transect 1,downwind,152.4,3,89
+Arkansas,East transect 1,downwind,152.4,4,87
+Arkansas,East transect 1,downwind,152.4,5,91
+Arkansas,East transect 1,downwind,152.4,6,79
+Arkansas,East transect 1,downwind,152.4,7,75
+Arkansas,East transect 1,downwind,152.4,8,90
+Arkansas,East transect 1,downwind,152.4,9,90
+Arkansas,East transect 1,downwind,152.4,10,93
+Arkansas,East transect 1,downwind,167.6,1,87
+Arkansas,East transect 1,downwind,167.6,2,86
+Arkansas,East transect 1,downwind,167.6,3,87
+Arkansas,East transect 1,downwind,167.6,4,82
+Arkansas,East transect 1,downwind,167.6,5,89
+Arkansas,East transect 1,downwind,167.6,6,79
+Arkansas,East transect 1,downwind,167.6,7,83
+Arkansas,East transect 1,downwind,167.6,8,92
+Arkansas,East transect 1,downwind,167.6,9,93
+Arkansas,East transect 1,downwind,167.6,10,82
+Arkansas,East transect 1,downwind,182.9,1,91
+Arkansas,East transect 1,downwind,182.9,2,93
+Arkansas,East transect 1,downwind,182.9,3,99
+Arkansas,East transect 1,downwind,182.9,4,84
+Arkansas,East transect 1,downwind,182.9,5,90
+Arkansas,East transect 1,downwind,182.9,6,88
+Arkansas,East transect 1,downwind,182.9,7,89
+Arkansas,East transect 1,downwind,182.9,8,90
+Arkansas,East transect 1,downwind,182.9,9,86
+Arkansas,East transect 1,downwind,182.9,10,90
+Arkansas,East transect 1,downwind,198.1,1,86
+Arkansas,East transect 1,downwind,198.1,2,87
+Arkansas,East transect 1,downwind,198.1,3,77
+Arkansas,East transect 1,downwind,198.1,4,89
+Arkansas,East transect 1,downwind,198.1,5,92
+Arkansas,East transect 1,downwind,198.1,6,91
+Arkansas,East transect 1,downwind,198.1,7,71
+Arkansas,East transect 1,downwind,198.1,8,79
+Arkansas,East transect 1,downwind,198.1,9,93
+Arkansas,East transect 1,downwind,198.1,10,94
+Arkansas,East transect 1,downwind,213.4,1,88
+Arkansas,East transect 1,downwind,213.4,2,85
+Arkansas,East transect 1,downwind,213.4,3,86
+Arkansas,East transect 1,downwind,213.4,4,83
+Arkansas,East transect 1,downwind,213.4,5,88
+Arkansas,East transect 1,downwind,213.4,6,87
+Arkansas,East transect 1,downwind,213.4,7,86
+Arkansas,East transect 1,downwind,213.4,8,91
+Arkansas,East transect 1,downwind,213.4,9,84
+Arkansas,East transect 1,downwind,213.4,10,81
+Arkansas,East transect 1,downwind,228.6,1,78
+Arkansas,East transect 1,downwind,228.6,2,87
+Arkansas,East transect 1,downwind,228.6,3,79
+Arkansas,East transect 1,downwind,228.6,4,90
+Arkansas,East transect 1,downwind,228.6,5,81
+Arkansas,East transect 1,downwind,228.6,6,67
+Arkansas,East transect 1,downwind,228.6,7,74
+Arkansas,East transect 1,downwind,228.6,8,78
+Arkansas,East transect 1,downwind,228.6,9,79
+Arkansas,East transect 1,downwind,228.6,10,78
+Arkansas,East transect 1,downwind,243.8,1,82
+Arkansas,East transect 1,downwind,243.8,2,75
+Arkansas,East transect 1,downwind,243.8,3,86
+Arkansas,East transect 1,downwind,243.8,4,86
+Arkansas,East transect 1,downwind,243.8,5,81
+Arkansas,East transect 1,downwind,243.8,6,78
+Arkansas,East transect 1,downwind,243.8,7,84
+Arkansas,East transect 1,downwind,243.8,8,83
+Arkansas,East transect 1,downwind,243.8,9,82
+Arkansas,East transect 1,downwind,243.8,10,60
+Arkansas,East transect 1,downwind,259.1,1,83
+Arkansas,East transect 1,downwind,259.1,2,78
+Arkansas,East transect 1,downwind,259.1,3,73
+Arkansas,East transect 1,downwind,259.1,4,82
+Arkansas,East transect 1,downwind,259.1,5,86
+Arkansas,East transect 1,downwind,259.1,6,85
+Arkansas,East transect 1,downwind,259.1,7,84
+Arkansas,East transect 1,downwind,259.1,8,83
+Arkansas,East transect 1,downwind,259.1,9,89
+Arkansas,East transect 1,downwind,259.1,10,90
+Arkansas,East transect 2,downwind,15.2,1,87
+Arkansas,East transect 2,downwind,15.2,2,90
+Arkansas,East transect 2,downwind,15.2,3,92
+Arkansas,East transect 2,downwind,15.2,4,84
+Arkansas,East transect 2,downwind,15.2,5,84
+Arkansas,East transect 2,downwind,15.2,6,87
+Arkansas,East transect 2,downwind,15.2,7,87
+Arkansas,East transect 2,downwind,15.2,8,86
+Arkansas,East transect 2,downwind,15.2,9,89
+Arkansas,East transect 2,downwind,15.2,10,79
+Arkansas,East transect 2,downwind,30.5,1,82
+Arkansas,East transect 2,downwind,30.5,2,80
+Arkansas,East transect 2,downwind,30.5,3,82
+Arkansas,East transect 2,downwind,30.5,4,84
+Arkansas,East transect 2,downwind,30.5,5,85
+Arkansas,East transect 2,downwind,30.5,6,82
+Arkansas,East transect 2,downwind,30.5,7,90
+Arkansas,East transect 2,downwind,30.5,8,88
+Arkansas,East transect 2,downwind,30.5,9,87
+Arkansas,East transect 2,downwind,30.5,10,87
+Arkansas,East transect 2,downwind,45.7,1,82
+Arkansas,East transect 2,downwind,45.7,2,86
+Arkansas,East transect 2,downwind,45.7,3,94
+Arkansas,East transect 2,downwind,45.7,4,93
+Arkansas,East transect 2,downwind,45.7,5,73
+Arkansas,East transect 2,downwind,45.7,6,74
+Arkansas,East transect 2,downwind,45.7,7,86
+Arkansas,East transect 2,downwind,45.7,8,72
+Arkansas,East transect 2,downwind,45.7,9,81
+Arkansas,East transect 2,downwind,45.7,10,75
+Arkansas,East transect 2,downwind,61,1,84
+Arkansas,East transect 2,downwind,61,2,86
+Arkansas,East transect 2,downwind,61,3,95
+Arkansas,East transect 2,downwind,61,4,76
+Arkansas,East transect 2,downwind,61,5,94
+Arkansas,East transect 2,downwind,61,6,76
+Arkansas,East transect 2,downwind,61,7,82
+Arkansas,East transect 2,downwind,61,8,86
+Arkansas,East transect 2,downwind,61,9,85
+Arkansas,East transect 2,downwind,61,10,81
+Arkansas,East transect 2,downwind,76.2,1,75
+Arkansas,East transect 2,downwind,76.2,2,89
+Arkansas,East transect 2,downwind,76.2,3,80
+Arkansas,East transect 2,downwind,76.2,4,88
+Arkansas,East transect 2,downwind,76.2,5,79
+Arkansas,East transect 2,downwind,76.2,6,83
+Arkansas,East transect 2,downwind,76.2,7,89
+Arkansas,East transect 2,downwind,76.2,8,92
+Arkansas,East transect 2,downwind,76.2,9,95
+Arkansas,East transect 2,downwind,76.2,10,80
+Arkansas,East transect 2,downwind,91.4,1,77
+Arkansas,East transect 2,downwind,91.4,2,87
+Arkansas,East transect 2,downwind,91.4,3,91
+Arkansas,East transect 2,downwind,91.4,4,90
+Arkansas,East transect 2,downwind,91.4,5,75
+Arkansas,East transect 2,downwind,91.4,6,81
+Arkansas,East transect 2,downwind,91.4,7,82
+Arkansas,East transect 2,downwind,91.4,8,90
+Arkansas,East transect 2,downwind,91.4,9,84
+Arkansas,East transect 2,downwind,91.4,10,82
+Arkansas,East transect 2,downwind,106.7,1,84
+Arkansas,East transect 2,downwind,106.7,2,87
+Arkansas,East transect 2,downwind,106.7,3,78
+Arkansas,East transect 2,downwind,106.7,4,88
+Arkansas,East transect 2,downwind,106.7,5,97
+Arkansas,East transect 2,downwind,106.7,6,85
+Arkansas,East transect 2,downwind,106.7,7,76
+Arkansas,East transect 2,downwind,106.7,8,70
+Arkansas,East transect 2,downwind,106.7,9,81
+Arkansas,East transect 2,downwind,106.7,10,82
+Arkansas,East transect 2,downwind,121.9,1,86
+Arkansas,East transect 2,downwind,121.9,2,92
+Arkansas,East transect 2,downwind,121.9,3,88
+Arkansas,East transect 2,downwind,121.9,4,80
+Arkansas,East transect 2,downwind,121.9,5,81
+Arkansas,East transect 2,downwind,121.9,6,77
+Arkansas,East transect 2,downwind,121.9,7,75
+Arkansas,East transect 2,downwind,121.9,8,75
+Arkansas,East transect 2,downwind,121.9,9,90
+Arkansas,East transect 2,downwind,121.9,10,72
+Arkansas,East transect 2,downwind,137.2,1,68
+Arkansas,East transect 2,downwind,137.2,2,76
+Arkansas,East transect 2,downwind,137.2,3,77
+Arkansas,East transect 2,downwind,137.2,4,84
+Arkansas,East transect 2,downwind,137.2,5,86
+Arkansas,East transect 2,downwind,137.2,6,65
+Arkansas,East transect 2,downwind,137.2,7,69
+Arkansas,East transect 2,downwind,137.2,8,75
+Arkansas,East transect 2,downwind,137.2,9,63
+Arkansas,East transect 2,downwind,137.2,10,79
+Arkansas,East transect 2,downwind,152.4,1,78
+Arkansas,East transect 2,downwind,152.4,2,75
+Arkansas,East transect 2,downwind,152.4,3,88
+Arkansas,East transect 2,downwind,152.4,4,84
+Arkansas,East transect 2,downwind,152.4,5,77
+Arkansas,East transect 2,downwind,152.4,6,90
+Arkansas,East transect 2,downwind,152.4,7,82
+Arkansas,East transect 2,downwind,152.4,8,84
+Arkansas,East transect 2,downwind,152.4,9,87
+Arkansas,East transect 2,downwind,152.4,10,87
+Arkansas,East transect 2,downwind,167.6,1,71
+Arkansas,East transect 2,downwind,167.6,2,88
+Arkansas,East transect 2,downwind,167.6,3,87
+Arkansas,East transect 2,downwind,167.6,4,88
+Arkansas,East transect 2,downwind,167.6,5,84
+Arkansas,East transect 2,downwind,167.6,6,78
+Arkansas,East transect 2,downwind,167.6,7,75
+Arkansas,East transect 2,downwind,167.6,8,85
+Arkansas,East transect 2,downwind,167.6,9,80
+Arkansas,East transect 2,downwind,167.6,10,82
+Arkansas,East transect 2,downwind,182.9,1,78
+Arkansas,East transect 2,downwind,182.9,2,79
+Arkansas,East transect 2,downwind,182.9,3,83
+Arkansas,East transect 2,downwind,182.9,4,88
+Arkansas,East transect 2,downwind,182.9,5,86
+Arkansas,East transect 2,downwind,182.9,6,72
+Arkansas,East transect 2,downwind,182.9,7,78
+Arkansas,East transect 2,downwind,182.9,8,69
+Arkansas,East transect 2,downwind,182.9,9,88
+Arkansas,East transect 2,downwind,182.9,10,89
+Arkansas,East transect 2,downwind,198.1,1,92
+Arkansas,East transect 2,downwind,198.1,2,91
+Arkansas,East transect 2,downwind,198.1,3,89
+Arkansas,East transect 2,downwind,198.1,4,86
+Arkansas,East transect 2,downwind,198.1,5,79
+Arkansas,East transect 2,downwind,198.1,6,82
+Arkansas,East transect 2,downwind,198.1,7,83
+Arkansas,East transect 2,downwind,198.1,8,94
+Arkansas,East transect 2,downwind,198.1,9,97
+Arkansas,East transect 2,downwind,198.1,10,87
+Arkansas,East transect 2,downwind,213.4,1,75
+Arkansas,East transect 2,downwind,213.4,2,79
+Arkansas,East transect 2,downwind,213.4,3,86
+Arkansas,East transect 2,downwind,213.4,4,78
+Arkansas,East transect 2,downwind,213.4,5,85
+Arkansas,East transect 2,downwind,213.4,6,81
+Arkansas,East transect 2,downwind,213.4,7,84
+Arkansas,East transect 2,downwind,213.4,8,90
+Arkansas,East transect 2,downwind,213.4,9,88
+Arkansas,East transect 2,downwind,213.4,10,84
+Arkansas,East transect 2,downwind,228.6,1,84
+Arkansas,East transect 2,downwind,228.6,2,88
+Arkansas,East transect 2,downwind,228.6,3,87
+Arkansas,East transect 2,downwind,228.6,4,84
+Arkansas,East transect 2,downwind,228.6,5,83
+Arkansas,East transect 2,downwind,228.6,6,85
+Arkansas,East transect 2,downwind,228.6,7,78
+Arkansas,East transect 2,downwind,228.6,8,89
+Arkansas,East transect 2,downwind,228.6,9,81
+Arkansas,East transect 2,downwind,228.6,10,78
+Arkansas,East transect 2,downwind,243.8,1,86
+Arkansas,East transect 2,downwind,243.8,2,84
+Arkansas,East transect 2,downwind,243.8,3,86
+Arkansas,East transect 2,downwind,243.8,4,86
+Arkansas,East transect 2,downwind,243.8,5,81
+Arkansas,East transect 2,downwind,243.8,6,84
+Arkansas,East transect 2,downwind,243.8,7,75
+Arkansas,East transect 2,downwind,243.8,8,86
+Arkansas,East transect 2,downwind,243.8,9,82
+Arkansas,East transect 2,downwind,243.8,10,88
+Arkansas,East transect 2,downwind,259.1,1,81
+Arkansas,East transect 2,downwind,259.1,2,76
+Arkansas,East transect 2,downwind,259.1,3,75
+Arkansas,East transect 2,downwind,259.1,4,79
+Arkansas,East transect 2,downwind,259.1,5,86
+Arkansas,East transect 2,downwind,259.1,6,87
+Arkansas,East transect 2,downwind,259.1,7,87
+Arkansas,East transect 2,downwind,259.1,8,82
+Arkansas,East transect 2,downwind,259.1,9,81
+Arkansas,East transect 2,downwind,259.1,10,80
+Arkansas,East transect 3,downwind,15.2,1,90
+Arkansas,East transect 3,downwind,15.2,2,90
+Arkansas,East transect 3,downwind,15.2,3,84
+Arkansas,East transect 3,downwind,15.2,4,93
+Arkansas,East transect 3,downwind,15.2,5,76
+Arkansas,East transect 3,downwind,15.2,6,89
+Arkansas,East transect 3,downwind,15.2,7,71
+Arkansas,East transect 3,downwind,15.2,8,72
+Arkansas,East transect 3,downwind,15.2,9,81
+Arkansas,East transect 3,downwind,15.2,10,90
+Arkansas,East transect 3,downwind,30.5,1,81
+Arkansas,East transect 3,downwind,30.5,2,87
+Arkansas,East transect 3,downwind,30.5,3,84
+Arkansas,East transect 3,downwind,30.5,4,76
+Arkansas,East transect 3,downwind,30.5,5,75
+Arkansas,East transect 3,downwind,30.5,6,83
+Arkansas,East transect 3,downwind,30.5,7,73
+Arkansas,East transect 3,downwind,30.5,8,79
+Arkansas,East transect 3,downwind,30.5,9,80
+Arkansas,East transect 3,downwind,30.5,10,84
+Arkansas,East transect 3,downwind,45.7,1,87
+Arkansas,East transect 3,downwind,45.7,2,88
+Arkansas,East transect 3,downwind,45.7,3,87
+Arkansas,East transect 3,downwind,45.7,4,84
+Arkansas,East transect 3,downwind,45.7,5,83
+Arkansas,East transect 3,downwind,45.7,6,86
+Arkansas,East transect 3,downwind,45.7,7,82
+Arkansas,East transect 3,downwind,45.7,8,86
+Arkansas,East transect 3,downwind,45.7,9,90
+Arkansas,East transect 3,downwind,45.7,10,89
+Arkansas,East transect 3,downwind,61,1,80
+Arkansas,East transect 3,downwind,61,2,85
+Arkansas,East transect 3,downwind,61,3,86
+Arkansas,East transect 3,downwind,61,4,91
+Arkansas,East transect 3,downwind,61,5,82
+Arkansas,East transect 3,downwind,61,6,78
+Arkansas,East transect 3,downwind,61,7,74
+Arkansas,East transect 3,downwind,61,8,86
+Arkansas,East transect 3,downwind,61,9,90
+Arkansas,East transect 3,downwind,61,10,88
+Arkansas,East transect 3,downwind,76.2,1,80
+Arkansas,East transect 3,downwind,76.2,2,72
+Arkansas,East transect 3,downwind,76.2,3,81
+Arkansas,East transect 3,downwind,76.2,4,77
+Arkansas,East transect 3,downwind,76.2,5,87
+Arkansas,East transect 3,downwind,76.2,6,86
+Arkansas,East transect 3,downwind,76.2,7,86
+Arkansas,East transect 3,downwind,76.2,8,83
+Arkansas,East transect 3,downwind,76.2,9,72
+Arkansas,East transect 3,downwind,76.2,10,88
+Arkansas,East transect 3,downwind,91.4,1,84
+Arkansas,East transect 3,downwind,91.4,2,86
+Arkansas,East transect 3,downwind,91.4,3,78
+Arkansas,East transect 3,downwind,91.4,4,83
+Arkansas,East transect 3,downwind,91.4,5,90
+Arkansas,East transect 3,downwind,91.4,6,88
+Arkansas,East transect 3,downwind,91.4,7,82
+Arkansas,East transect 3,downwind,91.4,8,81
+Arkansas,East transect 3,downwind,91.4,9,84
+Arkansas,East transect 3,downwind,91.4,10,87
+Arkansas,East transect 3,downwind,106.7,1,69
+Arkansas,East transect 3,downwind,106.7,2,68
+Arkansas,East transect 3,downwind,106.7,3,78
+Arkansas,East transect 3,downwind,106.7,4,83
+Arkansas,East transect 3,downwind,106.7,5,74
+Arkansas,East transect 3,downwind,106.7,6,87
+Arkansas,East transect 3,downwind,106.7,7,84
+Arkansas,East transect 3,downwind,106.7,8,73
+Arkansas,East transect 3,downwind,106.7,9,78
+Arkansas,East transect 3,downwind,106.7,10,79
+Arkansas,East transect 3,downwind,121.9,1,84
+Arkansas,East transect 3,downwind,121.9,2,86
+Arkansas,East transect 3,downwind,121.9,3,79
+Arkansas,East transect 3,downwind,121.9,4,84
+Arkansas,East transect 3,downwind,121.9,5,85
+Arkansas,East transect 3,downwind,121.9,6,80
+Arkansas,East transect 3,downwind,121.9,7,76
+Arkansas,East transect 3,downwind,121.9,8,77
+Arkansas,East transect 3,downwind,121.9,9,85
+Arkansas,East transect 3,downwind,121.9,10,73
+Arkansas,East transect 3,downwind,137.2,1,91
+Arkansas,East transect 3,downwind,137.2,2,92
+Arkansas,East transect 3,downwind,137.2,3,88
+Arkansas,East transect 3,downwind,137.2,4,90
+Arkansas,East transect 3,downwind,137.2,5,80
+Arkansas,East transect 3,downwind,137.2,6,81
+Arkansas,East transect 3,downwind,137.2,7,83
+Arkansas,East transect 3,downwind,137.2,8,82
+Arkansas,East transect 3,downwind,137.2,9,79
+Arkansas,East transect 3,downwind,137.2,10,74
+Arkansas,East transect 3,downwind,152.4,1,81
+Arkansas,East transect 3,downwind,152.4,2,79
+Arkansas,East transect 3,downwind,152.4,3,79
+Arkansas,East transect 3,downwind,152.4,4,64
+Arkansas,East transect 3,downwind,152.4,5,83
+Arkansas,East transect 3,downwind,152.4,6,78
+Arkansas,East transect 3,downwind,152.4,7,73
+Arkansas,East transect 3,downwind,152.4,8,88
+Arkansas,East transect 3,downwind,152.4,9,81
+Arkansas,East transect 3,downwind,152.4,10,74
+Arkansas,East transect 3,downwind,167.6,1,90
+Arkansas,East transect 3,downwind,167.6,2,92
+Arkansas,East transect 3,downwind,167.6,3,87
+Arkansas,East transect 3,downwind,167.6,4,72
+Arkansas,East transect 3,downwind,167.6,5,72
+Arkansas,East transect 3,downwind,167.6,6,75
+Arkansas,East transect 3,downwind,167.6,7,80
+Arkansas,East transect 3,downwind,167.6,8,88
+Arkansas,East transect 3,downwind,167.6,9,89
+Arkansas,East transect 3,downwind,167.6,10,79
+Arkansas,East transect 3,downwind,182.9,1,62
+Arkansas,East transect 3,downwind,182.9,2,83
+Arkansas,East transect 3,downwind,182.9,3,78
+Arkansas,East transect 3,downwind,182.9,4,93
+Arkansas,East transect 3,downwind,182.9,5,83
+Arkansas,East transect 3,downwind,182.9,6,83
+Arkansas,East transect 3,downwind,182.9,7,77
+Arkansas,East transect 3,downwind,182.9,8,82
+Arkansas,East transect 3,downwind,182.9,9,80
+Arkansas,East transect 3,downwind,182.9,10,84
+Arkansas,East transect 3,downwind,198.1,1,82
+Arkansas,East transect 3,downwind,198.1,2,83
+Arkansas,East transect 3,downwind,198.1,3,78
+Arkansas,East transect 3,downwind,198.1,4,89
+Arkansas,East transect 3,downwind,198.1,5,86
+Arkansas,East transect 3,downwind,198.1,6,86
+Arkansas,East transect 3,downwind,198.1,7,91
+Arkansas,East transect 3,downwind,198.1,8,90
+Arkansas,East transect 3,downwind,198.1,9,79
+Arkansas,East transect 3,downwind,198.1,10,83
+Arkansas,East transect 3,downwind,213.4,1,78
+Arkansas,East transect 3,downwind,213.4,2,82
+Arkansas,East transect 3,downwind,213.4,3,86
+Arkansas,East transect 3,downwind,213.4,4,84
+Arkansas,East transect 3,downwind,213.4,5,86
+Arkansas,East transect 3,downwind,213.4,6,79
+Arkansas,East transect 3,downwind,213.4,7,87
+Arkansas,East transect 3,downwind,213.4,8,90
+Arkansas,East transect 3,downwind,213.4,9,85
+Arkansas,East transect 3,downwind,213.4,10,86
+Arkansas,East transect 3,downwind,228.6,1,78
+Arkansas,East transect 3,downwind,228.6,2,77
+Arkansas,East transect 3,downwind,228.6,3,86
+Arkansas,East transect 3,downwind,228.6,4,85
+Arkansas,East transect 3,downwind,228.6,5,92
+Arkansas,East transect 3,downwind,228.6,6,93
+Arkansas,East transect 3,downwind,228.6,7,98
+Arkansas,East transect 3,downwind,228.6,8,68
+Arkansas,East transect 3,downwind,228.6,9,70
+Arkansas,East transect 3,downwind,228.6,10,84
+Arkansas,East transect 3,downwind,243.8,1,88
+Arkansas,East transect 3,downwind,243.8,2,87
+Arkansas,East transect 3,downwind,243.8,3,79
+Arkansas,East transect 3,downwind,243.8,4,86
+Arkansas,East transect 3,downwind,243.8,5,80
+Arkansas,East transect 3,downwind,243.8,6,88
+Arkansas,East transect 3,downwind,243.8,7,96
+Arkansas,East transect 3,downwind,243.8,8,80
+Arkansas,East transect 3,downwind,243.8,9,80
+Arkansas,East transect 3,downwind,243.8,10,96
+Arkansas,East transect 3,downwind,259.1,1,76
+Arkansas,East transect 3,downwind,259.1,2,84
+Arkansas,East transect 3,downwind,259.1,3,85
+Arkansas,East transect 3,downwind,259.1,4,92
+Arkansas,East transect 3,downwind,259.1,5,79
+Arkansas,East transect 3,downwind,259.1,6,77
+Arkansas,East transect 3,downwind,259.1,7,80
+Arkansas,East transect 3,downwind,259.1,8,90
+Arkansas,East transect 3,downwind,259.1,9,89
+Arkansas,East transect 3,downwind,259.1,10,86
+Ontario,Cover 1,downwind,1.524,1,72
+Ontario,Cover 1,downwind,1.524,2,62
+Ontario,Cover 1,downwind,1.524,3,78
+Ontario,Cover 1,downwind,1.524,4,79
+Ontario,Cover 1,downwind,1.524,5,89
+Ontario,Cover 1,downwind,1.524,6,86
+Ontario,Cover 1,downwind,1.524,7,87
+Ontario,Cover 1,downwind,1.524,8,57
+Ontario,Cover 1,downwind,1.524,9,82
+Ontario,Cover 1,downwind,1.524,10,75
+Ontario,Cover 1,downwind,3.048,1,64
+Ontario,Cover 1,downwind,3.048,2,80
+Ontario,Cover 1,downwind,3.048,3,82
+Ontario,Cover 1,downwind,3.048,4,86
+Ontario,Cover 1,downwind,3.048,5,87
+Ontario,Cover 1,downwind,3.048,6,84
+Ontario,Cover 1,downwind,3.048,7,63
+Ontario,Cover 1,downwind,3.048,8,77
+Ontario,Cover 1,downwind,3.048,9,72
+Ontario,Cover 1,downwind,3.048,10,63
+Ontario,Cover 1,downwind,4.572,1,75
+Ontario,Cover 1,downwind,4.572,2,83
+Ontario,Cover 1,downwind,4.572,3,87
+Ontario,Cover 1,downwind,4.572,4,88
+Ontario,Cover 1,downwind,4.572,5,83
+Ontario,Cover 1,downwind,4.572,6,64
+Ontario,Cover 1,downwind,4.572,7,78
+Ontario,Cover 1,downwind,4.572,8,64
+Ontario,Cover 1,downwind,4.572,9,70
+Ontario,Cover 1,downwind,4.572,10,80
+Ontario,Cover 1,downwind,6.096,1,77
+Ontario,Cover 1,downwind,6.096,2,86
+Ontario,Cover 1,downwind,6.096,3,86
+Ontario,Cover 1,downwind,6.096,4,81
+Ontario,Cover 1,downwind,6.096,5,63
+Ontario,Cover 1,downwind,6.096,6,79
+Ontario,Cover 1,downwind,6.096,7,73
+Ontario,Cover 1,downwind,6.096,8,73
+Ontario,Cover 1,downwind,6.096,9,81
+Ontario,Cover 1,downwind,6.096,10,76
+Ontario,Cover 1,downwind,7.62,1,83
+Ontario,Cover 1,downwind,7.62,2,87
+Ontario,Cover 1,downwind,7.62,3,82
+Ontario,Cover 1,downwind,7.62,4,64
+Ontario,Cover 1,downwind,7.62,5,82
+Ontario,Cover 1,downwind,7.62,6,68
+Ontario,Cover 1,downwind,7.62,7,71
+Ontario,Cover 1,downwind,7.62,8,76
+Ontario,Cover 1,downwind,7.62,9,83
+Ontario,Cover 1,downwind,7.62,10,85
+Ontario,Cover 1,downwind,9.144,1,85
+Ontario,Cover 1,downwind,9.144,2,80
+Ontario,Cover 1,downwind,9.144,3,74
+Ontario,Cover 1,downwind,9.144,4,82
+Ontario,Cover 1,downwind,9.144,5,77
+Ontario,Cover 1,downwind,9.144,6,69
+Ontario,Cover 1,downwind,9.144,7,74
+Ontario,Cover 1,downwind,9.144,8,80
+Ontario,Cover 1,downwind,9.144,9,82
+Ontario,Cover 1,downwind,9.144,10,84
+Ontario,Cover 1,downwind,10.668,1,79
+Ontario,Cover 1,downwind,10.668,2,72
+Ontario,Cover 1,downwind,10.668,3,81
+Ontario,Cover 1,downwind,10.668,4,76
+Ontario,Cover 1,downwind,10.668,5,70
+Ontario,Cover 1,downwind,10.668,6,79
+Ontario,Cover 1,downwind,10.668,7,82
+Ontario,Cover 1,downwind,10.668,8,88
+Ontario,Cover 1,downwind,10.668,9,82
+Ontario,Cover 1,downwind,10.668,10,82
+Ontario,Cover 1,downwind,12.192,1,71
+Ontario,Cover 1,downwind,12.192,2,84
+Ontario,Cover 1,downwind,12.192,3,78
+Ontario,Cover 1,downwind,12.192,4,72
+Ontario,Cover 1,downwind,12.192,5,78
+Ontario,Cover 1,downwind,12.192,6,84
+Ontario,Cover 1,downwind,12.192,7,87
+Ontario,Cover 1,downwind,12.192,8,82
+Ontario,Cover 1,downwind,12.192,9,80
+Ontario,Cover 1,downwind,12.192,10,72
+Ontario,Cover 1,downwind,13.716,1,86
+Ontario,Cover 1,downwind,13.716,2,74
+Ontario,Cover 1,downwind,13.716,3,73
+Ontario,Cover 1,downwind,13.716,4,80
+Ontario,Cover 1,downwind,13.716,5,85
+Ontario,Cover 1,downwind,13.716,6,87
+Ontario,Cover 1,downwind,13.716,7,84
+Ontario,Cover 1,downwind,13.716,8,79
+Ontario,Cover 1,downwind,13.716,9,75
+Ontario,Cover 1,downwind,13.716,10,85
+Ontario,Cover 2,downwind,1.524,1,86
+Ontario,Cover 2,downwind,1.524,2,90
+Ontario,Cover 2,downwind,1.524,3,87
+Ontario,Cover 2,downwind,1.524,4,88
+Ontario,Cover 2,downwind,1.524,5,92
+Ontario,Cover 2,downwind,1.524,6,91
+Ontario,Cover 2,downwind,1.524,7,92
+Ontario,Cover 2,downwind,1.524,8,93
+Ontario,Cover 2,downwind,1.524,9,98
+Ontario,Cover 2,downwind,1.524,10,91
+Ontario,Cover 2,downwind,3.048,1,88
+Ontario,Cover 2,downwind,3.048,2,89
+Ontario,Cover 2,downwind,3.048,3,90
+Ontario,Cover 2,downwind,3.048,4,92
+Ontario,Cover 2,downwind,3.048,5,90
+Ontario,Cover 2,downwind,3.048,6,91
+Ontario,Cover 2,downwind,3.048,7,91
+Ontario,Cover 2,downwind,3.048,8,96
+Ontario,Cover 2,downwind,3.048,9,90
+Ontario,Cover 2,downwind,3.048,10,87
+Ontario,Cover 2,downwind,4.572,1,89
+Ontario,Cover 2,downwind,4.572,2,88
+Ontario,Cover 2,downwind,4.572,3,91
+Ontario,Cover 2,downwind,4.572,4,92
+Ontario,Cover 2,downwind,4.572,5,93
+Ontario,Cover 2,downwind,4.572,6,91
+Ontario,Cover 2,downwind,4.572,7,94
+Ontario,Cover 2,downwind,4.572,8,90
+Ontario,Cover 2,downwind,4.572,9,85
+Ontario,Cover 2,downwind,4.572,10,86
+Ontario,Cover 2,downwind,6.096,1,84
+Ontario,Cover 2,downwind,6.096,2,91
+Ontario,Cover 2,downwind,6.096,3,91
+Ontario,Cover 2,downwind,6.096,4,90
+Ontario,Cover 2,downwind,6.096,5,91
+Ontario,Cover 2,downwind,6.096,6,92
+Ontario,Cover 2,downwind,6.096,7,91
+Ontario,Cover 2,downwind,6.096,8,90
+Ontario,Cover 2,downwind,6.096,9,87
+Ontario,Cover 2,downwind,6.096,10,87
+Ontario,Cover 2,downwind,7.62,1,91
+Ontario,Cover 2,downwind,7.62,2,93
+Ontario,Cover 2,downwind,7.62,3,93
+Ontario,Cover 2,downwind,7.62,4,93
+Ontario,Cover 2,downwind,7.62,5,91
+Ontario,Cover 2,downwind,7.62,6,91
+Ontario,Cover 2,downwind,7.62,7,87
+Ontario,Cover 2,downwind,7.62,8,89
+Ontario,Cover 2,downwind,7.62,9,86
+Ontario,Cover 2,downwind,7.62,10,92
+Ontario,Cover 2,downwind,9.144,1,93
+Ontario,Cover 2,downwind,9.144,2,92
+Ontario,Cover 2,downwind,9.144,3,91
+Ontario,Cover 2,downwind,9.144,4,93
+Ontario,Cover 2,downwind,9.144,5,92
+Ontario,Cover 2,downwind,9.144,6,89
+Ontario,Cover 2,downwind,9.144,7,90
+Ontario,Cover 2,downwind,9.144,8,90
+Ontario,Cover 2,downwind,9.144,9,93
+Ontario,Cover 2,downwind,9.144,10,92
+Ontario,Cover 2,downwind,10.668,1,93
+Ontario,Cover 2,downwind,10.668,2,90
+Ontario,Cover 2,downwind,10.668,3,92
+Ontario,Cover 2,downwind,10.668,4,91
+Ontario,Cover 2,downwind,10.668,5,88
+Ontario,Cover 2,downwind,10.668,6,91
+Ontario,Cover 2,downwind,10.668,7,89
+Ontario,Cover 2,downwind,10.668,8,90
+Ontario,Cover 2,downwind,10.668,9,91
+Ontario,Cover 2,downwind,10.668,10,91
+Ontario,Cover 2,downwind,12.192,1,91
+Ontario,Cover 2,downwind,12.192,2,91
+Ontario,Cover 2,downwind,12.192,3,89
+Ontario,Cover 2,downwind,12.192,4,86
+Ontario,Cover 2,downwind,12.192,5,86
+Ontario,Cover 2,downwind,12.192,6,88
+Ontario,Cover 2,downwind,12.192,7,91
+Ontario,Cover 2,downwind,12.192,8,90
+Ontario,Cover 2,downwind,12.192,9,91
+Ontario,Cover 2,downwind,12.192,10,91
+Ontario,Cover 2,downwind,13.716,1,92
+Ontario,Cover 2,downwind,13.716,2,88
+Ontario,Cover 2,downwind,13.716,3,86
+Ontario,Cover 2,downwind,13.716,4,86
+Ontario,Cover 2,downwind,13.716,5,89
+Ontario,Cover 2,downwind,13.716,6,90
+Ontario,Cover 2,downwind,13.716,7,91
+Ontario,Cover 2,downwind,13.716,8,92
+Ontario,Cover 2,downwind,13.716,9,92
+Ontario,Cover 2,downwind,13.716,10,93
+Ontario,Cover 3,downwind,1.524,1,88
+Ontario,Cover 3,downwind,1.524,2,89
+Ontario,Cover 3,downwind,1.524,3,87
+Ontario,Cover 3,downwind,1.524,4,91
+Ontario,Cover 3,downwind,1.524,5,91
+Ontario,Cover 3,downwind,1.524,6,93
+Ontario,Cover 3,downwind,1.524,7,95
+Ontario,Cover 3,downwind,1.524,8,94
+Ontario,Cover 3,downwind,1.524,9,90
+Ontario,Cover 3,downwind,1.524,10,87
+Ontario,Cover 3,downwind,3.048,1,90
+Ontario,Cover 3,downwind,3.048,2,91
+Ontario,Cover 3,downwind,3.048,3,91
+Ontario,Cover 3,downwind,3.048,4,91
+Ontario,Cover 3,downwind,3.048,5,91
+Ontario,Cover 3,downwind,3.048,6,96
+Ontario,Cover 3,downwind,3.048,7,92
+Ontario,Cover 3,downwind,3.048,8,91
+Ontario,Cover 3,downwind,3.048,9,89
+Ontario,Cover 3,downwind,3.048,10,90
+Ontario,Cover 3,downwind,4.572,1,91
+Ontario,Cover 3,downwind,4.572,2,90
+Ontario,Cover 3,downwind,4.572,3,92
+Ontario,Cover 3,downwind,4.572,4,90
+Ontario,Cover 3,downwind,4.572,5,93
+Ontario,Cover 3,downwind,4.572,6,91
+Ontario,Cover 3,downwind,4.572,7,91
+Ontario,Cover 3,downwind,4.572,8,88
+Ontario,Cover 3,downwind,4.572,9,90
+Ontario,Cover 3,downwind,4.572,10,91
+Ontario,Cover 3,downwind,6.096,1,89
+Ontario,Cover 3,downwind,6.096,2,90
+Ontario,Cover 3,downwind,6.096,3,91
+Ontario,Cover 3,downwind,6.096,4,91
+Ontario,Cover 3,downwind,6.096,5,91
+Ontario,Cover 3,downwind,6.096,6,92
+Ontario,Cover 3,downwind,6.096,7,92
+Ontario,Cover 3,downwind,6.096,8,89
+Ontario,Cover 3,downwind,6.096,9,90
+Ontario,Cover 3,downwind,6.096,10,91
+Ontario,Cover 3,downwind,7.62,1,91
+Ontario,Cover 3,downwind,7.62,2,89
+Ontario,Cover 3,downwind,7.62,3,97
+Ontario,Cover 3,downwind,7.62,4,91
+Ontario,Cover 3,downwind,7.62,5,92
+Ontario,Cover 3,downwind,7.62,6,90
+Ontario,Cover 3,downwind,7.62,7,87
+Ontario,Cover 3,downwind,7.62,8,91
+Ontario,Cover 3,downwind,7.62,9,92
+Ontario,Cover 3,downwind,7.62,10,91
+Ontario,Cover 3,downwind,9.144,1,90
+Ontario,Cover 3,downwind,9.144,2,93
+Ontario,Cover 3,downwind,9.144,3,92
+Ontario,Cover 3,downwind,9.144,4,91
+Ontario,Cover 3,downwind,9.144,5,91
+Ontario,Cover 3,downwind,9.144,6,89
+Ontario,Cover 3,downwind,9.144,7,89
+Ontario,Cover 3,downwind,9.144,8,92
+Ontario,Cover 3,downwind,9.144,9,89
+Ontario,Cover 3,downwind,9.144,10,88
+Ontario,Cover 3,downwind,10.668,1,94
+Ontario,Cover 3,downwind,10.668,2,91
+Ontario,Cover 3,downwind,10.668,3,93
+Ontario,Cover 3,downwind,10.668,4,91
+Ontario,Cover 3,downwind,10.668,5,91
+Ontario,Cover 3,downwind,10.668,6,91
+Ontario,Cover 3,downwind,10.668,7,91
+Ontario,Cover 3,downwind,10.668,8,89
+Ontario,Cover 3,downwind,10.668,9,90
+Ontario,Cover 3,downwind,10.668,10,92
+Ontario,Cover 3,downwind,12.192,1,90
+Ontario,Cover 3,downwind,12.192,2,91
+Ontario,Cover 3,downwind,12.192,3,90
+Ontario,Cover 3,downwind,12.192,4,91
+Ontario,Cover 3,downwind,12.192,5,88
+Ontario,Cover 3,downwind,12.192,6,89
+Ontario,Cover 3,downwind,12.192,7,92
+Ontario,Cover 3,downwind,12.192,8,91
+Ontario,Cover 3,downwind,12.192,9,92
+Ontario,Cover 3,downwind,12.192,10,91
+Ontario,Cover 3,downwind,13.716,1,92
+Ontario,Cover 3,downwind,13.716,2,91
+Ontario,Cover 3,downwind,13.716,3,87
+Ontario,Cover 3,downwind,13.716,4,88
+Ontario,Cover 3,downwind,13.716,5,90
+Ontario,Cover 3,downwind,13.716,6,92
+Ontario,Cover 3,downwind,13.716,7,91
+Ontario,Cover 3,downwind,13.716,8,92
+Ontario,Cover 3,downwind,13.716,9,91
+Ontario,Cover 3,downwind,13.716,10,91
+Ontario,Uncover 1,downwind,1.524,1,80
+Ontario,Uncover 1,downwind,1.524,2,86
+Ontario,Uncover 1,downwind,1.524,3,90
+Ontario,Uncover 1,downwind,1.524,4,89
+Ontario,Uncover 1,downwind,1.524,5,92
+Ontario,Uncover 1,downwind,1.524,6,92
+Ontario,Uncover 1,downwind,1.524,7,92
+Ontario,Uncover 1,downwind,1.524,8,91
+Ontario,Uncover 1,downwind,1.524,9,93
+Ontario,Uncover 1,downwind,1.524,10,71
+Ontario,Uncover 1,downwind,3.048,1,85
+Ontario,Uncover 1,downwind,3.048,2,91
+Ontario,Uncover 1,downwind,3.048,3,90
+Ontario,Uncover 1,downwind,3.048,4,93
+Ontario,Uncover 1,downwind,3.048,5,91
+Ontario,Uncover 1,downwind,3.048,6,95
+Ontario,Uncover 1,downwind,3.048,7,92
+Ontario,Uncover 1,downwind,3.048,8,92
+Ontario,Uncover 1,downwind,3.048,9,82
+Ontario,Uncover 1,downwind,3.048,10,87
+Ontario,Uncover 1,downwind,4.572,1,90
+Ontario,Uncover 1,downwind,4.572,2,86
+Ontario,Uncover 1,downwind,4.572,3,92
+Ontario,Uncover 1,downwind,4.572,4,92
+Ontario,Uncover 1,downwind,4.572,5,91
+Ontario,Uncover 1,downwind,4.572,6,95
+Ontario,Uncover 1,downwind,4.572,7,94
+Ontario,Uncover 1,downwind,4.572,8,80
+Ontario,Uncover 1,downwind,4.572,9,86
+Ontario,Uncover 1,downwind,4.572,10,90
+Ontario,Uncover 1,downwind,6.096,1,89
+Ontario,Uncover 1,downwind,6.096,2,90
+Ontario,Uncover 1,downwind,6.096,3,100
+Ontario,Uncover 1,downwind,6.096,4,93
+Ontario,Uncover 1,downwind,6.096,5,93
+Ontario,Uncover 1,downwind,6.096,6,93
+Ontario,Uncover 1,downwind,6.096,7,78
+Ontario,Uncover 1,downwind,6.096,8,85
+Ontario,Uncover 1,downwind,6.096,9,89
+Ontario,Uncover 1,downwind,6.096,10,88
+Ontario,Uncover 1,downwind,7.62,1,91
+Ontario,Uncover 1,downwind,7.62,2,93
+Ontario,Uncover 1,downwind,7.62,3,93
+Ontario,Uncover 1,downwind,7.62,4,94
+Ontario,Uncover 1,downwind,7.62,5,92
+Ontario,Uncover 1,downwind,7.62,6,79
+Ontario,Uncover 1,downwind,7.62,7,80
+Ontario,Uncover 1,downwind,7.62,8,90
+Ontario,Uncover 1,downwind,7.62,9,88
+Ontario,Uncover 1,downwind,7.62,10,89
+Ontario,Uncover 1,downwind,9.144,1,92
+Ontario,Uncover 1,downwind,9.144,2,91
+Ontario,Uncover 1,downwind,9.144,3,90
+Ontario,Uncover 1,downwind,9.144,4,97
+Ontario,Uncover 1,downwind,9.144,5,77
+Ontario,Uncover 1,downwind,9.144,6,87
+Ontario,Uncover 1,downwind,9.144,7,89
+Ontario,Uncover 1,downwind,9.144,8,86
+Ontario,Uncover 1,downwind,9.144,9,91
+Ontario,Uncover 1,downwind,9.144,10,94
+Ontario,Uncover 1,downwind,10.668,1,93
+Ontario,Uncover 1,downwind,10.668,2,91
+Ontario,Uncover 1,downwind,10.668,3,97
+Ontario,Uncover 1,downwind,10.668,4,80
+Ontario,Uncover 1,downwind,10.668,5,90
+Ontario,Uncover 1,downwind,10.668,6,91
+Ontario,Uncover 1,downwind,10.668,7,89
+Ontario,Uncover 1,downwind,10.668,8,90
+Ontario,Uncover 1,downwind,10.668,9,91
+Ontario,Uncover 1,downwind,10.668,10,92
+Ontario,Uncover 1,downwind,12.192,1,92
+Ontario,Uncover 1,downwind,12.192,2,92
+Ontario,Uncover 1,downwind,12.192,3,82
+Ontario,Uncover 1,downwind,12.192,4,89
+Ontario,Uncover 1,downwind,12.192,5,91
+Ontario,Uncover 1,downwind,12.192,6,84
+Ontario,Uncover 1,downwind,12.192,7,91
+Ontario,Uncover 1,downwind,12.192,8,85
+Ontario,Uncover 1,downwind,12.192,9,90
+Ontario,Uncover 1,downwind,12.192,10,92
+Ontario,Uncover 1,downwind,13.716,1,93
+Ontario,Uncover 1,downwind,13.716,2,85
+Ontario,Uncover 1,downwind,13.716,3,87
+Ontario,Uncover 1,downwind,13.716,4,88
+Ontario,Uncover 1,downwind,13.716,5,85
+Ontario,Uncover 1,downwind,13.716,6,93
+Ontario,Uncover 1,downwind,13.716,7,89
+Ontario,Uncover 1,downwind,13.716,8,92
+Ontario,Uncover 1,downwind,13.716,9,94
+Ontario,Uncover 1,downwind,13.716,10,98
+Ontario,Uncover 2,downwind,1.524,1,75
+Ontario,Uncover 2,downwind,1.524,2,86
+Ontario,Uncover 2,downwind,1.524,3,85
+Ontario,Uncover 2,downwind,1.524,4,84
+Ontario,Uncover 2,downwind,1.524,5,83
+Ontario,Uncover 2,downwind,1.524,6,75
+Ontario,Uncover 2,downwind,1.524,7,83
+Ontario,Uncover 2,downwind,1.524,8,77
+Ontario,Uncover 2,downwind,1.524,9,67
+Ontario,Uncover 2,downwind,1.524,10,80
+Ontario,Uncover 2,downwind,3.048,1,85
+Ontario,Uncover 2,downwind,3.048,2,84
+Ontario,Uncover 2,downwind,3.048,3,87
+Ontario,Uncover 2,downwind,3.048,4,84
+Ontario,Uncover 2,downwind,3.048,5,74
+Ontario,Uncover 2,downwind,3.048,6,86
+Ontario,Uncover 2,downwind,3.048,7,79
+Ontario,Uncover 2,downwind,3.048,8,75
+Ontario,Uncover 2,downwind,3.048,9,75
+Ontario,Uncover 2,downwind,3.048,10,82
+Ontario,Uncover 2,downwind,4.572,1,76
+Ontario,Uncover 2,downwind,4.572,2,86
+Ontario,Uncover 2,downwind,4.572,3,81
+Ontario,Uncover 2,downwind,4.572,4,83
+Ontario,Uncover 2,downwind,4.572,5,86
+Ontario,Uncover 2,downwind,4.572,6,77
+Ontario,Uncover 2,downwind,4.572,7,80
+Ontario,Uncover 2,downwind,4.572,8,74
+Ontario,Uncover 2,downwind,4.572,9,77
+Ontario,Uncover 2,downwind,4.572,10,81
+Ontario,Uncover 2,downwind,6.096,1,84
+Ontario,Uncover 2,downwind,6.096,2,82
+Ontario,Uncover 2,downwind,6.096,3,79
+Ontario,Uncover 2,downwind,6.096,4,85
+Ontario,Uncover 2,downwind,6.096,5,80
+Ontario,Uncover 2,downwind,6.096,6,79
+Ontario,Uncover 2,downwind,6.096,7,76
+Ontario,Uncover 2,downwind,6.096,8,81
+Ontario,Uncover 2,downwind,6.096,9,78
+Ontario,Uncover 2,downwind,6.096,10,82
+Ontario,Uncover 2,downwind,7.62,1,87
+Ontario,Uncover 2,downwind,7.62,2,78
+Ontario,Uncover 2,downwind,7.62,3,84
+Ontario,Uncover 2,downwind,7.62,4,81
+Ontario,Uncover 2,downwind,7.62,5,79
+Ontario,Uncover 2,downwind,7.62,6,75
+Ontario,Uncover 2,downwind,7.62,7,78
+Ontario,Uncover 2,downwind,7.62,8,84
+Ontario,Uncover 2,downwind,7.62,9,84
+Ontario,Uncover 2,downwind,7.62,10,86
+Ontario,Uncover 2,downwind,9.144,1,85
+Ontario,Uncover 2,downwind,9.144,2,88
+Ontario,Uncover 2,downwind,9.144,3,84
+Ontario,Uncover 2,downwind,9.144,4,79
+Ontario,Uncover 2,downwind,9.144,5,76
+Ontario,Uncover 2,downwind,9.144,6,79
+Ontario,Uncover 2,downwind,9.144,7,85
+Ontario,Uncover 2,downwind,9.144,8,86
+Ontario,Uncover 2,downwind,9.144,9,85
+Ontario,Uncover 2,downwind,9.144,10,79
+Ontario,Uncover 2,downwind,10.668,1,79
+Ontario,Uncover 2,downwind,10.668,2,74
+Ontario,Uncover 2,downwind,10.668,3,72
+Ontario,Uncover 2,downwind,10.668,4,77
+Ontario,Uncover 2,downwind,10.668,5,75
+Ontario,Uncover 2,downwind,10.668,6,83
+Ontario,Uncover 2,downwind,10.668,7,88
+Ontario,Uncover 2,downwind,10.668,8,85
+Ontario,Uncover 2,downwind,10.668,9,77
+Ontario,Uncover 2,downwind,10.668,10,80
+Ontario,Uncover 2,downwind,12.192,1,73
+Ontario,Uncover 2,downwind,12.192,2,82
+Ontario,Uncover 2,downwind,12.192,3,80
+Ontario,Uncover 2,downwind,12.192,4,80
+Ontario,Uncover 2,downwind,12.192,5,82
+Ontario,Uncover 2,downwind,12.192,6,87
+Ontario,Uncover 2,downwind,12.192,7,84
+Ontario,Uncover 2,downwind,12.192,8,86
+Ontario,Uncover 2,downwind,12.192,9,85
+Ontario,Uncover 2,downwind,12.192,10,76
+Ontario,Uncover 2,downwind,13.716,1,75
+Ontario,Uncover 2,downwind,13.716,2,77
+Ontario,Uncover 2,downwind,13.716,3,79
+Ontario,Uncover 2,downwind,13.716,4,79
+Ontario,Uncover 2,downwind,13.716,5,85
+Ontario,Uncover 2,downwind,13.716,6,81
+Ontario,Uncover 2,downwind,13.716,7,85
+Ontario,Uncover 2,downwind,13.716,8,81
+Ontario,Uncover 2,downwind,13.716,9,79
+Ontario,Uncover 2,downwind,13.716,10,79
+Ontario,Uncover 3,downwind,1.524,1,84
+Ontario,Uncover 3,downwind,1.524,2,83
+Ontario,Uncover 3,downwind,1.524,3,91
+Ontario,Uncover 3,downwind,1.524,4,91
+Ontario,Uncover 3,downwind,1.524,5,92
+Ontario,Uncover 3,downwind,1.524,6,92
+Ontario,Uncover 3,downwind,1.524,7,100
+Ontario,Uncover 3,downwind,1.524,8,92
+Ontario,Uncover 3,downwind,1.524,9,91
+Ontario,Uncover 3,downwind,1.524,10,82
+Ontario,Uncover 3,downwind,3.048,1,89
+Ontario,Uncover 3,downwind,3.048,2,88
+Ontario,Uncover 3,downwind,3.048,3,90
+Ontario,Uncover 3,downwind,3.048,4,95
+Ontario,Uncover 3,downwind,3.048,5,96
+Ontario,Uncover 3,downwind,3.048,6,92
+Ontario,Uncover 3,downwind,3.048,7,93
+Ontario,Uncover 3,downwind,3.048,8,98
+Ontario,Uncover 3,downwind,3.048,9,78
+Ontario,Uncover 3,downwind,3.048,10,84
+Ontario,Uncover 3,downwind,4.572,1,87
+Ontario,Uncover 3,downwind,4.572,2,89
+Ontario,Uncover 3,downwind,4.572,3,94
+Ontario,Uncover 3,downwind,4.572,4,94
+Ontario,Uncover 3,downwind,4.572,5,98
+Ontario,Uncover 3,downwind,4.572,6,97
+Ontario,Uncover 3,downwind,4.572,7,91
+Ontario,Uncover 3,downwind,4.572,8,87
+Ontario,Uncover 3,downwind,4.572,9,89
+Ontario,Uncover 3,downwind,4.572,10,89
+Ontario,Uncover 3,downwind,6.096,1,90
+Ontario,Uncover 3,downwind,6.096,2,93
+Ontario,Uncover 3,downwind,6.096,3,92
+Ontario,Uncover 3,downwind,6.096,4,94
+Ontario,Uncover 3,downwind,6.096,5,91
+Ontario,Uncover 3,downwind,6.096,6,90
+Ontario,Uncover 3,downwind,6.096,7,87
+Ontario,Uncover 3,downwind,6.096,8,85
+Ontario,Uncover 3,downwind,6.096,9,88
+Ontario,Uncover 3,downwind,6.096,10,91
+Ontario,Uncover 3,downwind,7.62,1,91
+Ontario,Uncover 3,downwind,7.62,2,93
+Ontario,Uncover 3,downwind,7.62,3,92
+Ontario,Uncover 3,downwind,7.62,4,91
+Ontario,Uncover 3,downwind,7.62,5,90
+Ontario,Uncover 3,downwind,7.62,6,89
+Ontario,Uncover 3,downwind,7.62,7,76
+Ontario,Uncover 3,downwind,7.62,8,91
+Ontario,Uncover 3,downwind,7.62,9,90
+Ontario,Uncover 3,downwind,7.62,10,91
+Ontario,Uncover 3,downwind,9.144,1,96
+Ontario,Uncover 3,downwind,9.144,2,92
+Ontario,Uncover 3,downwind,9.144,3,93
+Ontario,Uncover 3,downwind,9.144,4,97
+Ontario,Uncover 3,downwind,9.144,5,86
+Ontario,Uncover 3,downwind,9.144,6,83
+Ontario,Uncover 3,downwind,9.144,7,91
+Ontario,Uncover 3,downwind,9.144,8,91
+Ontario,Uncover 3,downwind,9.144,9,93
+Ontario,Uncover 3,downwind,9.144,10,93
+Ontario,Uncover 3,downwind,10.668,1,93
+Ontario,Uncover 3,downwind,10.668,2,92
+Ontario,Uncover 3,downwind,10.668,3,92
+Ontario,Uncover 3,downwind,10.668,4,85
+Ontario,Uncover 3,downwind,10.668,5,82
+Ontario,Uncover 3,downwind,10.668,6,91
+Ontario,Uncover 3,downwind,10.668,7,89
+Ontario,Uncover 3,downwind,10.668,8,91
+Ontario,Uncover 3,downwind,10.668,9,97
+Ontario,Uncover 3,downwind,10.668,10,95
+Ontario,Uncover 3,downwind,12.192,1,93
+Ontario,Uncover 3,downwind,12.192,2,92
+Ontario,Uncover 3,downwind,12.192,3,81
+Ontario,Uncover 3,downwind,12.192,4,84
+Ontario,Uncover 3,downwind,12.192,5,89
+Ontario,Uncover 3,downwind,12.192,6,90
+Ontario,Uncover 3,downwind,12.192,7,94
+Ontario,Uncover 3,downwind,12.192,8,92
+Ontario,Uncover 3,downwind,12.192,9,93
+Ontario,Uncover 3,downwind,12.192,10,93
+Ontario,Uncover 3,downwind,13.716,1,91
+Ontario,Uncover 3,downwind,13.716,2,82
+Ontario,Uncover 3,downwind,13.716,3,85
+Ontario,Uncover 3,downwind,13.716,4,87
+Ontario,Uncover 3,downwind,13.716,5,91
+Ontario,Uncover 3,downwind,13.716,6,91
+Ontario,Uncover 3,downwind,13.716,7,95
+Ontario,Uncover 3,downwind,13.716,8,93
+Ontario,Uncover 3,downwind,13.716,9,98
+Ontario,Uncover 3,downwind,13.716,10,91
+Ontario,Cover,upwind,1.524,1,72
+Ontario,Cover,upwind,1.524,2,74
+Ontario,Cover,upwind,1.524,3,75
+Ontario,Cover,upwind,1.524,4,80
+Ontario,Cover,upwind,1.524,5,84
+Ontario,Cover,upwind,1.524,6,78
+Ontario,Cover,upwind,1.524,7,74
+Ontario,Cover,upwind,1.524,8,76
+Ontario,Cover,upwind,1.524,9,79
+Ontario,Cover,upwind,1.524,10,66
+Ontario,Cover,upwind,3.048,1,77
+Ontario,Cover,upwind,3.048,2,80
+Ontario,Cover,upwind,3.048,3,79
+Ontario,Cover,upwind,3.048,4,75
+Ontario,Cover,upwind,3.048,5,72
+Ontario,Cover,upwind,3.048,6,73
+Ontario,Cover,upwind,3.048,7,70
+Ontario,Cover,upwind,3.048,8,79
+Ontario,Cover,upwind,3.048,9,67
+Ontario,Cover,upwind,3.048,10,79
+Ontario,Cover,upwind,4.572,1,74
+Ontario,Cover,upwind,4.572,2,79
+Ontario,Cover,upwind,4.572,3,71
+Ontario,Cover,upwind,4.572,4,74
+Ontario,Cover,upwind,4.572,5,72
+Ontario,Cover,upwind,4.572,6,65
+Ontario,Cover,upwind,4.572,7,75
+Ontario,Cover,upwind,4.572,8,65
+Ontario,Cover,upwind,4.572,9,77
+Ontario,Cover,upwind,4.572,10,79
+Ontario,Cover,upwind,6.096,1,76
+Ontario,Cover,upwind,6.096,2,77
+Ontario,Cover,upwind,6.096,3,76
+Ontario,Cover,upwind,6.096,4,77
+Ontario,Cover,upwind,6.096,5,69
+Ontario,Cover,upwind,6.096,6,69
+Ontario,Cover,upwind,6.096,7,69
+Ontario,Cover,upwind,6.096,8,80
+Ontario,Cover,upwind,6.096,9,73
+Ontario,Cover,upwind,6.096,10,79
+Ontario,Cover,upwind,7.62,1,75
+Ontario,Cover,upwind,7.62,2,72
+Ontario,Cover,upwind,7.62,3,77
+Ontario,Cover,upwind,7.62,4,62
+Ontario,Cover,upwind,7.62,5,66
+Ontario,Cover,upwind,7.62,6,70
+Ontario,Cover,upwind,7.62,7,78
+Ontario,Cover,upwind,7.62,8,76
+Ontario,Cover,upwind,7.62,9,81
+Ontario,Cover,upwind,7.62,10,73
+Ontario,Cover,upwind,9.144,1,77
+Ontario,Cover,upwind,9.144,2,81
+Ontario,Cover,upwind,9.144,3,76
+Ontario,Cover,upwind,9.144,4,74
+Ontario,Cover,upwind,9.144,5,73
+Ontario,Cover,upwind,9.144,6,81
+Ontario,Cover,upwind,9.144,7,74
+Ontario,Cover,upwind,9.144,8,78
+Ontario,Cover,upwind,9.144,9,80
+Ontario,Cover,upwind,9.144,10,79
+Ontario,Cover,upwind,10.668,1,81
+Ontario,Cover,upwind,10.668,2,77
+Ontario,Cover,upwind,10.668,3,72
+Ontario,Cover,upwind,10.668,4,74
+Ontario,Cover,upwind,10.668,5,79
+Ontario,Cover,upwind,10.668,6,81
+Ontario,Cover,upwind,10.668,7,76
+Ontario,Cover,upwind,10.668,8,78
+Ontario,Cover,upwind,10.668,9,77
+Ontario,Cover,upwind,10.668,10,76
+Ontario,Cover,upwind,12.192,1,75
+Ontario,Cover,upwind,12.192,2,77
+Ontario,Cover,upwind,12.192,3,76
+Ontario,Cover,upwind,12.192,4,80
+Ontario,Cover,upwind,12.192,5,80
+Ontario,Cover,upwind,12.192,6,81
+Ontario,Cover,upwind,12.192,7,81
+Ontario,Cover,upwind,12.192,8,78
+Ontario,Cover,upwind,12.192,9,75
+Ontario,Cover,upwind,12.192,10,76
+Ontario,Cover,upwind,13.716,1,82
+Ontario,Cover,upwind,13.716,2,71
+Ontario,Cover,upwind,13.716,3,78
+Ontario,Cover,upwind,13.716,4,75
+Ontario,Cover,upwind,13.716,5,75
+Ontario,Cover,upwind,13.716,6,82
+Ontario,Cover,upwind,13.716,7,77
+Ontario,Cover,upwind,13.716,8,74
+Ontario,Cover,upwind,13.716,9,78
+Ontario,Cover,upwind,13.716,10,79
+Ontario,Uncover,upwind,1.524,1,80
+Ontario,Uncover,upwind,1.524,2,78
+Ontario,Uncover,upwind,1.524,3,84
+Ontario,Uncover,upwind,1.524,4,84
+Ontario,Uncover,upwind,1.524,5,75
+Ontario,Uncover,upwind,1.524,6,73
+Ontario,Uncover,upwind,1.524,7,79
+Ontario,Uncover,upwind,1.524,8,77
+Ontario,Uncover,upwind,1.524,9,84
+Ontario,Uncover,upwind,1.524,10,82
+Ontario,Uncover,upwind,3.048,1,78
+Ontario,Uncover,upwind,3.048,2,79
+Ontario,Uncover,upwind,3.048,3,82
+Ontario,Uncover,upwind,3.048,4,76
+Ontario,Uncover,upwind,3.048,5,72
+Ontario,Uncover,upwind,3.048,6,78
+Ontario,Uncover,upwind,3.048,7,75
+Ontario,Uncover,upwind,3.048,8,82
+Ontario,Uncover,upwind,3.048,9,76
+Ontario,Uncover,upwind,3.048,10,75
+Ontario,Uncover,upwind,4.572,1,70
+Ontario,Uncover,upwind,4.572,2,74
+Ontario,Uncover,upwind,4.572,3,74
+Ontario,Uncover,upwind,4.572,4,74
+Ontario,Uncover,upwind,4.572,5,79
+Ontario,Uncover,upwind,4.572,6,70
+Ontario,Uncover,upwind,4.572,7,83
+Ontario,Uncover,upwind,4.572,8,82
+Ontario,Uncover,upwind,4.572,9,84
+Ontario,Uncover,upwind,4.572,10,82
+Ontario,Uncover,upwind,6.096,1,82
+Ontario,Uncover,upwind,6.096,2,72
+Ontario,Uncover,upwind,6.096,3,77
+Ontario,Uncover,upwind,6.096,4,74
+Ontario,Uncover,upwind,6.096,5,76
+Ontario,Uncover,upwind,6.096,6,88
+Ontario,Uncover,upwind,6.096,7,84
+Ontario,Uncover,upwind,6.096,8,79
+Ontario,Uncover,upwind,6.096,9,80
+Ontario,Uncover,upwind,6.096,10,83
+Ontario,Uncover,upwind,7.62,1,72
+Ontario,Uncover,upwind,7.62,2,75
+Ontario,Uncover,upwind,7.62,3,77
+Ontario,Uncover,upwind,7.62,4,80
+Ontario,Uncover,upwind,7.62,5,83
+Ontario,Uncover,upwind,7.62,6,70
+Ontario,Uncover,upwind,7.62,7,77
+Ontario,Uncover,upwind,7.62,8,74
+Ontario,Uncover,upwind,7.62,9,81
+Ontario,Uncover,upwind,7.62,10,73
+Ontario,Uncover,upwind,9.144,1,72
+Ontario,Uncover,upwind,9.144,2,81
+Ontario,Uncover,upwind,9.144,3,84
+Ontario,Uncover,upwind,9.144,4,88
+Ontario,Uncover,upwind,9.144,5,82
+Ontario,Uncover,upwind,9.144,6,80
+Ontario,Uncover,upwind,9.144,7,76
+Ontario,Uncover,upwind,9.144,8,82
+Ontario,Uncover,upwind,9.144,9,78
+Ontario,Uncover,upwind,9.144,10,76
+Ontario,Uncover,upwind,10.668,1,80
+Ontario,Uncover,upwind,10.668,2,82
+Ontario,Uncover,upwind,10.668,3,87
+Ontario,Uncover,upwind,10.668,4,79
+Ontario,Uncover,upwind,10.668,5,78
+Ontario,Uncover,upwind,10.668,6,80
+Ontario,Uncover,upwind,10.668,7,82
+Ontario,Uncover,upwind,10.668,8,78
+Ontario,Uncover,upwind,10.668,9,77
+Ontario,Uncover,upwind,10.668,10,81
+Ontario,Uncover,upwind,12.192,1,74
+Ontario,Uncover,upwind,12.192,2,85
+Ontario,Uncover,upwind,12.192,3,77
+Ontario,Uncover,upwind,12.192,4,82
+Ontario,Uncover,upwind,12.192,5,83
+Ontario,Uncover,upwind,12.192,6,82
+Ontario,Uncover,upwind,12.192,7,77
+Ontario,Uncover,upwind,12.192,8,78
+Ontario,Uncover,upwind,12.192,9,79
+Ontario,Uncover,upwind,12.192,10,78
+Ontario,Uncover,upwind,13.716,1,83
+Ontario,Uncover,upwind,13.716,2,82
+Ontario,Uncover,upwind,13.716,3,79
+Ontario,Uncover,upwind,13.716,4,81
+Ontario,Uncover,upwind,13.716,5,81
+Ontario,Uncover,upwind,13.716,6,74
+Ontario,Uncover,upwind,13.716,7,71
+Ontario,Uncover,upwind,13.716,8,76
+Ontario,Uncover,upwind,13.716,9,75
+Ontario,Uncover,upwind,13.716,10,86
+Indiana,Cover 1 North,downwind,2,1,49
+Indiana,Cover 1 North,downwind,2,2,51
+Indiana,Cover 1 North,downwind,2,3,52.5
+Indiana,Cover 1 North,downwind,2,4,42
+Indiana,Cover 1 North,downwind,2,5,38.5
+Indiana,Cover 1 North,downwind,2,6,41.5
+Indiana,Cover 1 North,downwind,2,7,49
+Indiana,Cover 1 North,downwind,2,8,48
+Indiana,Cover 1 North,downwind,2,9,51.5
+Indiana,Cover 1 North,downwind,2,10,46.5
+Indiana,Cover 1 North,downwind,3,1,52.5
+Indiana,Cover 1 North,downwind,3,2,49
+Indiana,Cover 1 North,downwind,3,3,43.5
+Indiana,Cover 1 North,downwind,3,4,48
+Indiana,Cover 1 North,downwind,3,5,42.5
+Indiana,Cover 1 North,downwind,3,6,53.5
+Indiana,Cover 1 North,downwind,3,7,49
+Indiana,Cover 1 North,downwind,3,8,45.5
+Indiana,Cover 1 North,downwind,3,9,46
+Indiana,Cover 1 North,downwind,3,10,50
+Indiana,Cover 1 North,downwind,4.572,1,43.5
+Indiana,Cover 1 North,downwind,4.572,2,42
+Indiana,Cover 1 North,downwind,4.572,3,53
+Indiana,Cover 1 North,downwind,4.572,4,51.5
+Indiana,Cover 1 North,downwind,4.572,5,45.5
+Indiana,Cover 1 North,downwind,4.572,6,48.5
+Indiana,Cover 1 North,downwind,4.572,7,48
+Indiana,Cover 1 North,downwind,4.572,8,58.5
+Indiana,Cover 1 North,downwind,4.572,9,57.5
+Indiana,Cover 1 North,downwind,4.572,10,49
+Indiana,Cover 1 North,downwind,6.096,1,53
+Indiana,Cover 1 North,downwind,6.096,2,45.5
+Indiana,Cover 1 North,downwind,6.096,3,50
+Indiana,Cover 1 North,downwind,6.096,4,52.5
+Indiana,Cover 1 North,downwind,6.096,5,51
+Indiana,Cover 1 North,downwind,6.096,6,52
+Indiana,Cover 1 North,downwind,6.096,7,47.5
+Indiana,Cover 1 North,downwind,6.096,8,45
+Indiana,Cover 1 North,downwind,6.096,9,47
+Indiana,Cover 1 North,downwind,6.096,10,49.5
+Indiana,Cover 1 North,downwind,7.62,1,45
+Indiana,Cover 1 North,downwind,7.62,2,42.5
+Indiana,Cover 1 North,downwind,7.62,3,51
+Indiana,Cover 1 North,downwind,7.62,4,51
+Indiana,Cover 1 North,downwind,7.62,5,52
+Indiana,Cover 1 North,downwind,7.62,6,47.5
+Indiana,Cover 1 North,downwind,7.62,7,54.5
+Indiana,Cover 1 North,downwind,7.62,8,48
+Indiana,Cover 1 North,downwind,7.62,9,47
+Indiana,Cover 1 North,downwind,7.62,10,44.5
+Indiana,Cover 1 North,downwind,9.144,1,55
+Indiana,Cover 1 North,downwind,9.144,2,54
+Indiana,Cover 1 North,downwind,9.144,3,52
+Indiana,Cover 1 North,downwind,9.144,4,51.5
+Indiana,Cover 1 North,downwind,9.144,5,50.5
+Indiana,Cover 1 North,downwind,9.144,6,47.5
+Indiana,Cover 1 North,downwind,9.144,7,50.5
+Indiana,Cover 1 North,downwind,9.144,8,51.5
+Indiana,Cover 1 North,downwind,9.144,9,45
+Indiana,Cover 1 North,downwind,9.144,10,49.5
+Indiana,Cover 1 North,downwind,10.668,1,48.5
+Indiana,Cover 1 North,downwind,10.668,2,43
+Indiana,Cover 1 North,downwind,10.668,3,41.5
+Indiana,Cover 1 North,downwind,10.668,4,43
+Indiana,Cover 1 North,downwind,10.668,5,44
+Indiana,Cover 1 North,downwind,10.668,6,52.5
+Indiana,Cover 1 North,downwind,10.668,7,41
+Indiana,Cover 1 North,downwind,10.668,8,35.5
+Indiana,Cover 1 North,downwind,10.668,9,42
+Indiana,Cover 1 North,downwind,10.668,10,38
+Indiana,Cover 1 North,downwind,12.192,1,45
+Indiana,Cover 1 North,downwind,12.192,2,46
+Indiana,Cover 1 North,downwind,12.192,3,52.5
+Indiana,Cover 1 North,downwind,12.192,4,48
+Indiana,Cover 1 North,downwind,12.192,5,50.5
+Indiana,Cover 1 North,downwind,12.192,6,48.5
+Indiana,Cover 1 North,downwind,12.192,7,47
+Indiana,Cover 1 North,downwind,12.192,8,44.5
+Indiana,Cover 1 North,downwind,12.192,9,50
+Indiana,Cover 1 North,downwind,12.192,10,49.5
+Indiana,Cover 1 North,downwind,13.716,1,47
+Indiana,Cover 1 North,downwind,13.716,2,49.5
+Indiana,Cover 1 North,downwind,13.716,3,47.5
+Indiana,Cover 1 North,downwind,13.716,4,50
+Indiana,Cover 1 North,downwind,13.716,5,45.5
+Indiana,Cover 1 North,downwind,13.716,6,51
+Indiana,Cover 1 North,downwind,13.716,7,46
+Indiana,Cover 1 North,downwind,13.716,8,55
+Indiana,Cover 1 North,downwind,13.716,9,50.5
+Indiana,Cover 1 North,downwind,13.716,10,48
+Indiana,Cover 2 Middle,downwind,2,1,53
+Indiana,Cover 2 Middle,downwind,2,2,59
+Indiana,Cover 2 Middle,downwind,2,3,54
+Indiana,Cover 2 Middle,downwind,2,4,59.5
+Indiana,Cover 2 Middle,downwind,2,5,54
+Indiana,Cover 2 Middle,downwind,2,6,59.5
+Indiana,Cover 2 Middle,downwind,2,7,58.5
+Indiana,Cover 2 Middle,downwind,2,8,55
+Indiana,Cover 2 Middle,downwind,2,9,58
+Indiana,Cover 2 Middle,downwind,2,10,55
+Indiana,Cover 2 Middle,downwind,3,1,58
+Indiana,Cover 2 Middle,downwind,3,2,58
+Indiana,Cover 2 Middle,downwind,3,3,56
+Indiana,Cover 2 Middle,downwind,3,4,57.5
+Indiana,Cover 2 Middle,downwind,3,5,55
+Indiana,Cover 2 Middle,downwind,3,6,53.5
+Indiana,Cover 2 Middle,downwind,3,7,50
+Indiana,Cover 2 Middle,downwind,3,8,58
+Indiana,Cover 2 Middle,downwind,3,9,57
+Indiana,Cover 2 Middle,downwind,3,10,51
+Indiana,Cover 2 Middle,downwind,4.572,1,56.5
+Indiana,Cover 2 Middle,downwind,4.572,2,52.5
+Indiana,Cover 2 Middle,downwind,4.572,3,50
+Indiana,Cover 2 Middle,downwind,4.572,4,53.5
+Indiana,Cover 2 Middle,downwind,4.572,5,55
+Indiana,Cover 2 Middle,downwind,4.572,6,54.5
+Indiana,Cover 2 Middle,downwind,4.572,7,57
+Indiana,Cover 2 Middle,downwind,4.572,8,51.5
+Indiana,Cover 2 Middle,downwind,4.572,9,55
+Indiana,Cover 2 Middle,downwind,4.572,10,52
+Indiana,Cover 2 Middle,downwind,6.096,1,52
+Indiana,Cover 2 Middle,downwind,6.096,2,58
+Indiana,Cover 2 Middle,downwind,6.096,3,56
+Indiana,Cover 2 Middle,downwind,6.096,4,55
+Indiana,Cover 2 Middle,downwind,6.096,5,55
+Indiana,Cover 2 Middle,downwind,6.096,6,59.5
+Indiana,Cover 2 Middle,downwind,6.096,7,59.5
+Indiana,Cover 2 Middle,downwind,6.096,8,56
+Indiana,Cover 2 Middle,downwind,6.096,9,55.5
+Indiana,Cover 2 Middle,downwind,6.096,10,61
+Indiana,Cover 2 Middle,downwind,7.62,1,50
+Indiana,Cover 2 Middle,downwind,7.62,2,52
+Indiana,Cover 2 Middle,downwind,7.62,3,54
+Indiana,Cover 2 Middle,downwind,7.62,4,53.5
+Indiana,Cover 2 Middle,downwind,7.62,5,56
+Indiana,Cover 2 Middle,downwind,7.62,6,58.5
+Indiana,Cover 2 Middle,downwind,7.62,7,53
+Indiana,Cover 2 Middle,downwind,7.62,8,57
+Indiana,Cover 2 Middle,downwind,7.62,9,50.5
+Indiana,Cover 2 Middle,downwind,7.62,10,49
+Indiana,Cover 2 Middle,downwind,9.144,1,50.5
+Indiana,Cover 2 Middle,downwind,9.144,2,48
+Indiana,Cover 2 Middle,downwind,9.144,3,47.5
+Indiana,Cover 2 Middle,downwind,9.144,4,44
+Indiana,Cover 2 Middle,downwind,9.144,5,49.5
+Indiana,Cover 2 Middle,downwind,9.144,6,50
+Indiana,Cover 2 Middle,downwind,9.144,7,57
+Indiana,Cover 2 Middle,downwind,9.144,8,53
+Indiana,Cover 2 Middle,downwind,9.144,9,50
+Indiana,Cover 2 Middle,downwind,9.144,10,46
+Indiana,Cover 2 Middle,downwind,10.668,1,48.5
+Indiana,Cover 2 Middle,downwind,10.668,2,46.5
+Indiana,Cover 2 Middle,downwind,10.668,3,49
+Indiana,Cover 2 Middle,downwind,10.668,4,51.5
+Indiana,Cover 2 Middle,downwind,10.668,5,51
+Indiana,Cover 2 Middle,downwind,10.668,6,53
+Indiana,Cover 2 Middle,downwind,10.668,7,49
+Indiana,Cover 2 Middle,downwind,10.668,8,52
+Indiana,Cover 2 Middle,downwind,10.668,9,50
+Indiana,Cover 2 Middle,downwind,10.668,10,51
+Indiana,Cover 2 Middle,downwind,12.192,1,45
+Indiana,Cover 2 Middle,downwind,12.192,2,46
+Indiana,Cover 2 Middle,downwind,12.192,3,43.5
+Indiana,Cover 2 Middle,downwind,12.192,4,44
+Indiana,Cover 2 Middle,downwind,12.192,5,45
+Indiana,Cover 2 Middle,downwind,12.192,6,43
+Indiana,Cover 2 Middle,downwind,12.192,7,42
+Indiana,Cover 2 Middle,downwind,12.192,8,50
+Indiana,Cover 2 Middle,downwind,12.192,9,52
+Indiana,Cover 2 Middle,downwind,12.192,10,51.5
+Indiana,Cover 2 Middle,downwind,13.716,1,55.5
+Indiana,Cover 2 Middle,downwind,13.716,2,56
+Indiana,Cover 2 Middle,downwind,13.716,3,53.5
+Indiana,Cover 2 Middle,downwind,13.716,4,52
+Indiana,Cover 2 Middle,downwind,13.716,5,48.6
+Indiana,Cover 2 Middle,downwind,13.716,6,54
+Indiana,Cover 2 Middle,downwind,13.716,7,57
+Indiana,Cover 2 Middle,downwind,13.716,8,55
+Indiana,Cover 2 Middle,downwind,13.716,9,53.5
+Indiana,Cover 2 Middle,downwind,13.716,10,59
+Indiana,Cover 3 South,downwind,2,1,46.5
+Indiana,Cover 3 South,downwind,2,2,46
+Indiana,Cover 3 South,downwind,2,3,48
+Indiana,Cover 3 South,downwind,2,4,48
+Indiana,Cover 3 South,downwind,2,5,50
+Indiana,Cover 3 South,downwind,2,6,46
+Indiana,Cover 3 South,downwind,2,7,50
+Indiana,Cover 3 South,downwind,2,8,50
+Indiana,Cover 3 South,downwind,2,9,48
+Indiana,Cover 3 South,downwind,2,10,46
+Indiana,Cover 3 South,downwind,3,1,47
+Indiana,Cover 3 South,downwind,3,2,45
+Indiana,Cover 3 South,downwind,3,3,47
+Indiana,Cover 3 South,downwind,3,4,47
+Indiana,Cover 3 South,downwind,3,5,44
+Indiana,Cover 3 South,downwind,3,6,47
+Indiana,Cover 3 South,downwind,3,7,50.5
+Indiana,Cover 3 South,downwind,3,8,51
+Indiana,Cover 3 South,downwind,3,9,50
+Indiana,Cover 3 South,downwind,3,10,50.5
+Indiana,Cover 3 South,downwind,4.572,1,48
+Indiana,Cover 3 South,downwind,4.572,2,49
+Indiana,Cover 3 South,downwind,4.572,3,49
+Indiana,Cover 3 South,downwind,4.572,4,52
+Indiana,Cover 3 South,downwind,4.572,5,46.5
+Indiana,Cover 3 South,downwind,4.572,6,50.5
+Indiana,Cover 3 South,downwind,4.572,7,52.5
+Indiana,Cover 3 South,downwind,4.572,8,51
+Indiana,Cover 3 South,downwind,4.572,9,54
+Indiana,Cover 3 South,downwind,4.572,10,53
+Indiana,Cover 3 South,downwind,6.096,1,49
+Indiana,Cover 3 South,downwind,6.096,2,55
+Indiana,Cover 3 South,downwind,6.096,3,49.5
+Indiana,Cover 3 South,downwind,6.096,4,44
+Indiana,Cover 3 South,downwind,6.096,5,53
+Indiana,Cover 3 South,downwind,6.096,6,49.5
+Indiana,Cover 3 South,downwind,6.096,7,54
+Indiana,Cover 3 South,downwind,6.096,8,50
+Indiana,Cover 3 South,downwind,6.096,9,56
+Indiana,Cover 3 South,downwind,6.096,10,48
+Indiana,Cover 3 South,downwind,7.62,1,50.5
+Indiana,Cover 3 South,downwind,7.62,2,44
+Indiana,Cover 3 South,downwind,7.62,3,49
+Indiana,Cover 3 South,downwind,7.62,4,45
+Indiana,Cover 3 South,downwind,7.62,5,49
+Indiana,Cover 3 South,downwind,7.62,6,45
+Indiana,Cover 3 South,downwind,7.62,7,44
+Indiana,Cover 3 South,downwind,7.62,8,44
+Indiana,Cover 3 South,downwind,7.62,9,44.5
+Indiana,Cover 3 South,downwind,7.62,10,49.5
+Indiana,Cover 3 South,downwind,9.144,1,49.5
+Indiana,Cover 3 South,downwind,9.144,2,48
+Indiana,Cover 3 South,downwind,9.144,3,50
+Indiana,Cover 3 South,downwind,9.144,4,52.5
+Indiana,Cover 3 South,downwind,9.144,5,51.5
+Indiana,Cover 3 South,downwind,9.144,6,52
+Indiana,Cover 3 South,downwind,9.144,7,55
+Indiana,Cover 3 South,downwind,9.144,8,47.5
+Indiana,Cover 3 South,downwind,9.144,9,50
+Indiana,Cover 3 South,downwind,9.144,10,49
+Indiana,Cover 3 South,downwind,10.668,1,50
+Indiana,Cover 3 South,downwind,10.668,2,49.5
+Indiana,Cover 3 South,downwind,10.668,3,50.5
+Indiana,Cover 3 South,downwind,10.668,4,47.5
+Indiana,Cover 3 South,downwind,10.668,5,50
+Indiana,Cover 3 South,downwind,10.668,6,45
+Indiana,Cover 3 South,downwind,10.668,7,48
+Indiana,Cover 3 South,downwind,10.668,8,55.5
+Indiana,Cover 3 South,downwind,10.668,9,50
+Indiana,Cover 3 South,downwind,10.668,10,52.5
+Indiana,Cover 3 South,downwind,12.192,1,49.5
+Indiana,Cover 3 South,downwind,12.192,2,52.5
+Indiana,Cover 3 South,downwind,12.192,3,46
+Indiana,Cover 3 South,downwind,12.192,4,50.5
+Indiana,Cover 3 South,downwind,12.192,5,52.5
+Indiana,Cover 3 South,downwind,12.192,6,54
+Indiana,Cover 3 South,downwind,12.192,7,53.5
+Indiana,Cover 3 South,downwind,12.192,8,55
+Indiana,Cover 3 South,downwind,12.192,9,49.5
+Indiana,Cover 3 South,downwind,12.192,10,50
+Indiana,Cover 3 South,downwind,13.716,1,50
+Indiana,Cover 3 South,downwind,13.716,2,55
+Indiana,Cover 3 South,downwind,13.716,3,53
+Indiana,Cover 3 South,downwind,13.716,4,57
+Indiana,Cover 3 South,downwind,13.716,5,58
+Indiana,Cover 3 South,downwind,13.716,6,53.5
+Indiana,Cover 3 South,downwind,13.716,7,50.5
+Indiana,Cover 3 South,downwind,13.716,8,55.5
+Indiana,Cover 3 South,downwind,13.716,9,49.5
+Indiana,Cover 3 South,downwind,13.716,10,52
+Indiana,Uncovered 1 North,downwind,2,1,54
+Indiana,Uncovered 1 North,downwind,2,2,51
+Indiana,Uncovered 1 North,downwind,2,3,46.5
+Indiana,Uncovered 1 North,downwind,2,4,52
+Indiana,Uncovered 1 North,downwind,2,5,56.5
+Indiana,Uncovered 1 North,downwind,2,6,55
+Indiana,Uncovered 1 North,downwind,2,7,50.5
+Indiana,Uncovered 1 North,downwind,2,8,52
+Indiana,Uncovered 1 North,downwind,2,9,56.5
+Indiana,Uncovered 1 North,downwind,2,10,50.5
+Indiana,Uncovered 1 North,downwind,3,1,47.5
+Indiana,Uncovered 1 North,downwind,3,2,43
+Indiana,Uncovered 1 North,downwind,3,3,35.5
+Indiana,Uncovered 1 North,downwind,3,4,55.5
+Indiana,Uncovered 1 North,downwind,3,5,52
+Indiana,Uncovered 1 North,downwind,3,6,52
+Indiana,Uncovered 1 North,downwind,3,7,50
+Indiana,Uncovered 1 North,downwind,3,8,53.5
+Indiana,Uncovered 1 North,downwind,3,9,46
+Indiana,Uncovered 1 North,downwind,3,10,51
+Indiana,Uncovered 1 North,downwind,4.572,1,52.5
+Indiana,Uncovered 1 North,downwind,4.572,2,52
+Indiana,Uncovered 1 North,downwind,4.572,3,54
+Indiana,Uncovered 1 North,downwind,4.572,4,50.5
+Indiana,Uncovered 1 North,downwind,4.572,5,55.5
+Indiana,Uncovered 1 North,downwind,4.572,6,49.5
+Indiana,Uncovered 1 North,downwind,4.572,7,53
+Indiana,Uncovered 1 North,downwind,4.572,8,52
+Indiana,Uncovered 1 North,downwind,4.572,9,54
+Indiana,Uncovered 1 North,downwind,4.572,10,49
+Indiana,Uncovered 1 North,downwind,6.096,1,56
+Indiana,Uncovered 1 North,downwind,6.096,2,57
+Indiana,Uncovered 1 North,downwind,6.096,3,60
+Indiana,Uncovered 1 North,downwind,6.096,4,56.5
+Indiana,Uncovered 1 North,downwind,6.096,5,57
+Indiana,Uncovered 1 North,downwind,6.096,6,53.5
+Indiana,Uncovered 1 North,downwind,6.096,7,57
+Indiana,Uncovered 1 North,downwind,6.096,8,54.5
+Indiana,Uncovered 1 North,downwind,6.096,9,52
+Indiana,Uncovered 1 North,downwind,6.096,10,55
+Indiana,Uncovered 1 North,downwind,7.62,1,56
+Indiana,Uncovered 1 North,downwind,7.62,2,59
+Indiana,Uncovered 1 North,downwind,7.62,3,56.5
+Indiana,Uncovered 1 North,downwind,7.62,4,54.5
+Indiana,Uncovered 1 North,downwind,7.62,5,50
+Indiana,Uncovered 1 North,downwind,7.62,6,53
+Indiana,Uncovered 1 North,downwind,7.62,7,53.5
+Indiana,Uncovered 1 North,downwind,7.62,8,54
+Indiana,Uncovered 1 North,downwind,7.62,9,55
+Indiana,Uncovered 1 North,downwind,7.62,10,48.5
+Indiana,Uncovered 1 North,downwind,9.144,1,57
+Indiana,Uncovered 1 North,downwind,9.144,2,49.5
+Indiana,Uncovered 1 North,downwind,9.144,3,54
+Indiana,Uncovered 1 North,downwind,9.144,4,58.5
+Indiana,Uncovered 1 North,downwind,9.144,5,59
+Indiana,Uncovered 1 North,downwind,9.144,6,55.5
+Indiana,Uncovered 1 North,downwind,9.144,7,56
+Indiana,Uncovered 1 North,downwind,9.144,8,56.5
+Indiana,Uncovered 1 North,downwind,9.144,9,55.5
+Indiana,Uncovered 1 North,downwind,9.144,10,54.5
+Indiana,Uncovered 1 North,downwind,10.668,1,57.5
+Indiana,Uncovered 1 North,downwind,10.668,2,50
+Indiana,Uncovered 1 North,downwind,10.668,3,50
+Indiana,Uncovered 1 North,downwind,10.668,4,57.5
+Indiana,Uncovered 1 North,downwind,10.668,5,50.5
+Indiana,Uncovered 1 North,downwind,10.668,6,56
+Indiana,Uncovered 1 North,downwind,10.668,7,52
+Indiana,Uncovered 1 North,downwind,10.668,8,51.5
+Indiana,Uncovered 1 North,downwind,10.668,9,49
+Indiana,Uncovered 1 North,downwind,10.668,10,55.5
+Indiana,Uncovered 1 North,downwind,12.192,1,48.5
+Indiana,Uncovered 1 North,downwind,12.192,2,56
+Indiana,Uncovered 1 North,downwind,12.192,3,54
+Indiana,Uncovered 1 North,downwind,12.192,4,51.5
+Indiana,Uncovered 1 North,downwind,12.192,5,50
+Indiana,Uncovered 1 North,downwind,12.192,6,54.5
+Indiana,Uncovered 1 North,downwind,12.192,7,57
+Indiana,Uncovered 1 North,downwind,12.192,8,53.5
+Indiana,Uncovered 1 North,downwind,12.192,9,49
+Indiana,Uncovered 1 North,downwind,12.192,10,50.5
+Indiana,Uncovered 1 North,downwind,13.716,1,50.5
+Indiana,Uncovered 1 North,downwind,13.716,2,46
+Indiana,Uncovered 1 North,downwind,13.716,3,58
+Indiana,Uncovered 1 North,downwind,13.716,4,51.5
+Indiana,Uncovered 1 North,downwind,13.716,5,58
+Indiana,Uncovered 1 North,downwind,13.716,6,52
+Indiana,Uncovered 1 North,downwind,13.716,7,53
+Indiana,Uncovered 1 North,downwind,13.716,8,52
+Indiana,Uncovered 1 North,downwind,13.716,9,49.5
+Indiana,Uncovered 1 North,downwind,13.716,10,45
+Indiana,Uncovered 2 Middle,downwind,2,1,59.5
+Indiana,Uncovered 2 Middle,downwind,2,2,57
+Indiana,Uncovered 2 Middle,downwind,2,3,0
+Indiana,Uncovered 2 Middle,downwind,2,4,0
+Indiana,Uncovered 2 Middle,downwind,2,5,0
+Indiana,Uncovered 2 Middle,downwind,2,6,0
+Indiana,Uncovered 2 Middle,downwind,2,7,0
+Indiana,Uncovered 2 Middle,downwind,2,8,0
+Indiana,Uncovered 2 Middle,downwind,2,9,0
+Indiana,Uncovered 2 Middle,downwind,2,10,0
+Indiana,Uncovered 2 Middle,downwind,3,1,54.5
+Indiana,Uncovered 2 Middle,downwind,3,2,51
+Indiana,Uncovered 2 Middle,downwind,3,3,52.5
+Indiana,Uncovered 2 Middle,downwind,3,4,52
+Indiana,Uncovered 2 Middle,downwind,3,5,46.5
+Indiana,Uncovered 2 Middle,downwind,3,6,44
+Indiana,Uncovered 2 Middle,downwind,3,7,57
+Indiana,Uncovered 2 Middle,downwind,3,8,52.5
+Indiana,Uncovered 2 Middle,downwind,3,9,42
+Indiana,Uncovered 2 Middle,downwind,3,10,51.5
+Indiana,Uncovered 2 Middle,downwind,4.572,1,61.5
+Indiana,Uncovered 2 Middle,downwind,4.572,2,60
+Indiana,Uncovered 2 Middle,downwind,4.572,3,62
+Indiana,Uncovered 2 Middle,downwind,4.572,4,61
+Indiana,Uncovered 2 Middle,downwind,4.572,5,60
+Indiana,Uncovered 2 Middle,downwind,4.572,6,63.5
+Indiana,Uncovered 2 Middle,downwind,4.572,7,57
+Indiana,Uncovered 2 Middle,downwind,4.572,8,58.5
+Indiana,Uncovered 2 Middle,downwind,4.572,9,49
+Indiana,Uncovered 2 Middle,downwind,4.572,10,50.5
+Indiana,Uncovered 2 Middle,downwind,6.096,1,50.5
+Indiana,Uncovered 2 Middle,downwind,6.096,2,59
+Indiana,Uncovered 2 Middle,downwind,6.096,3,61.5
+Indiana,Uncovered 2 Middle,downwind,6.096,4,61
+Indiana,Uncovered 2 Middle,downwind,6.096,5,65.5
+Indiana,Uncovered 2 Middle,downwind,6.096,6,62
+Indiana,Uncovered 2 Middle,downwind,6.096,7,56.5
+Indiana,Uncovered 2 Middle,downwind,6.096,8,57.5
+Indiana,Uncovered 2 Middle,downwind,6.096,9,58
+Indiana,Uncovered 2 Middle,downwind,6.096,10,57.5
+Indiana,Uncovered 2 Middle,downwind,7.62,1,58.5
+Indiana,Uncovered 2 Middle,downwind,7.62,2,55
+Indiana,Uncovered 2 Middle,downwind,7.62,3,53.5
+Indiana,Uncovered 2 Middle,downwind,7.62,4,61
+Indiana,Uncovered 2 Middle,downwind,7.62,5,60.5
+Indiana,Uncovered 2 Middle,downwind,7.62,6,57.5
+Indiana,Uncovered 2 Middle,downwind,7.62,7,55
+Indiana,Uncovered 2 Middle,downwind,7.62,8,57.5
+Indiana,Uncovered 2 Middle,downwind,7.62,9,57.5
+Indiana,Uncovered 2 Middle,downwind,7.62,10,54
+Indiana,Uncovered 2 Middle,downwind,9.144,1,61.5
+Indiana,Uncovered 2 Middle,downwind,9.144,2,50
+Indiana,Uncovered 2 Middle,downwind,9.144,3,50
+Indiana,Uncovered 2 Middle,downwind,9.144,4,61.5
+Indiana,Uncovered 2 Middle,downwind,9.144,5,53
+Indiana,Uncovered 2 Middle,downwind,9.144,6,49.5
+Indiana,Uncovered 2 Middle,downwind,9.144,7,59
+Indiana,Uncovered 2 Middle,downwind,9.144,8,59.5
+Indiana,Uncovered 2 Middle,downwind,9.144,9,53
+Indiana,Uncovered 2 Middle,downwind,9.144,10,50.5
+Indiana,Uncovered 2 Middle,downwind,10.668,1,58.5
+Indiana,Uncovered 2 Middle,downwind,10.668,2,58.5
+Indiana,Uncovered 2 Middle,downwind,10.668,3,54
+Indiana,Uncovered 2 Middle,downwind,10.668,4,53
+Indiana,Uncovered 2 Middle,downwind,10.668,5,49.5
+Indiana,Uncovered 2 Middle,downwind,10.668,6,56.5
+Indiana,Uncovered 2 Middle,downwind,10.668,7,61.5
+Indiana,Uncovered 2 Middle,downwind,10.668,8,54
+Indiana,Uncovered 2 Middle,downwind,10.668,9,55.5
+Indiana,Uncovered 2 Middle,downwind,10.668,10,54.5
+Indiana,Uncovered 2 Middle,downwind,12.192,1,58.5
+Indiana,Uncovered 2 Middle,downwind,12.192,2,52
+Indiana,Uncovered 2 Middle,downwind,12.192,3,55.5
+Indiana,Uncovered 2 Middle,downwind,12.192,4,53
+Indiana,Uncovered 2 Middle,downwind,12.192,5,53.5
+Indiana,Uncovered 2 Middle,downwind,12.192,6,53.5
+Indiana,Uncovered 2 Middle,downwind,12.192,7,56
+Indiana,Uncovered 2 Middle,downwind,12.192,8,51.5
+Indiana,Uncovered 2 Middle,downwind,12.192,9,49
+Indiana,Uncovered 2 Middle,downwind,12.192,10,56.5
+Indiana,Uncovered 2 Middle,downwind,13.716,1,57.5
+Indiana,Uncovered 2 Middle,downwind,13.716,2,62
+Indiana,Uncovered 2 Middle,downwind,13.716,3,60.5
+Indiana,Uncovered 2 Middle,downwind,13.716,4,63
+Indiana,Uncovered 2 Middle,downwind,13.716,5,60
+Indiana,Uncovered 2 Middle,downwind,13.716,6,59.5
+Indiana,Uncovered 2 Middle,downwind,13.716,7,63.5
+Indiana,Uncovered 2 Middle,downwind,13.716,8,63
+Indiana,Uncovered 2 Middle,downwind,13.716,9,56.5
+Indiana,Uncovered 2 Middle,downwind,13.716,10,55.5
+Indiana,Uncovered 3 South,downwind,2,1,12
+Indiana,Uncovered 3 South,downwind,2,2,14
+Indiana,Uncovered 3 South,downwind,2,3,20
+Indiana,Uncovered 3 South,downwind,2,4,20
+Indiana,Uncovered 3 South,downwind,2,5,24.5
+Indiana,Uncovered 3 South,downwind,2,6,24
+Indiana,Uncovered 3 South,downwind,2,7,20
+Indiana,Uncovered 3 South,downwind,2,8,16
+Indiana,Uncovered 3 South,downwind,2,9,18
+Indiana,Uncovered 3 South,downwind,2,10,17
+Indiana,Uncovered 3 South,downwind,3,1,33.5
+Indiana,Uncovered 3 South,downwind,3,2,33
+Indiana,Uncovered 3 South,downwind,3,3,37
+Indiana,Uncovered 3 South,downwind,3,4,36.5
+Indiana,Uncovered 3 South,downwind,3,5,30
+Indiana,Uncovered 3 South,downwind,3,6,40
+Indiana,Uncovered 3 South,downwind,3,7,36
+Indiana,Uncovered 3 South,downwind,3,8,40
+Indiana,Uncovered 3 South,downwind,3,9,35.5
+Indiana,Uncovered 3 South,downwind,3,10,32
+Indiana,Uncovered 3 South,downwind,4.572,1,41
+Indiana,Uncovered 3 South,downwind,4.572,2,42
+Indiana,Uncovered 3 South,downwind,4.572,3,34.5
+Indiana,Uncovered 3 South,downwind,4.572,4,50
+Indiana,Uncovered 3 South,downwind,4.572,5,44
+Indiana,Uncovered 3 South,downwind,4.572,6,48
+Indiana,Uncovered 3 South,downwind,4.572,7,48.5
+Indiana,Uncovered 3 South,downwind,4.572,8,44
+Indiana,Uncovered 3 South,downwind,4.572,9,49.5
+Indiana,Uncovered 3 South,downwind,4.572,10,52
+Indiana,Uncovered 3 South,downwind,6.096,1,42.5
+Indiana,Uncovered 3 South,downwind,6.096,2,46
+Indiana,Uncovered 3 South,downwind,6.096,3,43.5
+Indiana,Uncovered 3 South,downwind,6.096,4,43
+Indiana,Uncovered 3 South,downwind,6.096,5,50
+Indiana,Uncovered 3 South,downwind,6.096,6,51
+Indiana,Uncovered 3 South,downwind,6.096,7,52
+Indiana,Uncovered 3 South,downwind,6.096,8,45
+Indiana,Uncovered 3 South,downwind,6.096,9,47
+Indiana,Uncovered 3 South,downwind,6.096,10,48
+Indiana,Uncovered 3 South,downwind,7.62,1,42
+Indiana,Uncovered 3 South,downwind,7.62,2,40.5
+Indiana,Uncovered 3 South,downwind,7.62,3,37.5
+Indiana,Uncovered 3 South,downwind,7.62,4,43.5
+Indiana,Uncovered 3 South,downwind,7.62,5,43
+Indiana,Uncovered 3 South,downwind,7.62,6,47
+Indiana,Uncovered 3 South,downwind,7.62,7,42
+Indiana,Uncovered 3 South,downwind,7.62,8,47
+Indiana,Uncovered 3 South,downwind,7.62,9,50
+Indiana,Uncovered 3 South,downwind,7.62,10,50.5
+Indiana,Uncovered 3 South,downwind,9.144,1,46
+Indiana,Uncovered 3 South,downwind,9.144,2,47
+Indiana,Uncovered 3 South,downwind,9.144,3,45.5
+Indiana,Uncovered 3 South,downwind,9.144,4,48
+Indiana,Uncovered 3 South,downwind,9.144,5,43.5
+Indiana,Uncovered 3 South,downwind,9.144,6,47
+Indiana,Uncovered 3 South,downwind,9.144,7,49
+Indiana,Uncovered 3 South,downwind,9.144,8,44
+Indiana,Uncovered 3 South,downwind,9.144,9,49
+Indiana,Uncovered 3 South,downwind,9.144,10,43.5
+Indiana,Uncovered 3 South,downwind,10.668,1,49
+Indiana,Uncovered 3 South,downwind,10.668,2,47.5
+Indiana,Uncovered 3 South,downwind,10.668,3,45
+Indiana,Uncovered 3 South,downwind,10.668,4,43.5
+Indiana,Uncovered 3 South,downwind,10.668,5,48
+Indiana,Uncovered 3 South,downwind,10.668,6,48.5
+Indiana,Uncovered 3 South,downwind,10.668,7,50
+Indiana,Uncovered 3 South,downwind,10.668,8,48.5
+Indiana,Uncovered 3 South,downwind,10.668,9,50
+Indiana,Uncovered 3 South,downwind,10.668,10,51
+Indiana,Uncovered 3 South,downwind,12.192,1,52.5
+Indiana,Uncovered 3 South,downwind,12.192,2,52.5
+Indiana,Uncovered 3 South,downwind,12.192,3,53
+Indiana,Uncovered 3 South,downwind,12.192,4,57
+Indiana,Uncovered 3 South,downwind,12.192,5,43.5
+Indiana,Uncovered 3 South,downwind,12.192,6,50.5
+Indiana,Uncovered 3 South,downwind,12.192,7,62.5
+Indiana,Uncovered 3 South,downwind,12.192,8,55
+Indiana,Uncovered 3 South,downwind,12.192,9,54
+Indiana,Uncovered 3 South,downwind,12.192,10,51
+Indiana,Uncovered 3 South,downwind,13.716,1,49.5
+Indiana,Uncovered 3 South,downwind,13.716,2,51.5
+Indiana,Uncovered 3 South,downwind,13.716,3,52
+Indiana,Uncovered 3 South,downwind,13.716,4,49.5
+Indiana,Uncovered 3 South,downwind,13.716,5,57
+Indiana,Uncovered 3 South,downwind,13.716,6,52
+Indiana,Uncovered 3 South,downwind,13.716,7,55
+Indiana,Uncovered 3 South,downwind,13.716,8,55.5
+Indiana,Uncovered 3 South,downwind,13.716,9,56.5
+Indiana,Uncovered 3 South,downwind,13.716,10,53
+Indiana,Upwind North,upwind,,1,60.5
+Indiana,Upwind North,upwind,,2,62
+Indiana,Upwind North,upwind,,3,65.5
+Indiana,Upwind North,upwind,,4,61.5
+Indiana,Upwind North,upwind,,5,66
+Indiana,Upwind North,upwind,,6,55
+Indiana,Upwind North,upwind,,7,64.5
+Indiana,Upwind North,upwind,,8,56
+Indiana,Upwind North,upwind,,9,56.5
+Indiana,Upwind North,upwind,,10,60
+Indiana,Upwind Middle,upwind,,1,57.5
+Indiana,Upwind Middle,upwind,,2,50
+Indiana,Upwind Middle,upwind,,3,62.5
+Indiana,Upwind Middle,upwind,,4,57
+Indiana,Upwind Middle,upwind,,5,53.5
+Indiana,Upwind Middle,upwind,,6,58
+Indiana,Upwind Middle,upwind,,7,54.5
+Indiana,Upwind Middle,upwind,,8,57.5
+Indiana,Upwind Middle,upwind,,9,58.5
+Indiana,Upwind Middle,upwind,,10,60.5
+Indiana,Upwind South,upwind,,1,63.5
+Indiana,Upwind South,upwind,,2,64
+Indiana,Upwind South,upwind,,3,57
+Indiana,Upwind South,upwind,,4,58
+Indiana,Upwind South,upwind,,5,58
+Indiana,Upwind South,upwind,,6,64
+Indiana,Upwind South,upwind,,7,59.5
+Indiana,Upwind South,upwind,,8,58
+Indiana,Upwind South,upwind,,9,60
+Indiana,Upwind South,upwind,,10,59.5
+Indiana,Transect 1 North,downwind,3.9624,1,47
+Indiana,Transect 1 North,downwind,3.9624,2,50.5
+Indiana,Transect 1 North,downwind,3.9624,3,54
+Indiana,Transect 1 North,downwind,3.9624,4,47.5
+Indiana,Transect 1 North,downwind,3.9624,5,52
+Indiana,Transect 1 North,downwind,3.9624,6,54
+Indiana,Transect 1 North,downwind,3.9624,7,50
+Indiana,Transect 1 North,downwind,3.9624,8,53
+Indiana,Transect 1 North,downwind,3.9624,9,54
+Indiana,Transect 1 North,downwind,3.9624,10,53
+Indiana,Transect 1 North,downwind,7.9248,1,52
+Indiana,Transect 1 North,downwind,7.9248,2,47.5
+Indiana,Transect 1 North,downwind,7.9248,3,51.5
+Indiana,Transect 1 North,downwind,7.9248,4,50
+Indiana,Transect 1 North,downwind,7.9248,5,55
+Indiana,Transect 1 North,downwind,7.9248,6,51.5
+Indiana,Transect 1 North,downwind,7.9248,7,47
+Indiana,Transect 1 North,downwind,7.9248,8,51
+Indiana,Transect 1 North,downwind,7.9248,9,50
+Indiana,Transect 1 North,downwind,7.9248,10,49
+Indiana,Transect 1 North,downwind,16.1544,1,49
+Indiana,Transect 1 North,downwind,16.1544,2,48
+Indiana,Transect 1 North,downwind,16.1544,3,51
+Indiana,Transect 1 North,downwind,16.1544,4,53
+Indiana,Transect 1 North,downwind,16.1544,5,50
+Indiana,Transect 1 North,downwind,16.1544,6,52
+Indiana,Transect 1 North,downwind,16.1544,7,51
+Indiana,Transect 1 North,downwind,16.1544,8,49
+Indiana,Transect 1 North,downwind,16.1544,9,52
+Indiana,Transect 1 North,downwind,16.1544,10,53
+Indiana,Transect 1 North,downwind,30.48,1,57
+Indiana,Transect 1 North,downwind,30.48,2,58
+Indiana,Transect 1 North,downwind,30.48,3,60
+Indiana,Transect 1 North,downwind,30.48,4,56.5
+Indiana,Transect 1 North,downwind,30.48,5,56
+Indiana,Transect 1 North,downwind,30.48,6,59.5
+Indiana,Transect 1 North,downwind,30.48,7,60
+Indiana,Transect 1 North,downwind,30.48,8,56
+Indiana,Transect 1 North,downwind,30.48,9,56
+Indiana,Transect 1 North,downwind,30.48,10,50
+Indiana,Transect 1 North,downwind,45.1104,1,64
+Indiana,Transect 1 North,downwind,45.1104,2,63
+Indiana,Transect 1 North,downwind,45.1104,3,61.5
+Indiana,Transect 1 North,downwind,45.1104,4,62
+Indiana,Transect 1 North,downwind,45.1104,5,61
+Indiana,Transect 1 North,downwind,45.1104,6,63.5
+Indiana,Transect 1 North,downwind,45.1104,7,61
+Indiana,Transect 1 North,downwind,45.1104,8,62
+Indiana,Transect 1 North,downwind,45.1104,9,59
+Indiana,Transect 1 North,downwind,45.1104,10,61
+Indiana,Transect 1 North,downwind,60.0456,1,58.5
+Indiana,Transect 1 North,downwind,60.0456,2,59
+Indiana,Transect 1 North,downwind,60.0456,3,60
+Indiana,Transect 1 North,downwind,60.0456,4,60.5
+Indiana,Transect 1 North,downwind,60.0456,5,64
+Indiana,Transect 1 North,downwind,60.0456,6,58.5
+Indiana,Transect 1 North,downwind,60.0456,7,63
+Indiana,Transect 1 North,downwind,60.0456,8,62
+Indiana,Transect 1 North,downwind,60.0456,9,63
+Indiana,Transect 1 North,downwind,60.0456,10,64
+Indiana,Transect 1 North,downwind,74.9808,1,65.5
+Indiana,Transect 1 North,downwind,74.9808,2,70
+Indiana,Transect 1 North,downwind,74.9808,3,72
+Indiana,Transect 1 North,downwind,74.9808,4,69.5
+Indiana,Transect 1 North,downwind,74.9808,5,57
+Indiana,Transect 1 North,downwind,74.9808,6,65
+Indiana,Transect 1 North,downwind,74.9808,7,67
+Indiana,Transect 1 North,downwind,74.9808,8,66
+Indiana,Transect 1 North,downwind,74.9808,9,65.5
+Indiana,Transect 1 North,downwind,74.9808,10,69
+Indiana,Transect 1 North,downwind,90.5256,1,65.5
+Indiana,Transect 1 North,downwind,90.5256,2,69
+Indiana,Transect 1 North,downwind,90.5256,3,62
+Indiana,Transect 1 North,downwind,90.5256,4,66
+Indiana,Transect 1 North,downwind,90.5256,5,70
+Indiana,Transect 1 North,downwind,90.5256,6,66
+Indiana,Transect 1 North,downwind,90.5256,7,64.5
+Indiana,Transect 1 North,downwind,90.5256,8,69.5
+Indiana,Transect 1 North,downwind,90.5256,9,64
+Indiana,Transect 1 North,downwind,90.5256,10,67
+Indiana,Transect 2 Middle,downwind,3.9624,1,60.5
+Indiana,Transect 2 Middle,downwind,3.9624,2,57
+Indiana,Transect 2 Middle,downwind,3.9624,3,58.5
+Indiana,Transect 2 Middle,downwind,3.9624,4,57.5
+Indiana,Transect 2 Middle,downwind,3.9624,5,58
+Indiana,Transect 2 Middle,downwind,3.9624,6,55.5
+Indiana,Transect 2 Middle,downwind,3.9624,7,53
+Indiana,Transect 2 Middle,downwind,3.9624,8,54
+Indiana,Transect 2 Middle,downwind,3.9624,9,57
+Indiana,Transect 2 Middle,downwind,3.9624,10,58
+Indiana,Transect 2 Middle,downwind,7.9248,1,59
+Indiana,Transect 2 Middle,downwind,7.9248,2,57
+Indiana,Transect 2 Middle,downwind,7.9248,3,58.5
+Indiana,Transect 2 Middle,downwind,7.9248,4,55.5
+Indiana,Transect 2 Middle,downwind,7.9248,5,54.5
+Indiana,Transect 2 Middle,downwind,7.9248,6,57
+Indiana,Transect 2 Middle,downwind,7.9248,7,53.5
+Indiana,Transect 2 Middle,downwind,7.9248,8,61
+Indiana,Transect 2 Middle,downwind,7.9248,9,60
+Indiana,Transect 2 Middle,downwind,7.9248,10,62
+Indiana,Transect 2 Middle,downwind,16.1544,1,56.5
+Indiana,Transect 2 Middle,downwind,16.1544,2,57.5
+Indiana,Transect 2 Middle,downwind,16.1544,3,60
+Indiana,Transect 2 Middle,downwind,16.1544,4,59
+Indiana,Transect 2 Middle,downwind,16.1544,5,62
+Indiana,Transect 2 Middle,downwind,16.1544,6,59
+Indiana,Transect 2 Middle,downwind,16.1544,7,57.5
+Indiana,Transect 2 Middle,downwind,16.1544,8,56
+Indiana,Transect 2 Middle,downwind,16.1544,9,58
+Indiana,Transect 2 Middle,downwind,16.1544,10,57
+Indiana,Transect 2 Middle,downwind,30.48,1,63
+Indiana,Transect 2 Middle,downwind,30.48,2,61
+Indiana,Transect 2 Middle,downwind,30.48,3,60
+Indiana,Transect 2 Middle,downwind,30.48,4,62.5
+Indiana,Transect 2 Middle,downwind,30.48,5,61
+Indiana,Transect 2 Middle,downwind,30.48,6,59.5
+Indiana,Transect 2 Middle,downwind,30.48,7,67.5
+Indiana,Transect 2 Middle,downwind,30.48,8,61
+Indiana,Transect 2 Middle,downwind,30.48,9,66
+Indiana,Transect 2 Middle,downwind,30.48,10,62.5
+Indiana,Transect 2 Middle,downwind,45.1104,1,58
+Indiana,Transect 2 Middle,downwind,45.1104,2,60
+Indiana,Transect 2 Middle,downwind,45.1104,3,55
+Indiana,Transect 2 Middle,downwind,45.1104,4,56.5
+Indiana,Transect 2 Middle,downwind,45.1104,5,58
+Indiana,Transect 2 Middle,downwind,45.1104,6,60
+Indiana,Transect 2 Middle,downwind,45.1104,7,55.5
+Indiana,Transect 2 Middle,downwind,45.1104,8,56.5
+Indiana,Transect 2 Middle,downwind,45.1104,9,55
+Indiana,Transect 2 Middle,downwind,45.1104,10,61
+Indiana,Transect 2 Middle,downwind,60.0456,1,64
+Indiana,Transect 2 Middle,downwind,60.0456,2,60
+Indiana,Transect 2 Middle,downwind,60.0456,3,61.5
+Indiana,Transect 2 Middle,downwind,60.0456,4,62
+Indiana,Transect 2 Middle,downwind,60.0456,5,57.5
+Indiana,Transect 2 Middle,downwind,60.0456,6,56
+Indiana,Transect 2 Middle,downwind,60.0456,7,55.5
+Indiana,Transect 2 Middle,downwind,60.0456,8,57
+Indiana,Transect 2 Middle,downwind,60.0456,9,59
+Indiana,Transect 2 Middle,downwind,60.0456,10,60
+Indiana,Transect 2 Middle,downwind,74.9808,1,60
+Indiana,Transect 2 Middle,downwind,74.9808,2,58.5
+Indiana,Transect 2 Middle,downwind,74.9808,3,66
+Indiana,Transect 2 Middle,downwind,74.9808,4,60
+Indiana,Transect 2 Middle,downwind,74.9808,5,61
+Indiana,Transect 2 Middle,downwind,74.9808,6,59
+Indiana,Transect 2 Middle,downwind,74.9808,7,61
+Indiana,Transect 2 Middle,downwind,74.9808,8,61
+Indiana,Transect 2 Middle,downwind,74.9808,9,60
+Indiana,Transect 2 Middle,downwind,74.9808,10,65.5
+Indiana,Transect 2 Middle,downwind,90.5256,1,60
+Indiana,Transect 2 Middle,downwind,90.5256,2,60
+Indiana,Transect 2 Middle,downwind,90.5256,3,62
+Indiana,Transect 2 Middle,downwind,90.5256,4,61.5
+Indiana,Transect 2 Middle,downwind,90.5256,5,60
+Indiana,Transect 2 Middle,downwind,90.5256,6,59
+Indiana,Transect 2 Middle,downwind,90.5256,7,58
+Indiana,Transect 2 Middle,downwind,90.5256,8,63
+Indiana,Transect 2 Middle,downwind,90.5256,9,61.5
+Indiana,Transect 2 Middle,downwind,90.5256,10,59.5
+Indiana,Transect 3 South,downwind,3.9624,1,54
+Indiana,Transect 3 South,downwind,3.9624,2,70
+Indiana,Transect 3 South,downwind,3.9624,3,58
+Indiana,Transect 3 South,downwind,3.9624,4,60
+Indiana,Transect 3 South,downwind,3.9624,5,56
+Indiana,Transect 3 South,downwind,3.9624,6,59
+Indiana,Transect 3 South,downwind,3.9624,7,60
+Indiana,Transect 3 South,downwind,3.9624,8,64.5
+Indiana,Transect 3 South,downwind,3.9624,9,62.5
+Indiana,Transect 3 South,downwind,3.9624,10,58
+Indiana,Transect 3 South,downwind,7.9248,1,43.5
+Indiana,Transect 3 South,downwind,7.9248,2,54
+Indiana,Transect 3 South,downwind,7.9248,3,55
+Indiana,Transect 3 South,downwind,7.9248,4,58
+Indiana,Transect 3 South,downwind,7.9248,5,56
+Indiana,Transect 3 South,downwind,7.9248,6,62
+Indiana,Transect 3 South,downwind,7.9248,7,61
+Indiana,Transect 3 South,downwind,7.9248,8,64
+Indiana,Transect 3 South,downwind,7.9248,9,66
+Indiana,Transect 3 South,downwind,7.9248,10,60
+Indiana,Transect 3 South,downwind,16.1544,1,79.5
+Indiana,Transect 3 South,downwind,16.1544,2,69
+Indiana,Transect 3 South,downwind,16.1544,3,73
+Indiana,Transect 3 South,downwind,16.1544,4,72
+Indiana,Transect 3 South,downwind,16.1544,5,69.5
+Indiana,Transect 3 South,downwind,16.1544,6,64
+Indiana,Transect 3 South,downwind,16.1544,7,62
+Indiana,Transect 3 South,downwind,16.1544,8,65
+Indiana,Transect 3 South,downwind,16.1544,9,70
+Indiana,Transect 3 South,downwind,16.1544,10,64.5
+Indiana,Transect 3 South,downwind,30.48,1,67
+Indiana,Transect 3 South,downwind,30.48,2,62
+Indiana,Transect 3 South,downwind,30.48,3,64
+Indiana,Transect 3 South,downwind,30.48,4,63
+Indiana,Transect 3 South,downwind,30.48,5,63.5
+Indiana,Transect 3 South,downwind,30.48,6,78
+Indiana,Transect 3 South,downwind,30.48,7,73
+Indiana,Transect 3 South,downwind,30.48,8,72
+Indiana,Transect 3 South,downwind,30.48,9,73
+Indiana,Transect 3 South,downwind,30.48,10,75
+Indiana,Transect 3 South,downwind,45.1104,1,63.5
+Indiana,Transect 3 South,downwind,45.1104,2,64
+Indiana,Transect 3 South,downwind,45.1104,3,61
+Indiana,Transect 3 South,downwind,45.1104,4,66
+Indiana,Transect 3 South,downwind,45.1104,5,64
+Indiana,Transect 3 South,downwind,45.1104,6,60
+Indiana,Transect 3 South,downwind,45.1104,7,59
+Indiana,Transect 3 South,downwind,45.1104,8,64
+Indiana,Transect 3 South,downwind,45.1104,9,65
+Indiana,Transect 3 South,downwind,45.1104,10,62
+Indiana,Transect 3 South,downwind,60.0456,1,69.5
+Indiana,Transect 3 South,downwind,60.0456,2,73
+Indiana,Transect 3 South,downwind,60.0456,3,69
+Indiana,Transect 3 South,downwind,60.0456,4,75
+Indiana,Transect 3 South,downwind,60.0456,5,72.5
+Indiana,Transect 3 South,downwind,60.0456,6,76
+Indiana,Transect 3 South,downwind,60.0456,7,72
+Indiana,Transect 3 South,downwind,60.0456,8,72
+Indiana,Transect 3 South,downwind,60.0456,9,73.5
+Indiana,Transect 3 South,downwind,60.0456,10,78
+Indiana,Transect 3 South,downwind,74.9808,1,77
+Indiana,Transect 3 South,downwind,74.9808,2,70
+Indiana,Transect 3 South,downwind,74.9808,3,72
+Indiana,Transect 3 South,downwind,74.9808,4,73
+Indiana,Transect 3 South,downwind,74.9808,5,71.5
+Indiana,Transect 3 South,downwind,74.9808,6,79
+Indiana,Transect 3 South,downwind,74.9808,7,70.5
+Indiana,Transect 3 South,downwind,74.9808,8,74
+Indiana,Transect 3 South,downwind,74.9808,9,73
+Indiana,Transect 3 South,downwind,74.9808,10,72
+Indiana,Transect 3 South,downwind,90.5256,1,71
+Indiana,Transect 3 South,downwind,90.5256,2,67
+Indiana,Transect 3 South,downwind,90.5256,3,72
+Indiana,Transect 3 South,downwind,90.5256,4,76
+Indiana,Transect 3 South,downwind,90.5256,5,69
+Indiana,Transect 3 South,downwind,90.5256,6,70
+Indiana,Transect 3 South,downwind,90.5256,7,64
+Indiana,Transect 3 South,downwind,90.5256,8,70.5
+Indiana,Transect 3 South,downwind,90.5256,9,70
+Indiana,Transect 3 South,downwind,90.5256,10,70.5
+Wisconsin,Cover 1 S,upwind,0.5,,75
+Wisconsin,Cover 1 S,upwind,0.5,,63
+Wisconsin,Cover 1 S,upwind,0.5,,62
+Wisconsin,Cover 1 S,upwind,1,62,78
+Wisconsin,Cover 1 S,upwind,1,70,70
+Wisconsin,Cover 1 S,upwind,1,68,75
+Wisconsin,Cover 1 S,upwind,1.5,66,82
+Wisconsin,Cover 1 S,upwind,1.5,65,77
+Wisconsin,Cover 1 S,upwind,1.5,60,80
+Wisconsin,Cover 1 S,upwind,2,65,80
+Wisconsin,Cover 1 S,upwind,2,62,79
+Wisconsin,Cover 1 S,upwind,2,65,79
+Wisconsin,Cover 1 S,upwind,2.5,69,80
+Wisconsin,Cover 1 S,upwind,2.5,63,74
+Wisconsin,Cover 1 S,upwind,2.5,58,76
+Wisconsin,Cover 1 S,upwind,3,68,77
+Wisconsin,Cover 1 S,upwind,3,66,75
+Wisconsin,Cover 1 S,upwind,3,62,76
+Wisconsin,Cover 1 S,upwind,3.5,67,83
+Wisconsin,Cover 1 S,upwind,3.5,67,77
+Wisconsin,Cover 1 S,upwind,3.5,77,78
+Wisconsin,Cover 1 S,upwind,4,75,80
+Wisconsin,Cover 1 S,upwind,4,81,80
+Wisconsin,Cover 1 S,upwind,4,82,78
+Wisconsin,Cover 1 S,upwind,4.5,88,78
+Wisconsin,Cover 1 S,upwind,4.5,87,77
+Wisconsin,Cover 1 S,upwind,4.5,84,80
+Wisconsin,Cover 1 S,upwind,5,85,83
+Wisconsin,Cover 1 S,upwind,5,79,77
+Wisconsin,Cover 1 S,upwind,5,85,83
+Wisconsin,Cover 1 S,upwind,5.5,85,82
+Wisconsin,Cover 1 S,upwind,5.5,81,81
+Wisconsin,Cover 1 S,upwind,5.5,87,78
+Wisconsin,Cover 1 S,upwind,6,85,80
+Wisconsin,Cover 1 S,upwind,6,84,79
+Wisconsin,Cover 1 S,upwind,6,78,80
+Wisconsin,Cover 1 S,upwind,6.5,76,73
+Wisconsin,Cover 1 S,upwind,6.5,84,76
+Wisconsin,Cover 1 S,upwind,6.5,85,76
+Wisconsin,Cover 1 S,upwind,7,84,79
+Wisconsin,Cover 1 S,upwind,7,88,77
+Wisconsin,Cover 1 S,upwind,7,83,78
+Wisconsin,Cover 1 S,upwind,7.5,83,83
+Wisconsin,Cover 1 S,upwind,7.5,89,84
+Wisconsin,Cover 1 S,upwind,7.5,85,81
+Wisconsin,Cover 1 S,upwind,8,91,83
+Wisconsin,Cover 1 S,upwind,8,82,84
+Wisconsin,Cover 1 S,upwind,8,88,82
+Wisconsin,Cover 1 S,upwind,8.5,90,88
+Wisconsin,Cover 1 S,upwind,8.5,84,84
+Wisconsin,Cover 1 S,upwind,8.5,88,84
+Wisconsin,Cover 1 S,upwind,9,84,87
+Wisconsin,Cover 1 S,upwind,9,88,84
+Wisconsin,Cover 1 S,upwind,9,82,84
+Wisconsin,Cover 1 S,upwind,9.5,89,86
+Wisconsin,Cover 1 S,upwind,9.5,88,84
+Wisconsin,Cover 1 S,upwind,9.5,86,80
+Wisconsin,Cover 1 S,upwind,10,87,88
+Wisconsin,Cover 1 S,upwind,10,83,86
+Wisconsin,Cover 1 S,upwind,10,87,84
+Wisconsin,Cover 1 S,upwind,10.5,86,83
+Wisconsin,Cover 1 S,upwind,10.5,85,83
+Wisconsin,Uncover 1 S,upwind,10.5,84,82
+Wisconsin,Uncover 1 S,upwind,0.5,1,
+Wisconsin,Uncover 1 S,upwind,0.5,2,
+Wisconsin,Uncover 1 S,upwind,0.5,3,
+Wisconsin,Uncover 1 S,upwind,1,1,80
+Wisconsin,Uncover 1 S,upwind,1,2,77
+Wisconsin,Uncover 1 S,upwind,1,3,78
+Wisconsin,Uncover 1 S,upwind,1.5,1,82
+Wisconsin,Uncover 1 S,upwind,1.5,2,78
+Wisconsin,Uncover 1 S,upwind,1.5,3,78
+Wisconsin,Uncover 1 S,upwind,2,1,82
+Wisconsin,Uncover 1 S,upwind,2,2,81
+Wisconsin,Uncover 1 S,upwind,2,3,82
+Wisconsin,Uncover 1 S,upwind,2.5,1,82
+Wisconsin,Uncover 1 S,upwind,2.5,2,80
+Wisconsin,Uncover 1 S,upwind,2.5,3,83
+Wisconsin,Uncover 1 S,upwind,3,1,84
+Wisconsin,Uncover 1 S,upwind,3,2,78
+Wisconsin,Uncover 1 S,upwind,3,3,80
+Wisconsin,Uncover 1 S,upwind,3.5,1,78
+Wisconsin,Uncover 1 S,upwind,3.5,2,82
+Wisconsin,Uncover 1 S,upwind,3.5,3,76
+Wisconsin,Uncover 1 S,upwind,4,1,82
+Wisconsin,Uncover 1 S,upwind,4,2,80
+Wisconsin,Uncover 1 S,upwind,4,3,77
+Wisconsin,Uncover 1 S,upwind,4.5,1,85
+Wisconsin,Uncover 1 S,upwind,4.5,2,84
+Wisconsin,Uncover 1 S,upwind,4.5,3,82
+Wisconsin,Uncover 1 S,upwind,5,1,83
+Wisconsin,Uncover 1 S,upwind,5,2,84
+Wisconsin,Uncover 1 S,upwind,5,3,83
+Wisconsin,Uncover 1 S,upwind,5.5,1,80
+Wisconsin,Uncover 1 S,upwind,5.5,2,84
+Wisconsin,Uncover 1 S,upwind,5.5,3,81
+Wisconsin,Uncover 1 S,upwind,6,1,80
+Wisconsin,Uncover 1 S,upwind,6,2,82
+Wisconsin,Uncover 1 S,upwind,6,3,80
+Wisconsin,Uncover 1 S,upwind,6.5,1,81
+Wisconsin,Uncover 1 S,upwind,6.5,2,78
+Wisconsin,Uncover 1 S,upwind,6.5,3,77
+Wisconsin,Uncover 1 S,upwind,7,1,79
+Wisconsin,Uncover 1 S,upwind,7,2,79
+Wisconsin,Uncover 1 S,upwind,7,3,79
+Wisconsin,Uncover 1 S,upwind,7.5,1,83
+Wisconsin,Uncover 1 S,upwind,7.5,2,78
+Wisconsin,Uncover 1 S,upwind,7.5,3,82
+Wisconsin,Uncover 1 S,upwind,8,1,83
+Wisconsin,Uncover 1 S,upwind,8,2,84
+Wisconsin,Uncover 1 S,upwind,8,3,80
+Wisconsin,Uncover 1 S,upwind,8.5,1,88
+Wisconsin,Uncover 1 S,upwind,8.5,2,84
+Wisconsin,Uncover 1 S,upwind,8.5,3,83
+Wisconsin,Uncover 1 S,upwind,9,1,84
+Wisconsin,Uncover 1 S,upwind,9,2,86
+Wisconsin,Uncover 1 S,upwind,9,3,84
+Wisconsin,Uncover 1 S,upwind,9.5,1,85
+Wisconsin,Uncover 1 S,upwind,9.5,2,86
+Wisconsin,Uncover 1 S,upwind,9.5,3,82
+Wisconsin,Uncover 1 S,upwind,10,1,82
+Wisconsin,Uncover 1 S,upwind,10,2,82
+Wisconsin,Uncover 1 S,upwind,10,3,86
+Wisconsin,Uncover 1 S,upwind,10.5,1,82
+Wisconsin,Uncover 1 S,upwind,10.5,2,85
+Wisconsin,Uncover 1 S,upwind,10.5,3,87
+Wisconsin,Cover 2 N,downwind,0.5,1,75
+Wisconsin,Cover 2 N,downwind,0.5,2,63
+Wisconsin,Cover 2 N,downwind,0.5,3,62
+Wisconsin,Cover 2 N,downwind,1,1,78
+Wisconsin,Cover 2 N,downwind,1,2,70
+Wisconsin,Cover 2 N,downwind,1,3,75
+Wisconsin,Cover 2 N,downwind,1.5,1,82
+Wisconsin,Cover 2 N,downwind,1.5,2,77
+Wisconsin,Cover 2 N,downwind,1.5,3,80
+Wisconsin,Cover 2 N,downwind,2,1,80
+Wisconsin,Cover 2 N,downwind,2,2,79
+Wisconsin,Cover 2 N,downwind,2,3,79
+Wisconsin,Cover 2 N,downwind,2.5,1,80
+Wisconsin,Cover 2 N,downwind,2.5,2,74
+Wisconsin,Cover 2 N,downwind,2.5,3,76
+Wisconsin,Cover 2 N,downwind,3,1,77
+Wisconsin,Cover 2 N,downwind,3,2,75
+Wisconsin,Cover 2 N,downwind,3,3,76
+Wisconsin,Cover 2 N,downwind,3.5,1,83
+Wisconsin,Cover 2 N,downwind,3.5,2,77
+Wisconsin,Cover 2 N,downwind,3.5,3,78
+Wisconsin,Cover 2 N,downwind,4,1,80
+Wisconsin,Cover 2 N,downwind,4,2,80
+Wisconsin,Cover 2 N,downwind,4,3,78
+Wisconsin,Cover 2 N,downwind,4.5,1,78
+Wisconsin,Cover 2 N,downwind,4.5,2,77
+Wisconsin,Cover 2 N,downwind,4.5,3,80
+Wisconsin,Cover 2 N,downwind,5,1,83
+Wisconsin,Cover 2 N,downwind,5,2,77
+Wisconsin,Cover 2 N,downwind,5,3,83
+Wisconsin,Cover 2 N,downwind,5.5,1,82
+Wisconsin,Cover 2 N,downwind,5.5,2,81
+Wisconsin,Cover 2 N,downwind,5.5,3,78
+Wisconsin,Cover 2 N,downwind,6,1,80
+Wisconsin,Cover 2 N,downwind,6,2,79
+Wisconsin,Cover 2 N,downwind,6,3,80
+Wisconsin,Cover 2 N,downwind,6.5,1,73
+Wisconsin,Cover 2 N,downwind,6.5,2,76
+Wisconsin,Cover 2 N,downwind,6.5,3,76
+Wisconsin,Cover 2 N,downwind,7,1,79
+Wisconsin,Cover 2 N,downwind,7,2,77
+Wisconsin,Cover 2 N,downwind,7,3,78
+Wisconsin,Cover 2 N,downwind,7.5,1,83
+Wisconsin,Cover 2 N,downwind,7.5,2,84
+Wisconsin,Cover 2 N,downwind,7.5,3,81
+Wisconsin,Cover 2 N,downwind,8,1,83
+Wisconsin,Cover 2 N,downwind,8,2,84
+Wisconsin,Cover 2 N,downwind,8,3,82
+Wisconsin,Cover 2 N,downwind,8.5,1,88
+Wisconsin,Cover 2 N,downwind,8.5,2,84
+Wisconsin,Cover 2 N,downwind,8.5,3,84
+Wisconsin,Cover 2 N,downwind,9,1,87
+Wisconsin,Cover 2 N,downwind,9,2,84
+Wisconsin,Cover 2 N,downwind,9,3,84
+Wisconsin,Cover 2 N,downwind,9.5,1,86
+Wisconsin,Cover 2 N,downwind,9.5,2,84
+Wisconsin,Cover 2 N,downwind,9.5,3,80
+Wisconsin,Cover 2 N,downwind,10,1,88
+Wisconsin,Cover 2 N,downwind,10,2,86
+Wisconsin,Cover 2 N,downwind,10,3,84
+Wisconsin,Cover 2 N,downwind,10.5,1,83
+Wisconsin,Cover 2 N,downwind,10.5,2,83
+Wisconsin,Uncover 2 N,downwind,10.5,3,82
+Wisconsin,Uncover 2 N,downwind,0.5,1,
+Wisconsin,Uncover 2 N,downwind,0.5,2,
+Wisconsin,Uncover 2 N,downwind,0.5,3,
+Wisconsin,Uncover 2 N,downwind,1,1,80
+Wisconsin,Uncover 2 N,downwind,1,2,77
+Wisconsin,Uncover 2 N,downwind,1,3,78
+Wisconsin,Uncover 2 N,downwind,1.5,1,82
+Wisconsin,Uncover 2 N,downwind,1.5,2,78
+Wisconsin,Uncover 2 N,downwind,1.5,3,78
+Wisconsin,Uncover 2 N,downwind,2,1,82
+Wisconsin,Uncover 2 N,downwind,2,2,81
+Wisconsin,Uncover 2 N,downwind,2,3,82
+Wisconsin,Uncover 2 N,downwind,2.5,1,82
+Wisconsin,Uncover 2 N,downwind,2.5,2,80
+Wisconsin,Uncover 2 N,downwind,2.5,3,83
+Wisconsin,Uncover 2 N,downwind,3,1,84
+Wisconsin,Uncover 2 N,downwind,3,2,78
+Wisconsin,Uncover 2 N,downwind,3,3,80
+Wisconsin,Uncover 2 N,downwind,3.5,1,78
+Wisconsin,Uncover 2 N,downwind,3.5,2,82
+Wisconsin,Uncover 2 N,downwind,3.5,3,76
+Wisconsin,Uncover 2 N,downwind,4,1,82
+Wisconsin,Uncover 2 N,downwind,4,2,80
+Wisconsin,Uncover 2 N,downwind,4,3,77
+Wisconsin,Uncover 2 N,downwind,4.5,1,85
+Wisconsin,Uncover 2 N,downwind,4.5,2,84
+Wisconsin,Uncover 2 N,downwind,4.5,3,82
+Wisconsin,Uncover 2 N,downwind,5,1,83
+Wisconsin,Uncover 2 N,downwind,5,2,84
+Wisconsin,Uncover 2 N,downwind,5,3,83
+Wisconsin,Uncover 2 N,downwind,5.5,1,80
+Wisconsin,Uncover 2 N,downwind,5.5,2,84
+Wisconsin,Uncover 2 N,downwind,5.5,3,81
+Wisconsin,Uncover 2 N,downwind,6,1,80
+Wisconsin,Uncover 2 N,downwind,6,2,82
+Wisconsin,Uncover 2 N,downwind,6,3,80
+Wisconsin,Uncover 2 N,downwind,6.5,1,81
+Wisconsin,Uncover 2 N,downwind,6.5,2,78
+Wisconsin,Uncover 2 N,downwind,6.5,3,77
+Wisconsin,Uncover 2 N,downwind,7,1,79
+Wisconsin,Uncover 2 N,downwind,7,2,79
+Wisconsin,Uncover 2 N,downwind,7,3,79
+Wisconsin,Uncover 2 N,downwind,7.5,1,83
+Wisconsin,Uncover 2 N,downwind,7.5,2,78
+Wisconsin,Uncover 2 N,downwind,7.5,3,82
+Wisconsin,Uncover 2 N,downwind,8,1,83
+Wisconsin,Uncover 2 N,downwind,8,2,84
+Wisconsin,Uncover 2 N,downwind,8,3,80
+Wisconsin,Uncover 2 N,downwind,8.5,1,88
+Wisconsin,Uncover 2 N,downwind,8.5,2,84
+Wisconsin,Uncover 2 N,downwind,8.5,3,83
+Wisconsin,Uncover 2 N,downwind,9,1,84
+Wisconsin,Uncover 2 N,downwind,9,2,86
+Wisconsin,Uncover 2 N,downwind,9,3,84
+Wisconsin,Uncover 2 N,downwind,9.5,1,85
+Wisconsin,Uncover 2 N,downwind,9.5,2,86
+Wisconsin,Uncover 2 N,downwind,9.5,3,82
+Wisconsin,Uncover 2 N,downwind,10,1,82
+Wisconsin,Uncover 2 N,downwind,10,2,82
+Wisconsin,Uncover 2 N,downwind,10,3,86
+Wisconsin,Uncover 2 N,downwind,10.5,1,82
+Wisconsin,Uncover 2 N,downwind,10.5,2,85
+Wisconsin,Uncover 2 N,downwind,10.5,3,87
+Wisconsin,Cover 3 N,downwind,0.5,1,82
+Wisconsin,Cover 3 N,downwind,0.5,2,84
+Wisconsin,Cover 3 N,downwind,0.5,3,82
+Wisconsin,Cover 3 N,downwind,1,1,85
+Wisconsin,Cover 3 N,downwind,1,2,85
+Wisconsin,Cover 3 N,downwind,1,3,86
+Wisconsin,Cover 3 N,downwind,1.5,1,89
+Wisconsin,Cover 3 N,downwind,1.5,2,87
+Wisconsin,Cover 3 N,downwind,1.5,3,84
+Wisconsin,Cover 3 N,downwind,2,1,85
+Wisconsin,Cover 3 N,downwind,2,2,87
+Wisconsin,Cover 3 N,downwind,2,3,84
+Wisconsin,Cover 3 N,downwind,2.5,1,85
+Wisconsin,Cover 3 N,downwind,2.5,2,86
+Wisconsin,Cover 3 N,downwind,2.5,3,87
+Wisconsin,Cover 3 N,downwind,3,1,83
+Wisconsin,Cover 3 N,downwind,3,2,85
+Wisconsin,Cover 3 N,downwind,3,3,83
+Wisconsin,Cover 3 N,downwind,3.5,1,85
+Wisconsin,Cover 3 N,downwind,3.5,2,86
+Wisconsin,Cover 3 N,downwind,3.5,3,87
+Wisconsin,Cover 3 N,downwind,4,1,86
+Wisconsin,Cover 3 N,downwind,4,2,88
+Wisconsin,Cover 3 N,downwind,4,3,85
+Wisconsin,Cover 3 N,downwind,4.5,1,90
+Wisconsin,Cover 3 N,downwind,4.5,2,93
+Wisconsin,Cover 3 N,downwind,4.5,3,91
+Wisconsin,Cover 3 N,downwind,5,1,85
+Wisconsin,Cover 3 N,downwind,5,2,87
+Wisconsin,Cover 3 N,downwind,5,3,89
+Wisconsin,Cover 3 N,downwind,5.5,1,87
+Wisconsin,Cover 3 N,downwind,5.5,2,80
+Wisconsin,Cover 3 N,downwind,5.5,3,87
+Wisconsin,Cover 3 N,downwind,6,1,83
+Wisconsin,Cover 3 N,downwind,6,2,84
+Wisconsin,Cover 3 N,downwind,6,3,84
+Wisconsin,Cover 3 N,downwind,6.5,1,86
+Wisconsin,Cover 3 N,downwind,6.5,2,87
+Wisconsin,Cover 3 N,downwind,6.5,3,84
+Wisconsin,Cover 3 N,downwind,7,1,84
+Wisconsin,Cover 3 N,downwind,7,2,88
+Wisconsin,Cover 3 N,downwind,7,3,85
+Wisconsin,Cover 3 N,downwind,7.5,1,88
+Wisconsin,Cover 3 N,downwind,7.5,2,89
+Wisconsin,Cover 3 N,downwind,7.5,3,87
+Wisconsin,Cover 3 N,downwind,8,1,90
+Wisconsin,Cover 3 N,downwind,8,2,90
+Wisconsin,Cover 3 N,downwind,8,3,90
+Wisconsin,Cover 3 N,downwind,8.5,1,84
+Wisconsin,Cover 3 N,downwind,8.5,2,90
+Wisconsin,Cover 3 N,downwind,8.5,3,91
+Wisconsin,Cover 3 N,downwind,9,1,87
+Wisconsin,Cover 3 N,downwind,9,2,86
+Wisconsin,Cover 3 N,downwind,9,3,88
+Wisconsin,Cover 3 N,downwind,9.5,1,86
+Wisconsin,Cover 3 N,downwind,9.5,2,86
+Wisconsin,Cover 3 N,downwind,9.5,3,92
+Wisconsin,Cover 3 N,downwind,10,1,90
+Wisconsin,Cover 3 N,downwind,10,2,89
+Wisconsin,Cover 3 N,downwind,10,3,89
+Wisconsin,Cover 3 N,downwind,10.5,1,91
+Wisconsin,Cover 3 N,downwind,10.5,2,90
+Wisconsin,Uncover 3 N,downwind,10.5,3,91
+Wisconsin,Uncover 3 N,downwind,0.5,1,
+Wisconsin,Uncover 3 N,downwind,0.5,2,
+Wisconsin,Uncover 3 N,downwind,0.5,3,
+Wisconsin,Uncover 3 N,downwind,1,1,70
+Wisconsin,Uncover 3 N,downwind,1,2,84
+Wisconsin,Uncover 3 N,downwind,1,3,82
+Wisconsin,Uncover 3 N,downwind,1.5,1,86
+Wisconsin,Uncover 3 N,downwind,1.5,2,77
+Wisconsin,Uncover 3 N,downwind,1.5,3,79
+Wisconsin,Uncover 3 N,downwind,2,1,80
+Wisconsin,Uncover 3 N,downwind,2,2,80
+Wisconsin,Uncover 3 N,downwind,2,3,81
+Wisconsin,Uncover 3 N,downwind,2.5,1,81
+Wisconsin,Uncover 3 N,downwind,2.5,2,84
+Wisconsin,Uncover 3 N,downwind,2.5,3,81
+Wisconsin,Uncover 3 N,downwind,3,1,75
+Wisconsin,Uncover 3 N,downwind,3,2,85
+Wisconsin,Uncover 3 N,downwind,3,3,86
+Wisconsin,Uncover 3 N,downwind,3.5,1,85
+Wisconsin,Uncover 3 N,downwind,3.5,2,90
+Wisconsin,Uncover 3 N,downwind,3.5,3,83
+Wisconsin,Uncover 3 N,downwind,4,1,89
+Wisconsin,Uncover 3 N,downwind,4,2,85
+Wisconsin,Uncover 3 N,downwind,4,3,83
+Wisconsin,Uncover 3 N,downwind,4.5,1,86
+Wisconsin,Uncover 3 N,downwind,4.5,2,84
+Wisconsin,Uncover 3 N,downwind,4.5,3,85
+Wisconsin,Uncover 3 N,downwind,5,1,85
+Wisconsin,Uncover 3 N,downwind,5,2,85
+Wisconsin,Uncover 3 N,downwind,5,3,85
+Wisconsin,Uncover 3 N,downwind,5.5,1,83
+Wisconsin,Uncover 3 N,downwind,5.5,2,84
+Wisconsin,Uncover 3 N,downwind,5.5,3,84
+Wisconsin,Uncover 3 N,downwind,6,1,84
+Wisconsin,Uncover 3 N,downwind,6,2,85
+Wisconsin,Uncover 3 N,downwind,6,3,85
+Wisconsin,Uncover 3 N,downwind,6.5,1,89
+Wisconsin,Uncover 3 N,downwind,6.5,2,84
+Wisconsin,Uncover 3 N,downwind,6.5,3,85
+Wisconsin,Uncover 3 N,downwind,7,1,87
+Wisconsin,Uncover 3 N,downwind,7,2,85
+Wisconsin,Uncover 3 N,downwind,7,3,82
+Wisconsin,Uncover 3 N,downwind,7.5,1,88
+Wisconsin,Uncover 3 N,downwind,7.5,2,88
+Wisconsin,Uncover 3 N,downwind,7.5,3,87
+Wisconsin,Uncover 3 N,downwind,8,1,90
+Wisconsin,Uncover 3 N,downwind,8,2,91
+Wisconsin,Uncover 3 N,downwind,8,3,85
+Wisconsin,Uncover 3 N,downwind,8.5,1,88
+Wisconsin,Uncover 3 N,downwind,8.5,2,85
+Wisconsin,Uncover 3 N,downwind,8.5,3,87
+Wisconsin,Uncover 3 N,downwind,9,1,84
+Wisconsin,Uncover 3 N,downwind,9,2,83
+Wisconsin,Uncover 3 N,downwind,9,3,88
+Wisconsin,Uncover 3 N,downwind,9.5,1,84
+Wisconsin,Uncover 3 N,downwind,9.5,2,84
+Wisconsin,Uncover 3 N,downwind,9.5,3,86
+Wisconsin,Uncover 3 N,downwind,10,1,82
+Wisconsin,Uncover 3 N,downwind,10,2,86
+Wisconsin,Uncover 3 N,downwind,10,3,87
+Wisconsin,Uncover 3 N,downwind,10.5,1,87
+Wisconsin,Uncover 3 N,downwind,10.5,2,86
+Wisconsin,Uncover 3 N,downwind,10.5,3,88
+Wisconsin,Cover 4 N,downwind,0.5,1,85
+Wisconsin,Cover 4 N,downwind,0.5,2,86
+Wisconsin,Cover 4 N,downwind,0.5,3,86
+Wisconsin,Cover 4 N,downwind,1,1,85
+Wisconsin,Cover 4 N,downwind,1,2,88
+Wisconsin,Cover 4 N,downwind,1,3,83
+Wisconsin,Cover 4 N,downwind,1.5,1,83
+Wisconsin,Cover 4 N,downwind,1.5,2,82
+Wisconsin,Cover 4 N,downwind,1.5,3,82
+Wisconsin,Cover 4 N,downwind,2,1,85
+Wisconsin,Cover 4 N,downwind,2,2,81
+Wisconsin,Cover 4 N,downwind,2,3,82
+Wisconsin,Cover 4 N,downwind,2.5,1,88
+Wisconsin,Cover 4 N,downwind,2.5,2,88
+Wisconsin,Cover 4 N,downwind,2.5,3,85
+Wisconsin,Cover 4 N,downwind,3,1,85
+Wisconsin,Cover 4 N,downwind,3,2,83
+Wisconsin,Cover 4 N,downwind,3,3,90
+Wisconsin,Cover 4 N,downwind,3.5,1,86
+Wisconsin,Cover 4 N,downwind,3.5,2,88
+Wisconsin,Cover 4 N,downwind,3.5,3,85
+Wisconsin,Cover 4 N,downwind,4,1,88
+Wisconsin,Cover 4 N,downwind,4,2,86
+Wisconsin,Cover 4 N,downwind,4,3,92
+Wisconsin,Cover 4 N,downwind,4.5,1,81
+Wisconsin,Cover 4 N,downwind,4.5,2,86
+Wisconsin,Cover 4 N,downwind,4.5,3,85
+Wisconsin,Cover 4 N,downwind,5,1,82
+Wisconsin,Cover 4 N,downwind,5,2,85
+Wisconsin,Cover 4 N,downwind,5,3,83
+Wisconsin,Cover 4 N,downwind,5.5,1,86
+Wisconsin,Cover 4 N,downwind,5.5,2,84
+Wisconsin,Cover 4 N,downwind,5.5,3,85
+Wisconsin,Cover 4 N,downwind,6,1,83
+Wisconsin,Cover 4 N,downwind,6,2,82
+Wisconsin,Cover 4 N,downwind,6,3,82
+Wisconsin,Cover 4 N,downwind,6.5,1,87
+Wisconsin,Cover 4 N,downwind,6.5,2,84
+Wisconsin,Cover 4 N,downwind,6.5,3,84
+Wisconsin,Cover 4 N,downwind,7,1,87
+Wisconsin,Cover 4 N,downwind,7,2,88
+Wisconsin,Cover 4 N,downwind,7,3,86
+Wisconsin,Cover 4 N,downwind,7.5,1,89
+Wisconsin,Cover 4 N,downwind,7.5,2,86
+Wisconsin,Cover 4 N,downwind,7.5,3,80
+Wisconsin,Cover 4 N,downwind,8,1,89
+Wisconsin,Cover 4 N,downwind,8,2,82
+Wisconsin,Cover 4 N,downwind,8,3,83
+Wisconsin,Cover 4 N,downwind,8.5,1,89
+Wisconsin,Cover 4 N,downwind,8.5,2,85
+Wisconsin,Cover 4 N,downwind,8.5,3,86
+Wisconsin,Cover 4 N,downwind,9,1,80
+Wisconsin,Cover 4 N,downwind,9,2,84
+Wisconsin,Cover 4 N,downwind,9,3,85
+Wisconsin,Cover 4 N,downwind,9.5,1,82
+Wisconsin,Cover 4 N,downwind,9.5,2,81
+Wisconsin,Cover 4 N,downwind,9.5,3,81
+Wisconsin,Cover 4 N,downwind,10,1,78
+Wisconsin,Cover 4 N,downwind,10,2,84
+Wisconsin,Cover 4 N,downwind,10,3,82
+Wisconsin,Cover 4 N,downwind,10.5,1,84
+Wisconsin,Cover 4 N,downwind,10.5,2,81
+Wisconsin,Uncover 4 N,downwind,10.5,3,83
+Wisconsin,Uncover 4 N,downwind,0.5,1,
+Wisconsin,Uncover 4 N,downwind,0.5,2,
+Wisconsin,Uncover 4 N,downwind,0.5,3,
+Wisconsin,Uncover 4 N,downwind,1,1,86
+Wisconsin,Uncover 4 N,downwind,1,2,81
+Wisconsin,Uncover 4 N,downwind,1,3,85
+Wisconsin,Uncover 4 N,downwind,1.5,1,84
+Wisconsin,Uncover 4 N,downwind,1.5,2,82
+Wisconsin,Uncover 4 N,downwind,1.5,3,84
+Wisconsin,Uncover 4 N,downwind,2,1,88
+Wisconsin,Uncover 4 N,downwind,2,2,84
+Wisconsin,Uncover 4 N,downwind,2,3,84
+Wisconsin,Uncover 4 N,downwind,2.5,1,85
+Wisconsin,Uncover 4 N,downwind,2.5,2,86
+Wisconsin,Uncover 4 N,downwind,2.5,3,87
+Wisconsin,Uncover 4 N,downwind,3,1,89
+Wisconsin,Uncover 4 N,downwind,3,2,87
+Wisconsin,Uncover 4 N,downwind,3,3,84
+Wisconsin,Uncover 4 N,downwind,3.5,1,84
+Wisconsin,Uncover 4 N,downwind,3.5,2,85
+Wisconsin,Uncover 4 N,downwind,3.5,3,85
+Wisconsin,Uncover 4 N,downwind,4,1,86
+Wisconsin,Uncover 4 N,downwind,4,2,85
+Wisconsin,Uncover 4 N,downwind,4,3,90
+Wisconsin,Uncover 4 N,downwind,4.5,1,94
+Wisconsin,Uncover 4 N,downwind,4.5,2,92
+Wisconsin,Uncover 4 N,downwind,4.5,3,87
+Wisconsin,Uncover 4 N,downwind,5,1,89
+Wisconsin,Uncover 4 N,downwind,5,2,88
+Wisconsin,Uncover 4 N,downwind,5,3,86
+Wisconsin,Uncover 4 N,downwind,5.5,1,87
+Wisconsin,Uncover 4 N,downwind,5.5,2,84
+Wisconsin,Uncover 4 N,downwind,5.5,3,85
+Wisconsin,Uncover 4 N,downwind,6,1,85
+Wisconsin,Uncover 4 N,downwind,6,2,87
+Wisconsin,Uncover 4 N,downwind,6,3,88
+Wisconsin,Uncover 4 N,downwind,6.5,1,89
+Wisconsin,Uncover 4 N,downwind,6.5,2,88
+Wisconsin,Uncover 4 N,downwind,6.5,3,84
+Wisconsin,Uncover 4 N,downwind,7,1,90
+Wisconsin,Uncover 4 N,downwind,7,2,88
+Wisconsin,Uncover 4 N,downwind,7,3,90
+Wisconsin,Uncover 4 N,downwind,7.5,1,88
+Wisconsin,Uncover 4 N,downwind,7.5,2,87
+Wisconsin,Uncover 4 N,downwind,7.5,3,87
+Wisconsin,Uncover 4 N,downwind,8,1,88
+Wisconsin,Uncover 4 N,downwind,8,2,87
+Wisconsin,Uncover 4 N,downwind,8,3,90
+Wisconsin,Uncover 4 N,downwind,8.5,1,93
+Wisconsin,Uncover 4 N,downwind,8.5,2,91
+Wisconsin,Uncover 4 N,downwind,8.5,3,88
+Wisconsin,Uncover 4 N,downwind,9,1,89
+Wisconsin,Uncover 4 N,downwind,9,2,89
+Wisconsin,Uncover 4 N,downwind,9,3,90
+Wisconsin,Uncover 4 N,downwind,9.5,1,87
+Wisconsin,Uncover 4 N,downwind,9.5,2,92
+Wisconsin,Uncover 4 N,downwind,9.5,3,83
+Wisconsin,Uncover 4 N,downwind,10,1,90
+Wisconsin,Uncover 4 N,downwind,10,2,88
+Wisconsin,Uncover 4 N,downwind,10,3,86
+Wisconsin,Uncover 4 N,downwind,10.5,1,88
+Wisconsin,Uncover 4 N,downwind,10.5,2,92
+Wisconsin,Uncover 4 N,downwind,10.5,3,89

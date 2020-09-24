@@ -1,0 +1,527 @@
+---
+title: "New report"
+author: "Maxwel Coura Oliveira"
+date: "1/19/2019"
+output: html_document
+---
+
+
+```{r include=FALSE}
+library(ggplot2)
+library(drc)
+library(knitr)
+library(kableExtra)
+library(ggthemes)
+library(ggplot2)
+library(RColorBrewer)
+library(CircStats)
+library(openair)
+library(scales)
+library(tidyverse)
+library(kableExtra)
+library(scales)
+library(ggthemes)
+library(usmap)
+library(ggmap)
+library(ggrepel)
+library(maps)
+library(grid)
+library(mapdata)
+library(maptools)
+library(stringr)
+library(dplyr)
+library(ggsn)
+library(choroplethr)
+```
+
+
+# ARKANSAS
+
+```{r include=FALSE}
+AR=read_csv("arkansas.csv")
+str(AR)
+```
+
+
+\newpage
+## Results at 22 DAT
+
+### Non-Xtend soybean injury 
+
+####
+
+```{r include=FALSE}
+AR1=filter(AR, Direction=="Upwind" & DAT=="22")
+Model1=drm(Injury~Distance, fct=l3(fixed = c(NA, NA, NA), names = c("slope", "asymptote", "ed50")), data=AR1)
+```
+
+##### Model summary
+
+```{r echo=FALSE}
+summary(Model1)
+```
+
+
+##### ED values
+
+```{r echo=FALSE}
+ED(Model1, c(1,10,20), type="absolute")
+```
+
+
+| State  | ED1 |
+| ------------- | ------------- |
+| Arkansas  | Content Cell  |
+| Content Cell  | Content Cell  |
+
+
+
+
+##### Figure
+
+```{r echo=FALSE}
+plot(Model1)
+```
+
+```{r warning=FALSE, include=FALSE}
+nd <- expand.grid(Distance=exp(seq(log(14), log(81), length=81)))
+
+pm <- predict(Model1, newdata=nd, interval="confidence")
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+AR1$Distance0 <- AR1$Distance 
+AR1$Distance0[AR1$h0==0] <- 14 
+```
+
+```{r echo=FALSE, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area in the upwind west transect 1, 2, and 3 in Arkansas at 22 DAT.", fig.height=6, fig.width=6, warning=FALSE}
+p1<-ggplot(AR1, aes(x = Distance0, y = Injury)) +  theme_stata() +
+geom_line(data=nd, aes(x=Distance, y=p), size=1.3) + coord_trans(x="log") +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: University of Arkansas Weed Science, 2018") +
+  scale_fill_brewer(palette="Paired") + ylim(0,100) +
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position=c(0.8, 0.8)) +
+  scale_x_continuous(breaks=c(15, 20, 30, 40, 80)) 
+```
+
+
+
+
+
+# INDIANA
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE}
+IN=read_csv("indiana.csv")
+str(IN)
+```
+
+
+
+```{r include=FALSE}
+IN <- IN %>% 
+  filter(Tarp != "Transect")
+```
+
+
+
+```{r include=FALSE}
+Model6=drm(Injury~Distance, Tarp, fct=l3(fixed = c(NA, 100, NA)), data=IN)
+```
+
+#### Model summary
+
+```{r echo=FALSE}
+summary(Model6)
+```
+
+
+#### ED values
+
+```{r echo=FALSE}
+ED(Model6, c(1,10,20), type="absolute")
+```
+
+
+
+#### ED's comparison
+
+```{r echo=FALSE}
+EDcomp(Model6, c(1,1,10,10,20, 20), type="absolute")
+```
+
+
+#### Figure
+
+```{r echo=FALSE}
+plot(Model6)
+```
+
+
+```{r include=FALSE} 
+newdata <- expand.grid(Distance=exp(seq(log(1), log(15), length=15)))
+newdata1 <- data.frame(Tarp = "Cover", newdata) 
+newdata2 <- data.frame(Tarp = "Uncover", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model6, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+IN$Distance0 <- IN$Distance 
+IN$Distance0[IN$h0==0] <- 1 
+```
+
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated area of north (cover and uncover) at 21 DAT in Indiana."}
+p2<-ggplot(IN, aes(x = Distance0, y = Injury, linetype=Tarp)) + theme_stata() +
+  geom_line(data=nd, aes(x=Distance, y=p, linetype=Tarp, color=Tarp), size=1.3) + coord_trans(x="log") +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: Purdue University Weed Science, 2018") +
+  scale_color_brewer(palette="Set1") + ylim(0,100) +
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position="none") +
+  scale_x_continuous(breaks=c(1, 3, 6, 10, 15)) 
+```
+
+
+
+
+
+# MICHIGAN
+
+
+```{r include=FALSE}
+MI=read_csv("michigan.csv")
+```
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+
+```{r include=FALSE}
+MI <- MI %>% 
+  filter(Type != "Transect")
+```
+
+
+```{r include=FALSE}
+Model14=drm(Injury~Distance, Type, fct=l3(), data=MI)
+```
+
+#### Model summary
+
+```{r echo=FALSE}
+summary(Model14)
+```
+
+
+#### ED values
+
+```{r echo=FALSE}
+ED(Model14, c(1,10,20), type="absolute")
+```
+
+
+
+#### ED's comparison
+
+```{r echo=FALSE}
+EDcomp(Model14, c(1,1,10,10,20, 20), type="absolute")
+```
+
+
+#### Figure
+
+```{r echo=FALSE}
+plot(Model14)
+```
+
+
+
+```{r include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Type ="Cover", newdata)
+newdata2 <- data.frame(Type ="Uncover", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model14, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+MI$Distance0 <- MI$Distance
+MI$Distance0[MI$h0==0] <- 0.5
+```
+
+
+```{r echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (m) from the dicamba treated at Area 1 (cover and uncover) at 21 DAT in Michigan."}
+p3<-ggplot(MI, aes(x = Distance0, y = Injury, linetype=Type, shape=Type, color=Type)) + theme_stata() +
+  geom_line(data=nd, aes(x=Distance, y=p, linetype=Type, color=Type), size=1.3) + coord_trans(x="log") +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: Michigan State University Weed Science, 2018") +
+  scale_color_brewer(palette="Set1") + ylim(0,100) +
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position="none") +
+  scale_x_continuous(breaks=c(1, 2, 4, 8, 15)) 
+```
+
+
+
+
+
+
+
+# NEBRASKA
+
+```{r include=FALSE}
+Nebraska=read_csv("Nebraska2.csv")
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+```{r include=FALSE}
+Model22=drm(Injury~Distance, Tarp, fct=l4(), data=Nebraska)
+```
+
+#### Model summary
+
+```{r echo=FALSE}
+summary(Model22)
+```
+
+
+#### Figure
+
+```{r echo=FALSE}
+plot(Model22)
+```
+
+
+```{r include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(4), log(16), length=16)))
+newdata1 <- data.frame(Tarp ="Cover", newdata)
+newdata2 <- data.frame(Tarp ="Uncover", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model22, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+Nebraska$Distance0 <- Nebraska$Distance
+Nebraska$Distance0[Nebraska$h0==0] <- 4
+```
+
+
+```{r warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area in the downwind area 1 (cover and uncover) at 21 DAT in Nebraska."}
+p4<-ggplot(Nebraska, aes(x = Distance0, y = Injury, fill=Tarp, color=Tarp)) + theme_stata() + 
+  geom_line(data=nd, aes(x=Distance, y=p, linetype=Tarp, color=Tarp), size=1.3) + coord_trans(x="log") +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: University of Nebraska-Lincoln PAT Lab, 2018") +
+  scale_color_brewer(palette="Set1") + ylim(0,100) + 
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position=c(0.8, 0.8)) +
+  scale_x_continuous(breaks=c(4, 7, 10, 15)) 
+```
+
+
+
+
+
+# ONTARIO
+
+```{r include=FALSE}
+ON=read_csv("guelph.csv")
+str(ON)
+ON$Area<-as.factor(ON$Area)
+```
+
+
+## Results at 21 DAT
+
+### Non-Xtend soybean injury 
+
+Uncover only, there is no injury in the covered soybeans.
+
+```{r warning=FALSE, include=FALSE}
+ON1=filter(ON, Tarp=="Uncover" & DAT==21)
+Model28=drm(Injury~Distance, fct=l3(fixed = c(NA, NA, NA)), data=ON1)
+```
+
+#### Model summary
+
+```{r echo=FALSE}
+summary(Model28)
+```
+
+
+#### ED values
+
+```{r echo=FALSE}
+ED(Model28, c(1,10,20), type="absolute")
+```
+
+
+
+#### Figure
+
+```{r echo=FALSE}
+plot(Model28)
+```
+
+
+```{r ONprediction, warning=FALSE, include=FALSE} 
+nd <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+
+pm <- predict(Model28, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2]   
+nd$pmax <- pm[,3] 
+
+
+ON1$Distance0 <- ON1$Distance 
+ON1$Distance0[ON1$h0==0] <- 0.5 
+```
+
+
+```{r ONPlot, warning=FALSE, echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area oof uncover area (1, 2, 3) at 21 DAT in Ontario."}
+p5<-ggplot(ON1, aes(x = Distance0, y = Injury)) + theme_stata() + 
+  geom_line(data=nd, aes(x=Distance, y=p), color="blue", size=1.3, linetype="dashed") + coord_trans(x="log") +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: University of Guelph Weed Science, 2018") +
+ ylim(0,100) + 
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position=c(0.8, 0.8)) +
+  scale_x_continuous(breaks=c(1, 5, 10, 15)) 
+```
+
+
+
+
+
+# WISCONSIN
+
+
+```{r include=FALSE}
+Wisconsin=read_csv("wisconsin.csv")
+str(Wisconsin)
+```
+
+
+
+## Results at 28 DAT
+
+### Non-Xtend soybean injury
+
+
+```{r include=FALSE}
+WI <- Wisconsin %>% 
+  filter(Location != "S-1")
+```
+
+
+```{r include=FALSE}
+WI1=filter(WI, DAT=="28")
+Model31=drm(Injury~Distance, Tarp, fct=l3(), data=WI1)
+```
+
+#### Model summary
+
+```{r echo=FALSE}
+summary(Model31)
+```
+
+
+#### ED values
+
+```{r echo=FALSE}
+ED(Model31, c(1,10,20), type="absolute")
+```
+
+
+
+#### ED's comparison
+
+```{r echo=FALSE}
+EDcomp(Model31, c(1,1,10,10,20, 20), type="absolute")
+```
+
+
+#### Figure
+
+```{r echo=FALSE}
+plot(Model31)
+```
+
+
+
+```{r include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.5), log(16), length=16)))
+newdata1 <- data.frame(Tarp ="Cover", newdata)
+newdata2 <- data.frame(Tarp ="Uncover", newdata)
+
+
+
+nd=rbind(newdata1, newdata2)
+
+pm <- predict(Model31, newdata=nd, interval="confidence")
+
+
+nd$p <- pm[,1] 
+nd$pmin <- pm[,2] 
+nd$pmax <- pm[,3] 
+
+
+WI1$Distance0 <- WI1$Distance
+WI1$Distance0[WI1$h0==0] <- 0.5
+```
+
+
+```{r echo=FALSE, fig.height= 6, fig.width=6, fig.cap="Non-Xtend soybean injury (%) with distance (%) from the dicamba treated area at Area 4 (cover and uncover) in Wisconsin at 28 DAT."}
+p6<-ggplot(WI1, aes(x = Distance0, y = Injury, linetype=Tarp, shape=Tarp, color=Tarp)) + theme_stata() + #geom_point() +
+  geom_line(data=nd, aes(x=Distance, y=p, linetype=Tarp, color=Tarp), size=1.3) + coord_trans(x="log") +
+  #geom_ribbon(data=nd, aes(x=Distance, y=p, ymin=pmin, ymax=pmax, fill=Tarp), alpha=0.2) +
+  labs(fill="", y="Non-Xtend soybean injury (%)", x="Distance (m)", caption = "Source: University of Wisconsin-Madison Weed Science, 2018") +
+  scale_color_brewer(palette="Set1") + ylim(0,100) + 
+  theme(plot.caption = element_text(size=10), legend.title = element_blank(), legend.text = element_text(size=12), legend.position=c(0.8, 0.8)) +
+  scale_x_continuous(breaks=c(1, 5, 10, 15)) 
+```
+
+
+
+
+
+
+```{r}
+library(gridExtra)
+library(cowplot)
+plot_grid(p1, p2, p3, p4, p5, p6, nrow = 2) + ggsave("All.png", height=8, width=15, dpi=600)
+```
+
+
+
+

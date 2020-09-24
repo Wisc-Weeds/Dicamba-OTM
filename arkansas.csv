@@ -1,0 +1,201 @@
+Direction,Cover,Location,Distance,Injury,DAT
+Upwind,No,West Transect 1,15.24,40,22
+Upwind,No,West Transect 1,30.48,15,22
+Upwind,No,West Transect 1,45.72,5,22
+Upwind,No,West Transect 1,60.96,0,22
+Upwind,No,West Transect 2,15.24,45,22
+Upwind,No,West Transect 2,30.48,15,22
+Upwind,No,West Transect 2,45.72,5,22
+Upwind,No,West Transect 2,60.96,0,22
+Upwind,No,West Transect 3,15.24,30,22
+Upwind,No,West Transect 3,30.48,10,22
+Upwind,No,West Transect 3,45.72,5,22
+Upwind,No,West Transect 3,60.96,5,22
+Upwind,No,West Transect 3,76.2,0,22
+Downwind,No,East Transect 1,15.24,50,22
+Downwind,No,East Transect 2,15.24,50,22
+Downwind,No,East Transect 3,15.24,50,22
+Downwind,Yes,East Transect 1,15.24,50,22
+Downwind,Yes,East Transect 2,15.24,50,22
+Downwind,Yes,East Transect 3,15.24,45,22
+Downwind,No,East Transect 1,30.48,45,22
+Downwind,No,East Transect 2,30.48,45,22
+Downwind,No,East Transect 3,30.48,35,22
+Downwind,Yes,East Transect 1,30.48,30,22
+Downwind,Yes,East Transect 2,30.48,30,22
+Downwind,Yes,East Transect 3,30.48,25,22
+Downwind,No,East Transect 1,45.72,45,22
+Downwind,No,East Transect 2,45.72,45,22
+Downwind,No,East Transect 3,45.72,30,22
+Downwind,Yes,East Transect 1,45.72,20,22
+Downwind,Yes,East Transect 2,45.72,30,22
+Downwind,Yes,East Transect 3,45.72,20,22
+Downwind,No,East Transect 1,60.96,30,22
+Downwind,No,East Transect 2,60.96,30,22
+Downwind,No,East Transect 3,60.96,20,22
+Downwind,Yes,East Transect 1,60.96,10,22
+Downwind,Yes,East Transect 2,60.96,25,22
+Downwind,Yes,East Transect 3,60.96,18,22
+Downwind,No,East Transect 1,76.2,20,22
+Downwind,No,East Transect 2,76.2,20,22
+Downwind,No,East Transect 3,76.2,20,22
+Downwind,Yes,East Transect 1,76.2,10,22
+Downwind,Yes,East Transect 2,76.2,15,22
+Downwind,Yes,East Transect 3,76.2,20,22
+Downwind,No,East Transect 1,91.44,10,22
+Downwind,No,East Transect 2,91.44,20,22
+Downwind,No,East Transect 3,91.44,15,22
+Downwind,Yes,East Transect 1,91.44,5,22
+Downwind,Yes,East Transect 2,91.44,10,22
+Downwind,Yes,East Transect 3,91.44,5,22
+Downwind,No,East Transect 1,106.68,10,22
+Downwind,No,East Transect 2,106.68,10,22
+Downwind,No,East Transect 3,106.68,10,22
+Downwind,Yes,East Transect 1,106.68,5,22
+Downwind,Yes,East Transect 2,106.68,8,22
+Downwind,Yes,East Transect 3,106.68,5,22
+Downwind,No,East Transect 1,121.92,10,22
+Downwind,No,East Transect 2,121.92,10,22
+Downwind,No,East Transect 3,121.92,10,22
+Downwind,Yes,East Transect 1,121.92,5,22
+Downwind,Yes,East Transect 2,121.92,7,22
+Downwind,Yes,East Transect 3,121.92,5,22
+Downwind,No,East Transect 1,137.16,5,22
+Downwind,No,East Transect 2,137.16,10,22
+Downwind,No,East Transect 3,137.16,5,22
+all,No,N,15.24,55,29
+all,No,N,30.48,45,29
+all,No,N,45.72,45,29
+all,No,N,60.96,45,29
+all,No,N,76.2,45,29
+all,No,N,91.44,45,29
+all,No,N,106.68,45,29
+all,No,N,121.92,40,29
+all,No,N,137.16,45,29
+all,No,N,152.4,45,29
+all,No,N,167.64,45,29
+all,No,N,182.88,40,29
+all,No,N,198.12,40,29
+all,No,N,213.36,40,29
+all,No,N,228.6,45,29
+all,No,N,243.84,25,29
+all,No,N,259.08,25,29
+all,No,N,274.32,25,29
+all,No,E,15.24,55,29
+all,No,E,30.48,35,29
+all,No,E,45.72,20,29
+all,No,E,60.96,15,29
+all,No,E,76.2,8,29
+all,No,E,91.44,8,29
+all,No,E,106.68,5,29
+all,No,E,121.92,5,29
+all,No,E,137.16,5,29
+all,No,E,152.4,3,29
+all,No,E,167.64,3,29
+all,No,E,182.88,3,29
+all,No,E,198.12,2,29
+all,No,E,213.36,2,29
+all,No,E,228.6,3,29
+all,No,E,243.84,2,29
+all,No,E,259.08,2,29
+all,No,E,274.32,0,29
+all,No,S,15.24,55,29
+all,No,S,30.48,50,29
+all,No,S,45.72,40,29
+all,No,S,60.96,35,29
+all,No,S,76.2,15,29
+all,No,S,91.44,15,29
+all,No,S,106.68,10,29
+all,No,S,121.92,10,29
+all,No,S,137.16,5,29
+all,No,S,152.4,5,29
+all,No,S,167.64,5,29
+all,No,S,182.88,5,29
+all,No,S,198.12,5,29
+all,No,S,213.36,3,29
+all,No,S,228.6,3,29
+all,No,S,243.84,3,29
+all,No,S,259.08,5,29
+all,No,S,274.32,0,29
+all,No,W,15.24,45,29
+all,No,W,30.48,40,29
+all,No,W,45.72,20,29
+all,No,W,60.96,15,29
+all,No,W,76.2,10,29
+all,No,W,91.44,8,29
+all,No,W,106.68,5,29
+all,No,W,121.92,5,29
+all,No,W,137.16,5,29
+all,No,W,152.4,5,29
+all,No,W,167.64,5,29
+all,No,W,182.88,3,29
+all,No,W,198.12,2,29
+all,No,W,213.36,5,29
+all,No,W,228.6,0,29
+all,No,W,243.84,0,29
+all,No,W,259.08,0,29
+all,No,W,274.32,0,29
+Upwind,Yes,West Transect 1,15.24,0,22
+Upwind,Yes,West Transect 1,30.48,0,22
+Upwind,Yes,West Transect 1,45.72,0,22
+Upwind,Yes,West Transect 1,60.96,0,22
+Upwind,Yes,West Transect 2,15.24,0,22
+Upwind,Yes,West Transect 2,30.48,0,22
+Upwind,Yes,West Transect 2,45.72,0,22
+Upwind,Yes,West Transect 2,60.96,0,22
+Upwind,Yes,West Transect 3,15.24,0,22
+Upwind,Yes,West Transect 3,30.48,0,22
+Upwind,Yes,West Transect 3,45.72,0,22
+Upwind,Yes,West Transect 3,60.96,0,22
+Upwind,Yes,West Transect 3,76.2,0,22
+Downwind,Yes,East Transect 1,137.16,3,22
+Downwind,Yes,East Transect 2,137.16,7,22
+Downwind,Yes,East Transect 3,137.16,5,22
+Downwind,No,East Transect 1,152.4,5,22
+Downwind,No,East Transect 2,152.4,10,22
+Downwind,No,East Transect 3,152.4,5,22
+Downwind,Yes,East Transect 1,152.4,3,22
+Downwind,Yes,East Transect 2,152.4,7,22
+Downwind,Yes,East Transect 3,152.4,3,22
+Downwind,No,East Transect 1,167.64,5,22
+Downwind,No,East Transect 2,167.64,5,22
+Downwind,No,East Transect 3,167.64,5,22
+Downwind,Yes,East Transect 1,167.64,2,22
+Downwind,Yes,East Transect 2,167.64,3,22
+Downwind,Yes,East Transect 3,167.64,3,22
+Downwind,No,East Transect 1,182.88,2,22
+Downwind,No,East Transect 2,182.88,5,22
+Downwind,No,East Transect 3,182.88,2,22
+Downwind,Yes,East Transect 1,182.88,1,22
+Downwind,Yes,East Transect 2,182.88,5,22
+Downwind,Yes,East Transect 3,182.88,2,22
+Downwind,No,East Transect 1,198.12,0,22
+Downwind,No,East Transect 2,198.12,5,22
+Downwind,No,East Transect 3,198.12,2,22
+Downwind,Yes,East Transect 1,198.12,0,22
+Downwind,Yes,East Transect 2,198.12,4,22
+Downwind,Yes,East Transect 3,198.12,0,22
+Downwind,No,East Transect 1,213.36,0,22
+Downwind,No,East Transect 2,213.36,5,22
+Downwind,No,East Transect 3,213.36,0,22
+Downwind,Yes,East Transect 1,213.36,0,22
+Downwind,Yes,East Transect 2,213.36,5,22
+Downwind,Yes,East Transect 3,213.36,0,22
+Downwind,No,East Transect 1,228.6,0,22
+Downwind,No,East Transect 2,228.6,5,22
+Downwind,No,East Transect 3,228.6,0,22
+Downwind,Yes,East Transect 1,228.6,0,22
+Downwind,Yes,East Transect 2,228.6,3,22
+Downwind,Yes,East Transect 3,228.6,0,22
+Downwind,No,East Transect 1,243.84,0,22
+Downwind,No,East Transect 2,243.84,2,22
+Downwind,No,East Transect 3,243.84,0,22
+Downwind,Yes,East Transect 1,243.84,0,22
+Downwind,Yes,East Transect 2,243.84,1,22
+Downwind,Yes,East Transect 3,243.84,0,22
+Downwind,No,East Transect 1,259.08,0,22
+Downwind,No,East Transect 2,259.08,2,22
+Downwind,No,East Transect 3,259.08,0,22
+Downwind,Yes,East Transect 1,259.08,0,22
+Downwind,Yes,East Transect 2,259.08,1,22
+Downwind,Yes,East Transect 3,259.08,0,22
