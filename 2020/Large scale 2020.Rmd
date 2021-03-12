@@ -1,0 +1,365 @@
+---
+title: "2020 Dicamba Large Scale Analysis"
+author: "Sarah Striegel"
+date: "9/8/2020"
+output: html_document
+---
+
+#Load packages
+```{r}
+library(ggplot2)
+library(drc)
+library(tidyverse)
+library(stats)
+library(plotrix)
+```
+
+#Upload data and change variables as needed
+```{r}
+Data <- read.csv("LSdata.csv", header=T)
+str(Data)
+dim(Data)
+Data$Transect= as.factor(Data$Transect)
+Data$Area = as.factor(Data$Area)
+str(Data)
+```
+
+#Raw data figure - injury
+```{r}
+ggplot(Data, aes(x = Distance, y=Injury, group=Distance, fill=Injury)) +
+  facet_grid (Transect~Area, scales="free") +
+  geom_boxplot(fill="mistyrose4") +  
+  ggtitle("2020 Dicamba Large Scale 21 DAT") +
+  theme_bw() + theme(plot.title =  element_text(size=25, hjust=0.5, color="black", face="bold"),
+                     axis.title.y = element_text(size=20, color="black", face="bold"),
+                     axis.title.x = element_text(size=20, color="black", face="bold"), 
+                     legend.position="none",
+                     axis.text.x = element_text(size=12, color="black"),
+                     axis.text.y = element_text(size=12, color="black"), 
+                     strip.text.x = element_text(size=15, color="black"),
+                     strip.background = element_rect(fill="cadetblue"),
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  labs(y="Soybean injury (%)", x="Distance from treated field edge (m))") +
+  ggsave("LSdic_21datINJ.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+#Raw data figure - height
+```{r}
+ggplot(Data, aes(x = Distance, y=Height, group=Distance, fill=Height)) +
+  facet_grid (Transect~Area, scales="free") +
+  geom_boxplot(fill="mistyrose4") +  
+  ggtitle("2020 Dicamba Large Scale 21 DAT") +
+  theme_bw() + theme(plot.title =  element_text(size=25, hjust=0.5, color="black", face="bold"),
+                     axis.title.y = element_text(size=20, color="black", face="bold"),
+                     axis.title.x = element_text(size=20, color="black", face="bold"), 
+                     legend.position="none",
+                     axis.text.x = element_text(size=12, color="black"),
+                     axis.text.y = element_text(size=12, color="black"), 
+                     strip.text.x = element_text(size=15, color="black"),
+                     strip.background = element_rect(fill="cadetblue"),
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  labs(y="Soybean height (cm)", x="Distance from treated field edge (m))") +
+  ggsave("LSdic_21datHT.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+MODELING
+
+North transect
+Injury - NLR, 3-parameter logistic
+```{r}
+data1 = Data %>%
+  filter(Transect=="North")
+
+N_model = drm(Injury ~ Distance, Area, fct = l3(fixed = c(NA, NA, NA), names = c("b", "d", "e")), data=data1)
+summary(N_model)
+plot(N_model)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.8), log(57.1), by=0.001)))
+
+newdata1 <- data.frame(Area = "Covered", newdata)
+newdata2 <- data.frame(Area = "Non-covered", newdata)
+nd <- rbind(newdata1, newdata2)
+
+pm <- predict(N_model, newdata = nd, interval="confidence")
+nd$p <- pm[,1]
+nd$pmin <- pm[,2]
+nd$pmax <- pm[,3]
+str(nd)
+
+data1$Distance0 <- data1$Distance
+data1$Distance0[data1$Distance0==0.8] <- 0.8
+```
+
+Injury fig
+```{r}
+ggplot(data1, aes(x=Distance, y=(Injury), color=Area)) + 
+  labs(y="Soybean injury (%)", x="Distance from treated area (m)") +
+  geom_line(data=nd, aes(x=Distance, y=(p), color=Area), size=1.2) +
+  geom_point(stat="identity", size=1.5, pch=1) +
+    theme_bw() + theme(plot.title = element_text(hjust=0.5, size=20, face="bold"),
+                     axis.title.y = element_text(size=15, color="black"),
+                     axis.title.x = element_text(size=15, color="black"), 
+                     legend.position=c(0.85,0.9),
+                     legend.text = element_text(color="black", size = 14), 
+                     legend.title = element_blank(),
+                     axis.text.x = element_text(size=15, color="black"),
+                     axis.text.y = element_text(size=15, color="black"), 
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  xlim(0,60) + ylim(0, 60) +
+  scale_fill_manual(values = c("#494949", "#c5050c")) + 
+  scale_color_manual(values = c("#494949", "#c5050c")) + 
+  ggtitle("North transect") +
+  ggsave("BayerLS N INJ.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+Height - linear regression & fig
+```{r fig.width=7, fig.height=5}
+data1_cov = data1 %>%
+  filter(Area=="Covered")
+data1_uncov = data1 %>%
+  filter(Area=="Non-covered")
+
+N_modelHTcov = lm(Height ~ Distance, data=data1_cov)
+summary(N_modelHTcov)
+N_modelHTcov$coefficients
+N_modelHTuncov = lm(Height ~ Distance, data=data1_uncov)
+summary(N_modelHTuncov)
+N_modelHTuncov$coefficients
+
+68.5144704 + (0.1753567*16)
+
+plot(Height ~ Distance, data=data1, col=as.integer(Area), xlab="", xlim=c(0,60),
+     ylab="", ylim=c(35,80), pch=1, las=1.5) + ablineclip(N_modelHTcov$coefficients, col="#494949", x1=0.8, x2=16.0, lty=1, lwd=2) + 
+  ablineclip(N_modelHTuncov$coefficients, col="#c5050c", x1=0.8, x2=57.1, lty=2, lwd = 1.2) + 
+  mtext(side=1, line=2.1, "Distance from treated area (m)", col="black", font=1, cex=1.3) +
+  mtext(side=2, line=2.5, "Soybean height (cm)", col="black", font=1, cex=1.3) +
+  mtext(side=3, line=0.5, "North transect", col="black", font=2, cex=1.8) +
+  legend(45, 45, legend = c("Covered", "Non-covered"), col=c("#494949", "#c5050c"), lty=1:2, cex = 0.8, box.lty = 0)
+```
+
+South transect
+Injury - NLR, 3-parameter logistic
+```{r}
+data2 = Data %>%
+  filter(Transect=="South", Distance > 0.8)
+
+S_model = drm(Injury ~ Distance, Area, fct = l3(fixed = c(NA, 20, NA), names = c("b", "d", "e")), data=data2)
+summary(S_model)
+plot(S_model)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(1.5), log(41.9), by=0.001)))
+
+newdata1 <- data.frame(Area = "Covered", newdata)
+newdata2 <- data.frame(Area = "Non-covered", newdata)
+nd <- rbind(newdata1, newdata2)
+
+pm <- predict(S_model, newdata = nd, interval="confidence")
+nd$p <- pm[,1]
+nd$pmin <- pm[,2]
+nd$pmax <- pm[,3]
+str(nd)
+
+data2$Distance0 <- data2$Distance
+data2$Distance0[data2$Distance0==1.5] <- 1.5
+```
+
+Injury fig
+```{r}
+ggplot(data2, aes(x=Distance, y=(Injury), color=Area)) + 
+  labs(y="Soybean injury (%)", x="Distance from treated area (m)") +
+  geom_line(data=nd, aes(x=Distance, y=(p), color=Area), size=1.2) +
+  geom_point(stat="identity", size=1.5, pch=1) +
+    theme_bw() + theme(plot.title = element_text(hjust=0.5, size=20, face="bold"),
+                     axis.title.y = element_text(size=15, color="black"),
+                     axis.title.x = element_text(size=15, color="black"), 
+                     legend.position=c(0.85,0.9),
+                     legend.text = element_text(color="black", size = 14), 
+                     legend.title = element_blank(),
+                     axis.text.x = element_text(size=15, color="black"),
+                     axis.text.y = element_text(size=15, color="black"), 
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  xlim(0,60) + ylim(0,60) +
+  scale_fill_manual(values = c("#494949", "#c5050c")) + 
+  scale_color_manual(values = c("#494949", "#c5050c")) + 
+  ggtitle("South transect") +
+  ggsave("BayerLS S INJ V2.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+Height - linear regression & fig
+```{r fig.width=7, fig.height=5}
+data2_cov = data2 %>%
+  filter(Area=="Covered")
+data2_uncov = data2 %>%
+  filter(Area=="Non-covered")
+
+S_modelHTcov = lm(Height ~ Distance, data=data2_cov)
+summary(S_modelHTcov)
+S_modelHTuncov = lm(Height ~ Distance, data=data2_uncov)
+summary(S_modelHTuncov)
+
+plot(Height ~ Distance, data=data2, col=as.integer(Area), xlab="", xlim=c(0,60), 
+     ylab="", ylim=c(35,80), pch=1, las=1.5) + ablineclip(S_modelHTcov$coefficients, col="#494949", x1=0.8, x2=16.0, lty=1, lwd=2) + 
+  ablineclip(S_modelHTuncov$coefficients, col="#c5050c", x1=0.8, x2=41.9, lty=2, lwd = 1.2) +
+  mtext(side=1, line=2.1, "Distance from treated area (m)", col="black", font=1, cex=1.3) +
+  mtext(side=2, line=2.5, "Soybean height (cm)", col="black", font=1, cex=1.3) +
+  mtext(side=3, line=0.5, "South transect", col="black", font=2, cex=1.8) + 
+  legend(45, 45, legend = c("Covered", "Non-covered"), col=c("#494949", "#c5050c"), lty=1:2, cex = 0.8, box.lty = 0)
+```
+
+East transect
+Injury - NLR, 3-parameter logistic
+```{r}
+data3 = Data %>%
+  filter(Transect=="East")
+
+E_model = drm(Injury ~ Distance, Area, fct = l3(fixed = c(NA, 40, NA), names = c("b", "d", "e")), data=data3)
+summary(E_model)
+plot(E_model)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.8), log(41.9), by=0.001)))
+
+newdata1 <- data.frame(Area = "Covered", newdata)
+newdata2 <- data.frame(Area = "Non-covered", newdata)
+nd <- rbind(newdata1, newdata2)
+
+pm <- predict(E_model, newdata = nd, interval="confidence")
+nd$p <- pm[,1]
+nd$pmin <- pm[,2]
+nd$pmax <- pm[,3]
+str(nd)
+
+data3$Distance0 <- data3$Distance
+data3$Distance0[data3$Distance0==0.8] <- 0.8
+```
+
+Injury fig
+```{r}
+ggplot(data3, aes(x=Distance, y=(Injury), color=Area)) + 
+  labs(y="Soybean injury (%)", x="Distance from treated area (m)") +
+  geom_line(data=nd, aes(x=Distance, y=(p), color=Area), size=1.2) +
+  geom_point(stat="identity", size=1.5, pch=1) +
+    theme_bw() + theme(plot.title = element_text(hjust=0.5, size=20, face="bold"),
+                     axis.title.y = element_text(size=15, color="black"),
+                     axis.title.x = element_text(size=15, color="black"), 
+                     legend.position=c(0.85,0.9),
+                     legend.text = element_text(color="black", size = 14), 
+                     legend.title = element_blank(),
+                     axis.text.x = element_text(size=15, color="black"),
+                     axis.text.y = element_text(size=15, color="black"), 
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  xlim(0,60) + ylim(0,60) +
+  scale_fill_manual(values = c("#494949", "#c5050c")) + 
+  scale_color_manual(values = c("#494949", "#c5050c")) + 
+  ggtitle("East transect") +
+  ggsave("BayerLS E INJ.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+Height - linear regression & fig
+```{r fig.width=7, fig.height=5}
+data3_cov = data3 %>%
+  filter(Area=="Covered")
+data3_uncov = data3 %>%
+  filter(Area=="Non-covered")
+
+E_modelHTcov = lm(Height ~ Distance, data=data3_cov)
+summary(E_modelHTcov)
+E_modelHTuncov = lm(Height ~ Distance, data=data3_uncov)
+summary(E_modelHTuncov)
+
+plot(Height ~ Distance, data=data3, col=as.integer(Area), xlab="", xlim=c(0,60), ylim=c(35,80),
+     ylab="", pch=1, las=1) + ablineclip(E_modelHTcov$coefficients, col="#494949", x1=0.8, x2=16.0, lty=1, lwd=2) + 
+  ablineclip(E_modelHTuncov$coefficients, col="#c5050c", x1=0.8, x2=41.9, lty=2, lwd = 1.2) +
+  mtext(side=1, line=2.1, "Distance from treated area (m)", col="black", font=1, cex=1.3) +
+  mtext(side=2, line=2.5, "Soybean height (cm)", col="black", font=1, cex=1.3) +
+  mtext(side=3, line=0.5, "East transect", col="black", font=2, cex=1.8) + 
+  legend(45, 45, legend = c("Covered", "Non-covered"), col=c("#494949", "#c5050c"), lty=1:2, cex = 0.8, box.lty = 0)
+```
+
+West transect
+Injury - NLR, 3-parameter logistic
+```{r}
+data4 = Data %>%
+  filter(Transect=="West")
+
+W_model = drm(Injury ~ Distance, Area, fct = l3(fixed = c(NA, NA, NA), names = c("b", "d", "e")), data=data4)
+summary(W_model)
+plot(W_model)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+newdata <- expand.grid(Distance=exp(seq(log(0.8), log(41.9), by=0.001)))
+
+newdata1 <- data.frame(Area = "Covered", newdata)
+newdata2 <- data.frame(Area = "Non-covered", newdata)
+nd <- rbind(newdata1, newdata2)
+
+pm <- predict(W_model, newdata = nd, interval="confidence")
+nd$p <- pm[,1]
+nd$pmin <- pm[,2]
+nd$pmax <- pm[,3]
+str(nd)
+
+data4$Distance0 <- data4$Distance
+data4$Distance0[data4$Distance0==0.8] <- 0.8
+```
+
+Injury fig
+```{r}
+ggplot(data4, aes(x=Distance, y=(Injury), color=Area)) + 
+  labs(y="Soybean injury (%)", x="Distance from treated area (m)") +
+  geom_line(data=nd, aes(x=Distance, y=(p), color=Area), size=1.2) +
+  geom_point(stat="identity", size=1.5, pch=1) +
+    theme_bw() + theme(plot.title = element_text(hjust=0.5, size=20, face="bold"),
+                     axis.title.y = element_text(size=15, color="black"),
+                     axis.title.x = element_text(size=15, color="black"), 
+                     legend.position=c(0.85,0.9),
+                     legend.text = element_text(color="black", size = 14), 
+                     legend.title = element_blank(),
+                     axis.text.x = element_text(size=15, color="black"),
+                     axis.text.y = element_text(size=15, color="black"), 
+                     panel.background = element_rect(fill="white"),
+                     panel.grid.major=element_line(color="white"),
+                     panel.grid.minor=element_line(color="white")) +
+  xlim(0,60) + ylim(0,60) +
+  scale_fill_manual(values = c("#494949", "#c5050c")) + 
+  scale_color_manual(values = c("#494949", "#c5050c")) + 
+  ggtitle("West transect") +
+  ggsave("BayerLS W INJ.pdf", units="in", width=7, height=5, dpi=600)
+```
+
+Height - linear regression & fig
+```{r fig.width=7, fig.height=5}
+data4_cov = data4 %>%
+  filter(Area=="Covered")
+data4_uncov = data4 %>%
+  filter(Area=="Non-covered")
+
+W_modelHTcov = lm(Height ~ Distance, data=data4_cov)
+summary(W_modelHTcov)
+W_modelHTuncov = lm(Height ~ Distance, data=data4_uncov)
+summary(W_modelHTuncov)
+
+plot(Height ~ Distance, data=data4, col=as.integer(Area), xlab="", xlim=c(0,60), ylim=c(35,80),
+     ylab="", pch=1, las=1) + ablineclip(W_modelHTcov$coefficients, col="#494949", x1=0.8, x2=16.0, lty=1, lwd=2) + 
+  ablineclip(W_modelHTuncov$coefficients, col="#c5050c", x1=0.8, x2=41.9, lty=2, lwd = 1.2) +
+  mtext(side=1, line=2.1, "Distance from treated area (m)", col="black", font=1, cex=1.3) +
+  mtext(side=2, line=2.5, "Soybean height (cm)", col="black", font=1, cex=1.3) +
+  mtext(side=3, line=0.5, "West transect", col="black", font=2, cex=1.8) + 
+  legend(45, 45, legend = c("Covered", "Non-covered"), col=c("#494949", "#c5050c"), lty=1:2, cex = 0.8, box.lty = 0)
+```
